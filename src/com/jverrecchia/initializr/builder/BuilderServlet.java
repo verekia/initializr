@@ -1,0 +1,63 @@
+package com.jverrecchia.initializr.builder;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.jverrecchia.initializr.builder.files.Files;
+import com.jverrecchia.initializr.builder.files.TemplateFile;
+import com.jverrecchia.initializr.builder.files.ZipFile;
+import com.jverrecchia.initializr.builder.mode.Mode;
+import com.jverrecchia.initializr.builder.mode.ModeSelector;
+import com.jverrecchia.initializr.builder.modules.Modules;
+import com.jverrecchia.initializr.builder.zip.Zip;
+import com.jverrecchia.initializr.builder.zip.ZipContentPrinter;
+
+public class BuilderServlet extends HttpServlet {
+	private static final long serialVersionUID = -1029291219058930682L;
+
+	public void doGet(HttpServletRequest req, HttpServletResponse resp)
+	throws ServletException, IOException {
+
+		Mode mode = ModeSelector.getMode(req.getParameter("mode"));
+		
+		Modules modules = new Modules(req);
+		
+		// test contenu modules
+		/*for (Module currentModule : modules.getModules()){
+			System.out.println(currentModule.getAuthor() + " " + currentModule.getId());
+		}*/
+		
+		@SuppressWarnings("unused")
+		Files files = new Files(modules.getModules());
+		
+		
+		List<ZipFile> zipFiles = new ArrayList<ZipFile>();
+		
+		ZipFile zipfile1 = new ZipFile();
+		zipfile1.setTemplate(new TemplateFile("builder/templates/index.html"));
+		zipfile1.setZipPath("index.html");
+		zipfile1.fillContent();
+/*
+		ZipFile zipfile2 = new ZipFile();
+		zipfile2.setZipPath("css/style.css");
+		zipfile2.setContent("css/style.css content");
+	*/	
+		zipFiles.add(zipfile1);
+	//	zipFiles.add(zipfile2);		
+		
+		Zip zip = new Zip(resp, mode, zipFiles);
+		
+		if (req.getParameter("print") != null){
+			ZipContentPrinter zipContentPrinter = new ZipContentPrinter(resp, zip);
+			zipContentPrinter.printZip();
+		}
+		else
+			zip.sendZip(zipFiles);
+	}
+}

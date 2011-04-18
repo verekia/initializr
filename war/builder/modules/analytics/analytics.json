@@ -1,0 +1,10 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Analytics",
+	"id" : "analytics",
+	"insert" :
+	{
+		"what" : "analytics.html",
+		"where" : "body"
+	}
+}
