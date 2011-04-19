@@ -1,0 +1,10 @@
+{
+	"author" : "Jonathan Verrecchia",
+	"name" : "jQuery Loading Test",
+	"id" : "jqtest",
+	"insert" :
+	{
+		"what" : "jqtest.html",
+		"where" : "body"
+	}
+}
