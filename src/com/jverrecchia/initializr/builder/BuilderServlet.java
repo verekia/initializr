@@ -28,7 +28,6 @@ public class BuilderServlet extends HttpServlet {
 		
 		Modules modules = new Modules(req);
 		
-		// test contenu modules
 		/*for (Module currentModule : modules.getModules()){
 			System.out.println(currentModule.getAuthor() + " " + currentModule.getId());
 		}*/

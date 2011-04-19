@@ -27,7 +27,7 @@ public class ZipFile {
 	
 	public void fillContent(){
 		this.template.readTemplateFile();
-		this.content = this.template.getContent();
+		this.content = this.template.getZipContent();
 	}
 	public void setTemplate(TemplateFile template) {
 		this.template = template;
