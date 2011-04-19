@@ -1,0 +1,10 @@
+{
+	"author" : "Paul Irish",
+	"name" : "IE Conditional Comments",
+	"id" : "iecond",
+	"insert" :
+	{
+		"what" : "iecond.html",
+		"where" : "index.html/html"
+	}
+}

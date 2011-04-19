@@ -5,6 +5,6 @@
 	"insert" :
 	{
 		"what" : "jqtest.html",
-		"where" : "body"
+		"where" : "index.html/body"
 	}
 }

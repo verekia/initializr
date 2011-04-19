@@ -5,6 +5,6 @@
 	"insert" :
 	{
 		"what" : "analytics.html",
-		"where" : "body"
+		"where" : "index.html/body"
 	}
 }
