@@ -9,5 +9,6 @@ pour chaque file, aller chopper son template
 	
 ajouter tous les fichiers au zip
 
-
 inline injections
+mettre en place un systeme de sets qui activent / désactivent
+les modules opposés (attention à ceux par défaut)

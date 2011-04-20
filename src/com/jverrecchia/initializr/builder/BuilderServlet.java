@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.jverrecchia.initializr.builder.files.File;
-import com.jverrecchia.initializr.builder.files.Files;
 import com.jverrecchia.initializr.builder.files.TemplateFile;
 import com.jverrecchia.initializr.builder.files.ZipFile;
 import com.jverrecchia.initializr.builder.mode.Mode;
@@ -26,7 +25,7 @@ public class BuilderServlet extends HttpServlet {
 	throws ServletException, IOException {
 
 		Mode mode = ModeSelector.getMode(req.getParameter("mode"));
-		Modules modules = new Modules(req);
+		Modules modules = new Modules(req, mode);
 		mode.addModulesFiles(modules);
 
 		

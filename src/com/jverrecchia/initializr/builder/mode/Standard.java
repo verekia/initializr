@@ -7,6 +7,8 @@ public class Standard extends Mode{
 	public Standard(){
 		this.setName("jverrecchia-initializr");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
-		this.getFiles().add(new File("style.css", "builder/templates/style.css", true, true));	
+		this.getFiles().add(new File("style.css", "builder/templates/style.css", true, true));
+		this.getDefaultModulesNames().add("iecond");
+		this.getDefaultModulesNames().add("modernizr");
 	}
 }

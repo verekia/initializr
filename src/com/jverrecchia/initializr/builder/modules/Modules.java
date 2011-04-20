@@ -7,13 +7,15 @@ import java.util.Map.Entry;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.jverrecchia.initializr.builder.mode.Mode;
+
 public class Modules {
 
 	private List<String> modulesnames = new ArrayList<String>();
 	private List<Module> modules = new ArrayList<Module>();
 
 
-	public Modules(HttpServletRequest req) {
+	public Modules(HttpServletRequest req, Mode mode) {
 		
 		@SuppressWarnings("unchecked")
 		Map<String, String[]> map = req.getParameterMap();
@@ -24,7 +26,16 @@ public class Modules {
 			
 			if (!mapEntry.getKey().equals("print") && !mapEntry.getKey().equals("mode"))
 			   modulesnames.add(mapEntry.getKey());
-			
+		}
+		
+		for (String currentDefaultModuleName : mode.getDefaultModulesNames()){
+			boolean found = false;
+			for (String currentModuleName : modulesnames){
+				if (currentDefaultModuleName.equals(currentModuleName))
+					found = true;
+			}
+			if (!found)
+				modulesnames.add(currentDefaultModuleName);
 		}
 		
 		// Verifier si le nom du module est valide avant

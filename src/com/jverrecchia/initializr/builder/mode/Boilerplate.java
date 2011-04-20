@@ -7,5 +7,7 @@ public class Boilerplate extends Mode {
 	public Boilerplate(){
 		this.setName("boilerplate-initializr");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
+		this.getDefaultModulesNames().add("oldiecond");
+		this.getDefaultModulesNames().add("modernizr");
 	}
 }
