@@ -1,0 +1,12 @@
+{
+	"author" : "Jonathan Verrecchia",
+	"name" : "Custom CSS",
+	"id" : "customcss",
+	"inserts" :
+	[
+		{
+			"what" : "customcss.css",
+			"where" : "style.css/custom"
+		}
+	]
+}

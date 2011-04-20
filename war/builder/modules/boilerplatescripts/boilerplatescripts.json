@@ -1,0 +1,24 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Boilerplate Scripts",
+	"id" : "boilerplatescripts",
+	"inserts" :
+	[
+		{
+			"what" : "boilerplatescripts.html",
+			"where" : "index.html/body/myjs"
+		}
+	,
+		{
+			"what" : "script.js",
+			"where" : "js/script.js",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "plugins.js",
+			"where" : "js/plugins.js",
+			"type" : "file"
+		}		
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Boilerplate CSS",
+	"id" : "boilerplatecss",
+	"inserts" :
+	[
+		{
+			"what" : "boilerplatecss.css",
+			"where" : "style.css/boilerplate"
+		}
+	]
+}
