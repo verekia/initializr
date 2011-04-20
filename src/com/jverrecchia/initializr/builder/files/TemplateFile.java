@@ -41,8 +41,9 @@ public class TemplateFile {
 			String foundTag = null;
 			
 			while ((str = reader.readLine()) != null) {
-				if (str.getBytes()[0] == '{' &&
-					str.getBytes()[1] == '#'){
+				String byteStr = str.toString();
+				if (byteStr.length() > 0 && str.getBytes()[0] == '{' &&
+						byteStr.length() > 1 && str.getBytes()[1] == '#'){
 					String currentLine = new String(str.getBytes());
 					int secondSpace = 3;
 					while (currentLine.charAt(secondSpace) != ' '){
