@@ -22,7 +22,7 @@ public class Modules {
 			   //String[] tmp = mapEntry.getValue();
 			   //System.out.print((String)tmp[0]);
 			
-			if (!mapEntry.getKey().equals("print"))
+			if (!mapEntry.getKey().equals("print") && !mapEntry.getKey().equals("mode"))
 			   modulesnames.add(mapEntry.getKey());
 			
 		}
