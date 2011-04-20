@@ -2,9 +2,11 @@
 	"author" : "Paul Irish",
 	"name" : "Analytics",
 	"id" : "analytics",
-	"insert" :
-	{
-		"what" : "analytics.html",
-		"where" : "index.html/body"
-	}
+	"inserts" :
+	[
+		{
+			"what" : "analytics.html",
+			"where" : "index.html/body"
+		}
+	]
 }

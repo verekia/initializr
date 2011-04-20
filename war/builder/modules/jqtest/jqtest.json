@@ -2,9 +2,11 @@
 	"author" : "Jonathan Verrecchia",
 	"name" : "jQuery Loading Test",
 	"id" : "jqtest",
-	"insert" :
-	{
-		"what" : "jqtest.html",
-		"where" : "index.html/body"
-	}
+	"inserts" :
+	[
+		{
+			"what" : "jqtest.html",
+			"where" : "index.html/body"
+		}
+	]
 }

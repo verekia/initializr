@@ -6,6 +6,7 @@ import java.io.StringReader;
 import java.util.List;
 
 import com.jverrecchia.initializr.builder.Utils;
+import com.jverrecchia.initializr.builder.modules.Insert;
 import com.jverrecchia.initializr.builder.modules.Module;
 import com.jverrecchia.initializr.builder.modules.ModulesRegistry;
 
@@ -54,8 +55,18 @@ public class TemplateFile {
 					String modulesToInsert = new String();
 					List<Module> modules = ModulesRegistry.getModulesByTag(foundTag);
 					for (Module currentModule : modules){
-						String insert = Utils.readFileAsString("builder/modules/" + currentModule.getId() + "/" + currentModule.getInsert().getWhat());
-						modulesToInsert += insert;					
+
+						List<Insert> inserts = currentModule.getInserts();
+						String insertString = null;
+						for (Insert currentInsert : inserts){
+							if (currentInsert.getType() == null || !currentInsert.getType().equals("file")){
+								insertString = Utils.readFileAsString("builder/modules/" + currentModule.getId() + "/" + currentInsert.getWhat());
+							}
+						}
+						modulesToInsert += insertString;
+						
+						
+											
 					}
 					this.setZipContent(this.getZipContent() + modulesToInsert);
 				

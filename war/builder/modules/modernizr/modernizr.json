@@ -2,9 +2,17 @@
 	"author" : "Paul Irish",
 	"name" : "Modernizr",
 	"id" : "modernizr",
-	"insert" :
-	{
-		"what" : "modernizr.html",
-		"where" : "index.html/head/html5polyfill"
-	}
+	"inserts" :
+	[
+		{
+			"what" : "modernizr.html",
+			"where" : "index.html/head/html5polyfill"
+		}
+	,
+		{
+			"what" : "modernizr-1.7.min.js",
+			"where" : "js/libs/modernizr-1.7.min.js",
+			"type" : "file"
+		}
+	]
 }

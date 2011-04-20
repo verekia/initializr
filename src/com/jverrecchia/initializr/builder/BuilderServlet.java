@@ -26,11 +26,12 @@ public class BuilderServlet extends HttpServlet {
 	throws ServletException, IOException {
 
 		Mode mode = ModeSelector.getMode(req.getParameter("mode"));
-		
 		Modules modules = new Modules(req);
+		mode.addModulesFiles(modules);
+
 		
-		@SuppressWarnings("unused")
-		Files files = new Files(modules.getModules());
+		//@SuppressWarnings("unused")
+		//Files files = new Files(modules.getModules());
 
 		List<ZipFile> zipFiles = new ArrayList<ZipFile>();		
 		

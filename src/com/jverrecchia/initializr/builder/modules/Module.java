@@ -8,7 +8,7 @@ public class Module {
 	private String author;
 	private String url;
 	private List<Module> requires;
-	private Insert insert;
+	private List<Insert> inserts;
 	// private List<insertion> (before after...)
 	
 	public String getName() {
@@ -41,10 +41,10 @@ public class Module {
 	public void setRequires(List<Module> requires) {
 		this.requires = requires;
 	}
-	public void setInsert(Insert insert) {
-		this.insert = insert;
+	public void setInserts(List<Insert> inserts) {
+		this.inserts = inserts;
 	}
-	public Insert getInsert() {
-		return insert;
+	public List<Insert> getInserts() {
+		return inserts;
 	}
 }

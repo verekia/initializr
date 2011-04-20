@@ -2,9 +2,11 @@
 	"author" : "Paul Irish",
 	"name" : "IE Conditional Comments",
 	"id" : "iecond",
-	"insert" :
-	{
-		"what" : "iecond.html",
-		"where" : "index.html/htmltag"
-	}
+	"inserts" :
+	[
+		{
+			"what" : "iecond.html",
+			"where" : "index.html/htmltag"
+		}
+	]
 }

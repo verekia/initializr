@@ -1,1 +1,13 @@
+Lifecycle:
+
+Check mode > ajouter fichiers avec leurs templates
+check attributs pour voir quels modules sont activés
+parmi les modules activés check ceux qui sont type file
+
+pour chaque file, aller chopper son template
+	pour chaque template remplacer les portions block
+	
+ajouter tous les fichiers au zip
+
+
 inline injections

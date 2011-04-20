@@ -14,8 +14,10 @@ public class ModulesRegistry {
 		List<Module> foundModules = new ArrayList<Module>();
 		
 		for (Module currentModule : modules){
-			if (currentModule.getInsert().getWhere().equals(tag))
-				foundModules.add(currentModule);
+			for (Insert currentInsert : currentModule.getInserts()){
+				if (currentInsert.getType()== null && currentInsert.getWhere().equals(tag))
+					foundModules.add(currentModule);				
+			}
 		}
 		return foundModules;
 	}

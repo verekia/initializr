@@ -4,11 +4,13 @@ public class File {
 	
 	private String realPath;
 	private String templatePath;
+	private boolean include;
 	private boolean modify;
 	
-	public File(String realPath, String templatePath, boolean modify) {
+	public File(String realPath, String templatePath, boolean include, boolean modify) {
 		this.realPath = realPath;
 		this.templatePath = templatePath;
+		this.include = include;
 		this.modify = modify;
 	}
 	public String getRealPath() {
@@ -29,6 +31,12 @@ public class File {
 	}
 	public String getTemplatePath() {
 		return templatePath;
+	}
+	public void setInclude(boolean include) {
+		this.include = include;
+	}
+	public boolean isInclude() {
+		return include;
 	}
 
 }
