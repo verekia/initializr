@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Basic Content",
+	"id" : "basiccontent",
+	"inserts" :
+	[
+		{
+			"what" : "basiccontent.html",
+			"where" : "index.html/body/content"
+		}
+	]
+}

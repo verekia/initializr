@@ -9,5 +9,8 @@ public class Boilerplate extends Mode {
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
 		this.getDefaultModulesNames().add("oldiecond");
 		this.getDefaultModulesNames().add("modernizr");
+		this.getDefaultModulesNames().add("basiccontent");
+		this.getDefaultModulesNames().add("jquery");
+		this.getDefaultModulesNames().add("ddbelatedpng");
 	}
 }
