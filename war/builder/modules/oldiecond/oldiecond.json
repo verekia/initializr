@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Old IE Conditional Comment",
+	"id" : "oldiecond",
+	"inserts" :
+	[
+		{
+			"what" : "oldiecond.html",
+			"where" : "index.html/htmltag"
+		}
+	]
+}
