@@ -12,5 +12,6 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("basiccontent");
 		this.getDefaultModulesNames().add("jquery");
 		this.getDefaultModulesNames().add("ddbelatedpng");
+		this.getDefaultModulesNames().add("analytics");
 	}
 }
