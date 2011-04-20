@@ -1,0 +1,18 @@
+{
+	"author" : "Jonathan Verrecchia",
+	"name" : "JavaScript",
+	"id" : "scriptjs",
+	"inserts" :
+	[
+		{
+			"what" : "scriptjs.html",
+			"where" : "index.html/body/myjs"
+		}
+	,
+		{
+			"what" : "script.js",
+			"where" : "js/script.js",
+			"type" : "file"
+		}
+	]
+}
