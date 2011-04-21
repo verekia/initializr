@@ -19,5 +19,6 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("favicon");
 		this.getDefaultModulesNames().add("appletouchicons");
 		this.getDefaultModulesNames().add("adobecrossdomain");
+		this.getDefaultModulesNames().add("humanstxt");
 	}
 }
