@@ -1,0 +1,18 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Favicon",
+	"id" : "favicon",
+	"inserts" :
+	[
+		{
+			"what" : "favicon.html",
+			"where" : "index.html/head/favicon"
+		}
+	,
+		{
+			"what" : "favicon.ico",
+			"where" : "favicon.ico",
+			"type" : "file"
+		}
+	]
+}
