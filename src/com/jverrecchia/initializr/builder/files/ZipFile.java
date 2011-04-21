@@ -1,10 +1,15 @@
 package com.jverrecchia.initializr.builder.files;
 
+import java.io.IOException;
+
+import com.jverrecchia.initializr.builder.Utils;
+
 public class ZipFile {
 	private TemplateFile template;
 	private String zipPath;
 	private String content;
 	private boolean included;
+	private byte[] bytesData;
 	
 	public String getZipPath() {
 		return zipPath;
@@ -35,5 +40,19 @@ public class ZipFile {
 	public TemplateFile getTemplate() {
 		return template;
 	}
-	
+
+	public void copyContent(File file){
+		try {
+			bytesData = Utils.getBytesFromFile(new java.io.File(file.getTemplatePath()));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public void setBytesData(byte[] bytesData) {
+		this.bytesData = bytesData;
+	}
+	public byte[] getBytesData() {
+		return bytesData;
+	}
 }

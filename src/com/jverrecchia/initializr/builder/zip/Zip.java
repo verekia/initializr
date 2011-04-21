@@ -50,9 +50,15 @@ public class Zip {
 	        for (ZipFile currentZipFile : zipfiles){
 	        	ZipEntry entry = new ZipEntry(currentZipFile.getZipPath());
 	        	zipOut.putNextEntry(entry);
+	        	
+	        	byte[] theByteArray = null;
+	        	if (currentZipFile.getContent() != null){
 	        	String stringToConvert = currentZipFile.getContent();
-		        byte[] theByteArray = stringToConvert.getBytes();			
-				zipOut.write(theByteArray);	        	
+	        	theByteArray = stringToConvert.getBytes();
+	        	}
+	        	else
+	        		theByteArray = currentZipFile.getBytesData();
+		        zipOut.write(theByteArray);	        	
 	        }
 	        
 	        zipOut.finish(); 

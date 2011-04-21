@@ -23,7 +23,10 @@ public class ZipContentPrinter {
 		
 		for (ZipFile currentFile : zip.getZipFiles()){
 			out.println("<h1>" + currentFile.getZipPath() + "</h1>");
-			out.println("<xmp>" + currentFile.getContent() + "</xmp>");
+			if (currentFile.getContent() == null)
+				out.println("<xmp>" + new String(currentFile.getBytesData()) + "</xmp>");
+			else
+				out.println("<xmp>" + currentFile.getContent() + "</xmp>");
 		}
 		
 		

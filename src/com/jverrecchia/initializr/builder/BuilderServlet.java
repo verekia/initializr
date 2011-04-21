@@ -36,9 +36,13 @@ public class BuilderServlet extends HttpServlet {
 		
 		for (File currentFile : mode.getFiles()){
 			ZipFile currentZipFile = new ZipFile();
-			currentZipFile.setTemplate(new TemplateFile(currentFile.getTemplatePath()));
 			currentZipFile.setZipPath(currentFile.getRealPath());
-			currentZipFile.fillContent();
+			if (currentFile.isModify()){
+				currentZipFile.setTemplate(new TemplateFile(currentFile.getTemplatePath()));
+				currentZipFile.fillContent();
+			}
+			else
+				currentZipFile.copyContent(currentFile);
 			zipFiles.add(currentZipFile);
 		}
 
