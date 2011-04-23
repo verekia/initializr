@@ -11,5 +11,6 @@ public class Standard extends Mode{
 		this.getFiles().add(new File("script.js", "builder/templates/script.js", true, true));
 		this.getDefaultModulesNames().add("iecond");
 		this.getDefaultModulesNames().add("modernizr");
+		this.getDefaultModulesNames().add("initializrcss");
 	}
 }
