@@ -1,0 +1,249 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title></title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <script src="js/libs/modernizr-1.7.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+
+    </header>
+    <div id="main" role="main">
+CSS tips and tricksHOMECSSWORKABOUTCONTACT    
+How to create slick effects with CSS3 box-shadow
+
+ 2digg 
+Drop shadows and inner shadows are some of the effects I learned to apply using Photoshop’s Blending options. But now, since CSS3 “hit the charts”, you don’t need Adobe’s design tool to add a drop shadow or an inner shadow to a box.
+
+Nowadays, CSS3 can help you create beautiful shadows without actually needing Photoshop anymore.
+
+
+
+View demo
+
+box-shadow property
+
+The box-shadow property allows you to add multiple shadows (outer or inner) on box elements. To do that you must specify values as: color, size, blur and offset.
+
+<shadow> = inset? && [ <length>{2,4} && <color>? ]
+Rocket science?
+
+Not at all, here’s an quick example:
+
+box-shadow: 3px 3px 10px 5px #000;
+This CSS declaration will generate the following shadow:
+
+
+
+A positive value for the horizontal offset draws a shadow that is offset to the right of the box, a negative
+length to the left.
+The second length is the vertical offset. A positive value for the vertical offset basically offsets the
+shadow down, a negative one up.
+You’re not allowed to use negative values for blur radius. The larger
+the value, the more the shadow’s edge is blurred, as it can be seen above.
+Spread distance positive values cause the
+shadow shape to expand in all directions by the specified radius.
+Negative ones cause the shadow shape to contract.
+The color is the color of the shadow.
+The inset keyword (missing above), if present,
+changes the drop shadow from an outer shadow to an inner
+shadow
+The above theory it’s just a small amount, if you want to read more, than be my guest and check the W3C specs.
+
+Enough theory, let’s see some stuff!
+
+Now let’s see how can you take advantage of this wonderful CSS3 feature. Below I’ll show you how to enhance your designs with the coolest box-shadow techniques!
+
+Add depth to your body
+
+Reference URL
+
+
+
+body:before
+{
+   content: "";
+   position: fixed;
+   top: -10px;
+   left: 0;
+   width: 100%;
+   height: 10px;
+   z-index: 100;
+   -webkit-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   -moz-box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   box-shadow: 0px 0px 10px rgba(0,0,0,.8);
+   }
+Drop shadows
+
+
+
+Here are the articles that inspired me, and not only:
+
+Divya Manian – Drop Shadows with CSS3
+Nicolas Gallagher – CSS drop-shadows without images
+#box
+{
+  position: relative;
+  width: 60%;
+  background: #ddd;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  padding: 2em 1.5em;
+  color: rgba(0,0,0, .8);
+  text-shadow: 0 1px 0 #fff;
+  line-height: 1.5;
+  margin: 60px auto;
+}
+
+#box:before, #box:after
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: rgba(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0 15px 10px rgba(0,0,0, 0.7);
+  -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+}
+
+#box:after
+{
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+Quick tips
+
+Try spicing up shadows with RGBa color. The box-shadow property can be used using CSS3 RGBa colors to create shadows with differing levels of opacity. If your browsers supports the box-shadow property, then it will definitively support the RGBa color mode.
+
+Use multiple shadows in one CSS declaration:
+
+  box-shadow: 3px 3px 10px 5px #000, 0 0 4px rgba(0, 0, 0, .5) inset;
+Browser Support
+
+Internet Explorer 9/10
+Firefox (from 3.5)
+Safari/Chrome
+Opera (from 10.5)
+View demo
+
+Final words
+
+You should start using these techniques today and I mean it. Why’s that? Because you can, as box-shadow will not break your layout on older browsers.
+
+Related content
+
+CSS ribbons
+CSS3 dropdown menu
+Inset box-shadow behavior on Chrome beta
+How to create a cool and usable CSS3 search box
+CSS3 love
+
+Written by Red
+
+Catalin Rosu, a.k.a Red, is a professional web designer and developer who loves to be creative and enjoys CSS techniques. Check out Red's articles at red-team-design.com or follow him on Twitter.
+2 Responses to “How to create slick effects with CSS3 box-shadow”
+
+Ashish says:
+April 19, 2011 at 08:12
+Wow, it’s awesome.
+This is very much like the shadow we create in photoshop. Now there no need use the images for this type of shadow, CSS 3.0 is enough for this.
+Just one stopper is there to use this, I hope you are getting my point(this is IE…).
+Anyways thanks….!!
+
+REPLY
+ppshein says:
+April 21, 2011 at 16:43
+Incredible post. I can cool it. Thanks for sharing.
+
+REPLY
+Leave a Reply
+
+  Name (required)
+ Mail (will not be published) (required)
+ Website
+
+
+FREE Updates
+
+via Ad Packs
+Categories
+CSS
+Graphic Design
+Tools
+Tutorials
+Web Design
+
+Friends
+Accesorii iPhone
+Crazy cool gadgets
+Science and technology blog
+StudioPress Genesis
+Total Computers
+Webtide
+© Copyright Red Team Design | Powered by Wordpress
+    </div>
+    <footer>
+
+    </footer>
+  </div> <!-- eo #container -->
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+  <script>window.jQuery || document.write("<script src='js/libs/jquery-1.5.1.min.js'>\x3C/script>")</script>
+
+
+  <!-- scripts concatenated and minified via ant build script-->
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <!-- end scripts-->
+
+
+  <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg");</script>
+  <![endif]-->
+
+
+
+  <script>
+    var _gaq=[["_setAccount","UA-XXXXX-X"],["_trackPageview"]]; // Change UA-XXXXX-X to be your site's ID 
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
+    s.parentNode.insertBefore(g,s)}(document,"script"));
+  </script>
+
+</body>
+</html>
