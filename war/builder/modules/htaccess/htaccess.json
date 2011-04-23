@@ -1,0 +1,13 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Htaccess Apache Configugation File",
+	"id" : "htaccess",
+	"inserts" :
+	[
+		{
+			"what" : ".htaccess",
+			"where" : ".htaccess",
+			"type" : "file"
+		}
+	]
+}
