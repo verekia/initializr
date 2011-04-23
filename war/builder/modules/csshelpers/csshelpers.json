@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Boilerplate CSS Helpers",
+	"id" : "csshelpers",
+	"inserts" :
+	[
+		{
+			"what" : "csshelpers.css",
+			"where" : "style.css/csshelpers"
+		}
+	]
+}

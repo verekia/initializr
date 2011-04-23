@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Boilerplate Media Queries",
+	"id" : "mediaqueries",
+	"inserts" :
+	[
+		{
+			"what" : "mediaqueries.css",
+			"where" : "style.css/mediaqueries"
+		}
+	]
+}
