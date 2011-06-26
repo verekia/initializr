@@ -26,5 +26,6 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("robots");
 		this.getDefaultModulesNames().add("404");
 		this.getDefaultModulesNames().add("htaccess");
+		this.getDefaultModulesNames().add("readmemd");
 	}
 }
