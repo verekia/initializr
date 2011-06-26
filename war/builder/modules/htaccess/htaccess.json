@@ -5,7 +5,7 @@
 	"inserts" :
 	[
 		{
-			"what" : ".htaccess",
+			"what" : "htaccess",
 			"where" : ".htaccess",
 			"type" : "file"
 		}
