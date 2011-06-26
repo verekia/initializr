@@ -18,7 +18,7 @@ If you want the Boilerplate Edition, just add a mode=boilerplate parameter :
 
 http://jverrecchia-initializr.appspot.com/builder?mode=boilerplate
 
-You can still display the content before dosnloading it with the print parameter:
+You can still display the content before downloading it with the print parameter:
 
 http://jverrecchia-initializr.appspot.com/builder?mode=boilerplate&print
 
@@ -31,30 +31,34 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 
 26 modules are currently available ("B" means that it's by default in the Boilerplate Edition):
 
-B  404
-B  adobecrossdomain
-B  analytics
-B  appletouchicons
-B  basiccontent
-B  boilerplatecss
-B  boilerplatescripts
-B  chromeframe
-B  csshelpers
-B  favicon
-B  htaccess
-B  humans
-B  iecond
-B  jquery
-B  mediaqueries
-B  modernizr
-B  primarystyles
-B  readmemd
-B  respond
-B  robots
+<ul>
+<li>B  404</li>
+<li>B  adobecrossdomain</li>
+<li>B  analytics</li>
+<li>B  appletouchicons</li>
+<li>B  basiccontent</li>
+<li>B  boilerplatecss</li>
+<li>B  boilerplatescripts</li>
+<li>B  chromeframe</li>
+<li>B  csshelpers</li>
+<li>B  favicon</li>
+<li>B  htaccess</li>
+<li>B  humans</li>
+<li>B  iecond</li>
+<li>B  jquery</li>
+<li>B  mediaqueries</li>
+<li>B  modernizr</li>
+<li>B  primarystyles</li>
+<li>B  readmemd</li>
+<li>B  respond</li>
+<li>B  robots</li>
+</ul>
+<ul>
+<li>   initializrcss</li>
+<li>   jqtest</li>
+<li>   oldiecond</li>
+<li>   handheld</li>
+<li>   ddbelatedpng</li>
+<li>   simplehtmltag</li>
 
-   initializrcss
-   jqtest
-   oldiecond
-   handheld
-   ddbelatedpng
-   simplehtmltag
+</ul>
