@@ -12,7 +12,6 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("modernizr");
 		this.getDefaultModulesNames().add("basiccontent");
 		this.getDefaultModulesNames().add("jquery");
-		this.getDefaultModulesNames().add("ddbelatedpng");
 		this.getDefaultModulesNames().add("analytics");
 		this.getDefaultModulesNames().add("boilerplatescripts");
 		this.getDefaultModulesNames().add("boilerplatecss");
@@ -27,5 +26,7 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("404");
 		this.getDefaultModulesNames().add("htaccess");
 		this.getDefaultModulesNames().add("readmemd");
+		this.getDefaultModulesNames().add("respond");
+		this.getDefaultModulesNames().add("chromeframe");
 	}
 }

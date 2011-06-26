@@ -10,8 +10,14 @@
 		}
 	,
 		{
-			"what" : "jquery-1.5.2.min.js",
-			"where" : "js/libs/jquery-1.5.2.min.js",
+			"what" : "jquery-1.6.1.min.js",
+			"where" : "js/libs/jquery-1.6.1.min.js",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "jquery-1.6.1.js",
+			"where" : "js/libs/jquery-1.6.1.js",
 			"type" : "file"
 		}
 	]

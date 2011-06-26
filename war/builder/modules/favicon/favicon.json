@@ -4,11 +4,7 @@
 	"id" : "favicon",
 	"inserts" :
 	[
-		{
-			"what" : "favicon.html",
-			"where" : "index.html/head/favicon"
-		}
-	,
+
 		{
 			"what" : "favicon.ico",
 			"where" : "favicon.ico",

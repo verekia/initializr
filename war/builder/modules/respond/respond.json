@@ -1,0 +1,23 @@
+{
+	"author" : "Scott Jehl",
+	"name" : "Respond.js",
+	"id" : "respond",
+	"inserts" :
+	[
+		{
+			"what" : "respond.html",
+			"where" : "index.html/head/respond"
+		},
+			
+		{
+			"what" : "respond.js",
+			"where" : "js/libs/respond.js",
+			"type" : "file"
+		},
+		{
+			"what" : "respond.min.js",
+			"where" : "js/libs/respond.min.js",
+			"type" : "file"
+		}
+	]
+}
