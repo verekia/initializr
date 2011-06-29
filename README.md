@@ -58,7 +58,6 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 <li>   jqtest</li>
 <li>   oldiecond</li>
 <li>   handheld</li>
-<li>   ddbelatedpng</li>
 <li>   simplehtmltag</li>
 
 </ul>
