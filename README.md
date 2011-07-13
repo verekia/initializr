@@ -47,6 +47,7 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 <li>B  iecond</li>
 <li>B  jquery</li>
 <li>B  mediaqueries</li>
+<li>B  mediaqueryprint</li>
 <li>B  modernizr</li>
 <li>B  primarystyles</li>
 <li>B  readmemd</li>

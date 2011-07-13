@@ -8,15 +8,12 @@ public class Boilerplate extends Mode {
 		this.setName("boilerplate-initializr");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
 		this.getFiles().add(new File("css/style.css", "builder/templates/style.css", true, true));
-		this.getDefaultModulesNames().add("iecond");
-		this.getDefaultModulesNames().add("modernizr");
+		this.getDefaultModulesNames().add("simplehtmltag");
 		this.getDefaultModulesNames().add("basiccontent");
-		this.getDefaultModulesNames().add("jquery");
-		this.getDefaultModulesNames().add("analytics");
-		this.getDefaultModulesNames().add("boilerplatescripts");
 		this.getDefaultModulesNames().add("boilerplatecss");
 		this.getDefaultModulesNames().add("csshelpers");
 		this.getDefaultModulesNames().add("mediaqueries");
+		this.getDefaultModulesNames().add("mediaqueryprint");		
 		this.getDefaultModulesNames().add("primarystyles");
 		this.getDefaultModulesNames().add("favicon");
 		this.getDefaultModulesNames().add("appletouchicons");
@@ -24,9 +21,5 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("humans");
 		this.getDefaultModulesNames().add("robots");
 		this.getDefaultModulesNames().add("404");
-		this.getDefaultModulesNames().add("htaccess");
-		this.getDefaultModulesNames().add("readmemd");
-		this.getDefaultModulesNames().add("respond");
-		this.getDefaultModulesNames().add("chromeframe");
 	}
 }
