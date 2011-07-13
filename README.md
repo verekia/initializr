@@ -31,33 +31,43 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 
 26 modules are currently available ("B" means that it's by default in the Boilerplate Edition):
 
+#### HTML5 Boilerplate minimal default config
+
 <ul>
+<li>B  simplehtmltag</li>
 <li>B  404</li>
 <li>B  adobecrossdomain</li>
-<li>B  analytics</li>
 <li>B  appletouchicons</li>
 <li>B  basiccontent</li>
 <li>B  boilerplatecss</li>
-<li>B  boilerplatescripts</li>
-<li>B  chromeframe</li>
 <li>B  csshelpers</li>
 <li>B  favicon</li>
-<li>B  htaccess</li>
 <li>B  humans</li>
-<li>B  iecond</li>
-<li>B  jquery</li>
 <li>B  mediaqueries</li>
 <li>B  mediaqueryprint</li>
-<li>B  modernizr</li>
 <li>B  primarystyles</li>
-<li>B  readmemd</li>
-<li>B  respond</li>
 <li>B  robots</li>
 </ul>
-<ul>
-<li>   initializrcss</li>
-<li>   jqtest</li>
-<li>   oldiecond</li>
-<li>   simplehtmltag</li>
 
+#### HTML5 Boilerplate available modules
+
+<ul>
+<li>   htaccess</li>
+<li>   chromeframe</li>
+<li>   boilerplatescripts</li>
+<li>   iecond</li>
+<li>   jquery</li>
+<li>   modernizr</li>
+<li>   readmemd</li>
+<li>   respond</li>
+<li>   analytics</li>
+<li>   oldiecond</li>
+
+</ul>
+
+#### Initializr specific modules
+
+<ul>
+<li>I  initializrcss</li>
+<li>I  jqtest</li>
 </ul>
