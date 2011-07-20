@@ -34,7 +34,6 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 #### HTML5 Boilerplate minimal default config
 
 <ul>
-<li>B  simplehtmltag</li>
 <li>B  404</li>
 <li>B  adobecrossdomain</li>
 <li>B  appletouchicons</li>
@@ -52,6 +51,7 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 #### HTML5 Boilerplate available modules
 
 <ul>
+<li>   simplehtmltag</li>
 <li>   htaccess</li>
 <li>   chromeframe</li>
 <li>   boilerplatescripts</li>

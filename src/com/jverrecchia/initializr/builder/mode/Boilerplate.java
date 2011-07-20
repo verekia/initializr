@@ -8,7 +8,6 @@ public class Boilerplate extends Mode {
 		this.setName("boilerplate-initializr");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
 		this.getFiles().add(new File("css/style.css", "builder/templates/style.css", true, true));
-		this.getDefaultModulesNames().add("simplehtmltag");
 		this.getDefaultModulesNames().add("basiccontent");
 		this.getDefaultModulesNames().add("boilerplatecss");
 		this.getDefaultModulesNames().add("csshelpers");
