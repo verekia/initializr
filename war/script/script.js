@@ -1,4 +1,4 @@
-$(function(){
+$(function(){ 
     var iecond_section = "";
     var analytics_section = "";
     var chromeframe_section = "";
