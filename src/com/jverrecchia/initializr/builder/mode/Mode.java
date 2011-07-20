@@ -8,7 +8,7 @@ import com.jverrecchia.initializr.builder.modules.Insert;
 import com.jverrecchia.initializr.builder.modules.Module;
 import com.jverrecchia.initializr.builder.modules.Modules;
 
-public abstract class Mode {
+public abstract class Mode { 
 
 	private String name;
 	private List<String> defaultModulesNames = new ArrayList<String>();

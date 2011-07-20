@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import com.jverrecchia.initializr.builder.Utils;
 
-public class ZipFile {
+public class ZipFile { 
 	private TemplateFile template;
 	private String zipPath;
 	private String content;

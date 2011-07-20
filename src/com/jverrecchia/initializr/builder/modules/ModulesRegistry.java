@@ -3,7 +3,7 @@ package com.jverrecchia.initializr.builder.modules;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ModulesRegistry {
+public class ModulesRegistry { 
 	public static List<Module> modules;
 	
 	public static void register(Module module){

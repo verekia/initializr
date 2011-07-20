@@ -12,7 +12,7 @@ import com.jverrecchia.initializr.builder.mode.Mode;
 import com.jverrecchia.initializr.builder.mode.ModeSelector;
 import com.jverrecchia.initializr.builder.modules.Modules;
 
-public class WebServlet extends HttpServlet {
+public class WebServlet extends HttpServlet { 
 	private static final long serialVersionUID = -1029291219058930682L;
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)

@@ -12,7 +12,7 @@ import com.jverrecchia.initializr.builder.Const;
 import com.jverrecchia.initializr.builder.files.ZipFile;
 import com.jverrecchia.initializr.builder.mode.Mode;
 
-public class Zip {
+public class Zip { 
 	private String filename;
 	private HttpServletResponse resp;
 	private byte[] byteData;

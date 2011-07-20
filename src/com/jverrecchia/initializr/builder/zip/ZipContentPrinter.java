@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.jverrecchia.initializr.builder.files.ZipFile;
 
-public class ZipContentPrinter {
+public class ZipContentPrinter { 
 	private Zip zip;
 	private HttpServletResponse resp;
 	

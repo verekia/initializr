@@ -2,7 +2,7 @@ package com.jverrecchia.initializr.builder.modules;
 
 import java.util.List;
 
-public class Module {
+public class Module { 
 	private String name;
 	private String id;
 	private String author;

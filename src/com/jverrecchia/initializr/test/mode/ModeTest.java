@@ -6,7 +6,7 @@ import com.jverrecchia.initializr.builder.mode.Boilerplate;
 import com.jverrecchia.initializr.builder.mode.ModeSelector;
 import com.jverrecchia.initializr.builder.mode.Standard;
 
-public class ModeTest extends TestCase{
+public class ModeTest extends TestCase{ 
 	
 	public void testModeBoilerplate(){
 		assert(ModeSelector.getMode("boilerplate").getClass().equals(Boilerplate.class));

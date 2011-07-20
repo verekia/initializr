@@ -18,7 +18,7 @@ import com.jverrecchia.initializr.builder.modules.Modules;
 import com.jverrecchia.initializr.builder.zip.Zip;
 import com.jverrecchia.initializr.builder.zip.ZipContentPrinter;
 
-public class BuilderServlet extends HttpServlet {
+public class BuilderServlet extends HttpServlet { 
 	private static final long serialVersionUID = -1029291219058930682L;
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)

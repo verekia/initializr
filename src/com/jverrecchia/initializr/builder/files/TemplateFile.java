@@ -10,7 +10,7 @@ import com.jverrecchia.initializr.builder.modules.Insert;
 import com.jverrecchia.initializr.builder.modules.Module;
 import com.jverrecchia.initializr.builder.modules.ModulesRegistry;
 
-public class TemplateFile {
+public class TemplateFile { 
 	private String templatePath;
 	private String content;
 	private String zipContent = new String();

@@ -1,6 +1,6 @@
 package com.jverrecchia.initializr.builder.modules;
 
-public class Insert {
+public class Insert { 
 	private String what;
 	private String where;
 	private String type;

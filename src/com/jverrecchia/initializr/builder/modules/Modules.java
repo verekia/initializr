@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import com.jverrecchia.initializr.builder.mode.Mode;
 
-public class Modules {
+public class Modules { 
 
 	private List<String> modulesnames = new ArrayList<String>();
 	private List<Module> modules = new ArrayList<Module>();

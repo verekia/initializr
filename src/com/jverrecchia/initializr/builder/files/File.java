@@ -1,6 +1,6 @@
 package com.jverrecchia.initializr.builder.files;
 
-public class File {
+public class File { 
 	
 	private String realPath;
 	private String templatePath;

@@ -1,4 +1,4 @@
-# Initializr 2.0
+# Initializr 2.0 
 
 ## Documentation
 

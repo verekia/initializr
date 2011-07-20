@@ -2,7 +2,7 @@ package com.jverrecchia.initializr.builder.mode;
 
 import com.jverrecchia.initializr.builder.files.File;
 
-public class Standard extends Mode{
+public class Standard extends Mode{ 
 	
 	public Standard(){
 		this.setName("jverrecchia-initializr");

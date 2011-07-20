@@ -1,4 +1,4 @@
-Docs
+Docs 
 Dire qu'IZR est toujours basé sur Boilerplate et que la Boilerplate Edition
 correspond au custom boilerplate, et qu'il n'inclut pas build, demo, test
 

@@ -5,7 +5,7 @@ import java.io.IOException;
 import com.google.gson.Gson;
 import com.jverrecchia.initializr.builder.Utils;
 
-public class ModuleReader {
+public class ModuleReader { 
 
 	public static Module readModuleJson(String filepath){
 		Gson gson = new Gson();

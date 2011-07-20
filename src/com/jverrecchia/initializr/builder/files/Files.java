@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.jverrecchia.initializr.builder.modules.Module;
 
-public class Files {
+public class Files { 
 
 	private List<File> files;
 	
