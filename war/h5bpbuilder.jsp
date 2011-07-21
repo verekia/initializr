@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-    <title>Initializr - HTML5 Boilerplate Builder</title>
+    <title>Initializr - HTML5 Boilerplate Builder!</title>
     
 </head>
 <body>
