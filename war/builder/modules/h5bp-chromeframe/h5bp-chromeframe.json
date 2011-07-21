@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Chrome Frame",
+	"id" : "h5bp-chromeframe",
+	"inserts" :
+	[
+		{
+			"what" : "chromeframe.html",
+			"where" : "index.html/body/end5"
+		}
+	]
+}

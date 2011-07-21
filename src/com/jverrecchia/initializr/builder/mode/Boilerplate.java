@@ -8,17 +8,17 @@ public class Boilerplate extends Mode {
 		this.setName("boilerplate-initializr");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
 		this.getFiles().add(new File("css/style.css", "builder/templates/style.css", true, true));
-		this.getDefaultModulesNames().add("basiccontent");
-		this.getDefaultModulesNames().add("boilerplatecss");
-		this.getDefaultModulesNames().add("csshelpers");
-		this.getDefaultModulesNames().add("mediaqueries");
-		this.getDefaultModulesNames().add("mediaqueryprint");		
-		this.getDefaultModulesNames().add("primarystyles");
-		this.getDefaultModulesNames().add("favicon");
-		this.getDefaultModulesNames().add("appletouchicons");
-		this.getDefaultModulesNames().add("adobecrossdomain");
-		this.getDefaultModulesNames().add("humans");
-		this.getDefaultModulesNames().add("robots");
-		this.getDefaultModulesNames().add("404");
+		this.getDefaultModulesNames().add("h5bp-content");
+		this.getDefaultModulesNames().add("h5bp-css");
+		this.getDefaultModulesNames().add("h5bp-csshelpers");
+		this.getDefaultModulesNames().add("h5bp-mediaqueries");
+		this.getDefaultModulesNames().add("h5bp-mediaqueryprint");		
+		this.getDefaultModulesNames().add("h5bp-primarystyles");
+		this.getDefaultModulesNames().add("h5bp-favicon");
+		this.getDefaultModulesNames().add("h5bp-appletouchicons");
+		this.getDefaultModulesNames().add("h5bp-adobecrossdomain");
+		this.getDefaultModulesNames().add("h5bp-humans");
+		this.getDefaultModulesNames().add("h5bp-robots");
+		this.getDefaultModulesNames().add("h5bp-404");
 	}
 }

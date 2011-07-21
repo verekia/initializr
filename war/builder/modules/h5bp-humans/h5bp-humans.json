@@ -1,0 +1,13 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Humans.txt",
+	"id" : "h5bp-humans",
+	"inserts" :
+	[
+		{
+			"what" : "humans.txt",
+			"where" : "humans.txt",
+			"type" : "file"
+		}
+	]
+}

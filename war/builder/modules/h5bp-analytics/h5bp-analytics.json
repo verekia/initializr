@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Analytics",
+	"id" : "h5bp-analytics",
+	"inserts" :
+	[
+		{
+			"what" : "analytics.html",
+			"where" : "index.html/body/end"
+		}
+	]
+}

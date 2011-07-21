@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Basic Content",
+	"id" : "h5bp-content",
+	"inserts" :
+	[
+		{
+			"what" : "content.html",
+			"where" : "index.html/body/content"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"author" : "Paul Irish",
+	"name" : "404 : Not Found Page",
+	"id" : "h5bp-404",
+	"inserts" :
+	[
+		{
+			"what" : "404.html",
+			"where" : "404.html",
+			"type" : "file"
+		}
+	]
+}

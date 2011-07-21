@@ -1,0 +1,13 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Adobe Cross Domain",
+	"id" : "h5bp-adobecrossdomain",
+	"inserts" :
+	[
+		{
+			"what" : "crossdomain.xml",
+			"where" : "crossdomain.xml",
+			"type" : "file"
+		}
+	]
+}

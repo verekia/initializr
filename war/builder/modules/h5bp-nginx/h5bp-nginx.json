@@ -1,0 +1,18 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Nginx Configugation File",
+	"id" : "h5bp-nginx",
+	"inserts" :
+	[
+		{
+			"what" : "nginx.conf",
+			"where" : "nginx.conf",
+			"type" : "file"
+		},
+		{
+			"what" : "nginx-mime.types",
+			"where" : "nginx-mime.types",
+			"type" : "file"
+		}
+	]
+}

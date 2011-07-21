@@ -1,0 +1,14 @@
+{
+	"author" : "Paul Irish",
+	"name" : "H5BP Favicon",
+	"id" : "h5bp-favicon",
+	"inserts" :
+	[
+
+		{
+			"what" : "favicon.ico",
+			"where" : "favicon.ico",
+			"type" : "file"
+		}
+	]
+}

@@ -1,0 +1,12 @@
+{
+	"author" : "Jonathan Verrecchia",
+	"name" : "Initializr CSS",
+	"id" : "izr-styles",
+	"inserts" :
+	[
+		{
+			"what" : "izr.css",
+			"where" : "style.css/primary"
+		}
+	]
+}

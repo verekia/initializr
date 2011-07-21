@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Boilerplate CSS",
+	"id" : "h5bp-css",
+	"inserts" :
+	[
+		{
+			"what" : "boilerplatecss.css",
+			"where" : "style.css/boilerplate"
+		}
+	]
+}

@@ -1,0 +1,13 @@
+{
+	"author" : "Paul Irish",
+	"name" : "README.md",
+	"id" : "h5bp-readmemd",
+	"inserts" :
+	[
+		{
+			"what" : "README.md",
+			"where" : "README.md",
+			"type" : "file"
+		}
+	]
+}

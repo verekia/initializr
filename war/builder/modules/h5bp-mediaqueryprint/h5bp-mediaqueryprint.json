@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Boilerplate Media Query Print",
+	"id" : "h5bp-mediaqueryprint",
+	"inserts" :
+	[
+		{
+			"what" : "mediaqueryprint.css",
+			"where" : "style.css/mediaqueryprint"
+		}
+	]
+}
