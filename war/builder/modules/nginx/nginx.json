@@ -1,0 +1,13 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Nginx Configugation File",
+	"id" : "nginx",
+	"inserts" :
+	[
+		{
+			"what" : "nginx.conf",
+			"where" : "nginx.conf",
+			"type" : "file"
+		}
+	]
+}

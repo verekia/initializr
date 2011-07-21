@@ -56,6 +56,7 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 <li>   chromeframe</li>
 <li>   boilerplatescripts</li>
 <li>   iecond</li>
+<li>   nginx</li>
 <li>   html5shiv</li>
 <li>   jquery</li>
 <li>   modernizr</li>
