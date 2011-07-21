@@ -1,0 +1,12 @@
+{
+	"author" : "Remy Sharp",
+	"name" : "HTML5 Shiv",
+	"id" : "html5shiv",
+	"inserts" :
+	[
+		{
+			"what" : "html5shiv.html",
+			"where" : "index.html/head/html5polyfill"
+		}
+	]
+}
