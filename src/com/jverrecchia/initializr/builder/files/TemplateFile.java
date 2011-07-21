@@ -72,7 +72,7 @@ public class TemplateFile {
 				
 				}
 				else{
-					this.setZipContent(this.getZipContent() + str + "\r\n");
+					this.setZipContent(this.getZipContent() + str + "\n");
 				}
 				
 	        }
