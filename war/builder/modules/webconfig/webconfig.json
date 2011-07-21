@@ -1,0 +1,13 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Web.config Configugation File",
+	"id" : "webconfig",
+	"inserts" :
+	[
+		{
+			"what" : "web.config",
+			"where" : "web.config",
+			"type" : "file"
+		}
+	]
+}
