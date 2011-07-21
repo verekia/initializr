@@ -1,6 +1,7 @@
 package com.jverrecchia.initializr.builder;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.jverrecchia.initializr.builder.errors.ModuleNotFoundException;
 import com.jverrecchia.initializr.builder.files.File;
 import com.jverrecchia.initializr.builder.files.TemplateFile;
 import com.jverrecchia.initializr.builder.files.ZipFile;
@@ -25,7 +27,15 @@ public class BuilderServlet extends HttpServlet {
 	throws ServletException, IOException {
 
 		Mode mode = ModeSelector.getMode(req.getParameter("mode"));
-		Modules modules = new Modules(req, mode);
+		Modules modules = null;
+		try {
+		    modules = new Modules(req, mode);
+		} catch (ModuleNotFoundException e) {
+			resp.setContentType("text/plain");
+			PrintWriter out = resp.getWriter();
+			out.println(e.getMsg());
+			return;
+		}
 		mode.addModulesFiles(modules);
 
 		

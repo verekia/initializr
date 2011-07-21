@@ -12,8 +12,9 @@ public class Utils {
     public static String readFileAsString(String filePath)
     throws java.io.IOException{
         StringBuffer fileData = new StringBuffer(1000);
-        BufferedReader reader = new BufferedReader(
-                new FileReader(filePath));
+        FileReader fr = new FileReader(filePath);
+
+        BufferedReader reader = new BufferedReader(fr);
         char[] buf = new char[1024];
         int numRead=0;
         while((numRead=reader.read(buf)) != -1){

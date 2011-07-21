@@ -1,5 +1,6 @@
 package com.jverrecchia.initializr.builder.modules;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -7,6 +8,7 @@ import java.util.Map.Entry;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.jverrecchia.initializr.builder.errors.ModuleNotFoundException;
 import com.jverrecchia.initializr.builder.mode.Mode;
 
 public class Modules { 
@@ -15,7 +17,7 @@ public class Modules {
 	private List<Module> modules = new ArrayList<Module>();
 
 
-	public Modules(HttpServletRequest req, Mode mode) {
+	public Modules(HttpServletRequest req, Mode mode) throws ModuleNotFoundException{
 		
 		@SuppressWarnings("unchecked")
 		Map<String, String[]> map = req.getParameterMap();
@@ -40,7 +42,7 @@ public class Modules {
 		
 		// Verifier si le nom du module est valide avant
 		for (String currentModuleName : modulesnames){
-			modules.add(ModuleReader.readModuleJson("builder/modules/" + currentModuleName + "/" + currentModuleName + ".json"));
+			modules.add(ModuleReader.readModuleJson(currentModuleName));
 		}
 		ModulesRegistry.modules = modules;
 	}
