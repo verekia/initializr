@@ -8,6 +8,11 @@
 			"what" : "nginx.conf",
 			"where" : "nginx.conf",
 			"type" : "file"
+		},
+		{
+			"what" : "nginx-mime.types",
+			"where" : "nginx-mime.types",
+			"type" : "file"
 		}
 	]
 }
