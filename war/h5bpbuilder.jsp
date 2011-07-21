@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-    <title>Initializr - HTML5 Boilerplate Builder!</title>
+    <title>Initializr - HTML5 Boilerplate Builder</title>
     
 </head>
 <body>
 
-<h1>HTML5 Boilerplate Builder </h1>
+<h1>HTML5 Boilerplate Builder!</h1>
 
 <h2>Enabled in the default config</h2>
 
