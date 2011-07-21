@@ -34,43 +34,42 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 #### HTML5 Boilerplate minimal default config
 
 <ul>
-<li>B  404</li>
-<li>B  adobecrossdomain</li>
-<li>B  appletouchicons</li>
-<li>B  basiccontent</li>
-<li>B  boilerplatecss</li>
-<li>B  csshelpers</li>
-<li>B  favicon</li>
-<li>B  humans</li>
-<li>B  mediaqueries</li>
-<li>B  mediaqueryprint</li>
-<li>B  primarystyles</li>
-<li>B  robots</li>
+<li>h5bp-404</li>
+<li>h5bp-adobecrossdomain</li>
+<li>h5bp-appletouchicons</li>
+<li>h5bp-content</li>
+<li>h5bp-css</li>
+<li>h5bp-csshelpers</li>
+<li>h5bp-favicon</li>
+<li>h5bp-humans</li>
+<li>h5bp-mediaqueries</li>
+<li>h5bp-mediaqueryprint</li>
+<li>h5bp-primarystyles</li>
+<li>h5bp-robots</li>
 </ul>
 
 #### HTML5 Boilerplate available modules
 
 <ul>
+<li>h5bp-htaccess</li>
+<li>h5bp-chromeframe</li>
+<li>h5bp-scripts</li>
+<li>h5bp-iecond</li>
+<li>h5bp-nginx</li>
+<li>h5bp-webconfig</li>
+<li>h5bp-readmemd</li>
+<li>h5bp-analytics</li>
+<li>h5bp-oldiecond</li>
 <li>   simplehtmltag</li>
-<li>   htaccess</li>
-<li>   chromeframe</li>
-<li>   boilerplatescripts</li>
-<li>   iecond</li>
-<li>   nginx</li>
-<li>   webconfig</li>
 <li>   html5shiv</li>
 <li>   jquery</li>
 <li>   modernizr</li>
-<li>   readmemd</li>
 <li>   respond</li>
-<li>   analytics</li>
-<li>   oldiecond</li>
-
 </ul>
 
 #### Initializr specific modules
 
 <ul>
-<li>I  initializrcss</li>
-<li>I  jqtest</li>
+<li>izr-styles</li>
+<li>izr-jqtest</li>
 </ul>
