@@ -14,5 +14,6 @@
 			"where" : "js/libs/modernizr-2.0.min.js",
 			"type" : "file"
 		}
-	]
+	],
+	"incompatibilities" : ["html5shiv"]
 }

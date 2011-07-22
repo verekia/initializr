@@ -8,5 +8,6 @@
 			"what" : "html5shiv.html",
 			"where" : "index.html/head/html5polyfill"
 		}
-	]
+	],
+	"incompatibilities" : ["modernizr"]
 }

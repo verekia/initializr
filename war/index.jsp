@@ -12,8 +12,7 @@
 <form action="builder">
 <input type="hidden" name="print" />
 
-<h1><%= ((Mode)request.getAttribute("mode")).getName() %></h1>
-<p><%= ((Mode)request.getAttribute("mode")).getFileName() + "-" + Const.version + ".zip" %></p>
+<h1>Initializr - API & Docs</h1>
 
 <h1>Modules</h1>
 <table>
@@ -25,7 +24,7 @@ for (Module currentModule : modules){
     for (String currentIncompatibility : currentModule.getIncompatibilities()){
 		currentModuleIncompatibilities += currentIncompatibility + ", ";
     }
-    if (currentModule.getIncompatibilities().size() > 1)
+    if (currentModule.getIncompatibilities().size() > 0)
 	currentModuleIncompatibilities = currentModuleIncompatibilities.substring(0, currentModuleIncompatibilities.length() - 2);
     }
     
