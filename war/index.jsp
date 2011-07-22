@@ -17,12 +17,13 @@
 
 <h1>Initializr - API & Docs</h1>
 
-<h1>Modules</h1>
+
 Custom Build <input type="radio" class="mode" name="mode" value="custom" /><br />
 Initializr <input type="radio" class="mode" name="mode" value="izr" /><br />
 H5BP Custom Builder<input type="radio" class="mode" name="mode" value="h5bp"/>
-<table>
-<thead><tr><td></td><td>Fancy name</td><td>ID</td><td>Module Author</td><td>This module is incompatible with</td></tr></thead>
+<br /><br />
+<table style="margin-bottom:100px">
+<thead><tr><td></td><td>Fancy name</td><td>ID</td><td>This module is incompatible with</td></tr></thead>
 <%
 List<Module> modules = (List<Module>)request.getAttribute("modules");
 for (Module currentModule : modules){
@@ -36,23 +37,22 @@ for (Module currentModule : modules){
     }
     
 	out.print("<tr><td><input class='select' type='checkbox' id='" + currentModule.getId() + "'/></td><td>" + currentModule.getName() + 
-		"</td><td>" + currentModule.getId() + "</td><td>"
-		+ currentModule.getAuthor() + "</td><td>" + currentModuleIncompatibilities + "</td></tr>");
+		"</td><td>" + currentModule.getId() + "</td><td>" + currentModuleIncompatibilities + "</td></tr>");
 }
 %>
 </table>
-
-<!-- <input id="printurl" type="text" style="width:500px" /> -->
-<button id="print">Print</button><br />
-<!-- <input id="downloadurl" type="text" style="width:500px" /> -->
-<button id="download">Download</button>
-
+<div style="position:fixed; bottom:0; background:#ddd">
+	<input id="printurl" type="text" style="width:900px" />
+	<button id="print">Print</button><br />
+	<input id="downloadurl" type="text" style="width:900px" />
+	<button id="download">Download</button>
+</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.min.js"><\/script>')</script>
 
 <script>
 $(function(){
-	var beginurl = 'http://localhost:8888/builder?';
+	var beginurl = 'http://jverrecchia-initializr.appspot.com/builder?';
 	var urlparameters = "";
 	
 	var mode = 'custom';
@@ -60,9 +60,9 @@ $(function(){
 		'h5bp-404' : {'enabled' : false, 'default' : ['h5bp']},
 		'h5bp-adobecrossdomain' : {'enabled' : false, 'default' : ['h5bp']},
 		'h5bp-analytics' : {'enabled' : false, 'default' : []},
-		'h5bp-appletouchicons' : {'enabled' : false, 'default' : ['h5bp']},
-		'h5bp-chromeframe' : {'enabled' : false, 'default' : []},
-		'h5bp-content' : {'enabled' : false, 'default' : ['h5bp']},
+		'h5bp-appletouchicons' : {'enabled' : false, 'default' : ['h5bp', 'izr']},
+		'h5bp-chromeframe' : {'enabled' : false, 'default' : ['izr']},
+		'h5bp-content' : {'enabled' : false, 'default' : ['h5bp', 'izr']},
 		'h5bp-css' : {'enabled' : false, 'default' : ['h5bp']},
 		'h5bp-csshelpers' : {'enabled' : false, 'default' : ['h5bp']},
 		'h5bp-favicon' : {'enabled' : false, 'default' : ['h5bp']},
@@ -92,6 +92,7 @@ $(function(){
 		mode = $(this).attr('value');
 		updateMode();
 		updateCheckBoxes(true);
+		updateURLs();
 	});
 	
 	$('.select').click(function(){
@@ -99,6 +100,7 @@ $(function(){
 			modules[$(this).attr('id')].enabled = true;
 		else
 			modules[$(this).attr('id')].enabled = false;
+		updateURLs();
 	});
 	
 	$("#print").click(function(){
@@ -151,6 +153,9 @@ $(function(){
 		
 		if (urlparameters[urlparameters.length - 1] == '&')
 			urlparameters = urlparameters.substr(0, urlparameters.length - 1);
+		
+		$('#printurl').attr('value', beginurl + 'print&' + urlparameters);
+		$('#downloadurl').attr('value', beginurl + urlparameters);
 	}
 });
 
