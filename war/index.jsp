@@ -52,10 +52,10 @@ for (Module currentModule : modules){
 
 <script>
 $(function(){
-	var commonurl = 'http://localhost:8888';
-	var printurl = commonurl + '/builder?print';
-	var downloadurl = commonurl + '/builder';
+	var beginurl = 'http://localhost:8888/builder?';
+	var urlparameters = "";
 	
+	var mode = 'custom';
 	var modules = {
 		'h5bp-404' : {'enabled' : false, 'default' : ['h5bp']},
 		'h5bp-adobecrossdomain' : {'enabled' : false, 'default' : ['h5bp']},
@@ -78,7 +78,7 @@ $(function(){
 		'h5bp-robots' : {'enabled' : false, 'default' : ['h5bp']},
 		'h5bp-scripts' : {'enabled' : false, 'default' : []},
 		'h5bp-webconfig' : {'enabled' : false, 'default' : []},
-		'h5tml5shiv' : {'enabled' : false, 'default' : []},
+		'html5shiv' : {'enabled' : false, 'default' : []},
 		'izr-jqtest' : {'enabled' : false, 'default' : []},
 		'izr-styles' : {'enabled' : false, 'default' : ['izr']},
 		'jquery' : {'enabled' : false, 'default' : []},
@@ -86,27 +86,31 @@ $(function(){
 		'respond' : {'enabled' : false, 'default' : []},
 		'simplehtmltag' : {'enabled' : false, 'default' : []}
 	};
+	updateCheckBoxes();
 	
 	$('.mode').click(function(){
-		switchMode($(this).attr('value'));
+		mode = $(this).attr('value');
+		updateMode();
 		updateCheckBoxes(true);
 	});
 	
 	$('.select').click(function(){
-		if ($('#' + $(this)).prop('checked', true))
-			modules[$(this).attr('id')] = true;
-			updateCheckBoxes(false);
+		if ($(this).prop('checked'))
+			modules[$(this).attr('id')].enabled = true;
+		else
+			modules[$(this).attr('id')].enabled = false;
 	});
 	
 	$("#print").click(function(){
-		
-		//alert(printurl);
+		updateURLs();
+		window.location = (beginurl + 'print&' + urlparameters);
 	});
 	$("#download").click(function(){
-		$("#downloadurl").attr("value", downloadurl);
+		updateURLs();
+		window.location = (beginurl + urlparameters);
 	});	
 	
-	function switchMode(mode){
+	function updateMode(){
 		for (curModule in modules){
 			if ($.inArray(mode, modules[curModule]['default']) >= 0){
 				modules[curModule].enabled = true;
@@ -130,6 +134,23 @@ $(function(){
 					$('#' + curModule).prop('disabled', false);			
 			}
 		}
+	}
+	
+	function updateURLs(){
+		urlparameters = '';
+
+		if (mode == 'h5bp')
+			urlparameters = 'mode=h5bp&';
+		else if (mode != 'izr')
+			urlparameters = 'mode=custom&';		
+		
+		for (curModule in modules){
+			if (modules[curModule].enabled == true && $.inArray(mode, modules[curModule]['default']) == -1)
+				urlparameters += curModule + '&';
+		}
+		
+		if (urlparameters[urlparameters.length - 1] == '&')
+			urlparameters = urlparameters.substr(0, urlparameters.length - 1);
 	}
 });
 
