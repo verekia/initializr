@@ -7,6 +7,7 @@ import java.util.Map.Entry;
 
 import javax.servlet.http.HttpServletRequest;
 
+import com.jverrecchia.initializr.builder.errors.IncompatibleModuleException;
 import com.jverrecchia.initializr.builder.errors.ModuleNotFoundException;
 import com.jverrecchia.initializr.builder.mode.Mode;
 
@@ -16,7 +17,7 @@ public class Modules {
 	private List<Module> modules = new ArrayList<Module>();
 
 
-	public Modules(HttpServletRequest req, Mode mode) throws ModuleNotFoundException{
+	public Modules(HttpServletRequest req, Mode mode) throws ModuleNotFoundException, IncompatibleModuleException{
 		
 		@SuppressWarnings("unchecked")
 		Map<String, String[]> map = req.getParameterMap();
@@ -43,12 +44,22 @@ public class Modules {
 		for (String currentModuleName : modulesnames){
 			modules.add(ModuleReader.readModuleJson(currentModuleName));
 		}
+		checkIncompatiblesModules();
 		ModulesRegistry.modules = modules;
 	}
 
 
-	private void checkIncompatiblesModules(){
-	    
+	private void checkIncompatiblesModules() throws IncompatibleModuleException{
+	    for (Module currentModule : this.modules){
+		if (currentModule.getIncompatibilities() != null){
+		    for (String currentIncompatibility : currentModule.getIncompatibilities()){
+			for (Module currentCheckedModule : this.modules){
+			    if (currentCheckedModule.getId().equals(currentIncompatibility))
+				throw new IncompatibleModuleException(currentModule.getId(), currentCheckedModule.getId());
+			}
+		    }
+		}
+	    }
 	}
 	
 	public List<Module> getModules() {

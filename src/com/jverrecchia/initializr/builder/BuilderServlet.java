@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.jverrecchia.initializr.builder.errors.IncompatibleModuleException;
 import com.jverrecchia.initializr.builder.errors.ModuleNotFoundException;
 import com.jverrecchia.initializr.builder.files.File;
 import com.jverrecchia.initializr.builder.files.TemplateFile;
@@ -31,6 +32,11 @@ public class BuilderServlet extends HttpServlet {
 		try {
 		    modules = new Modules(req, mode);
 		} catch (ModuleNotFoundException e) {
+			resp.setContentType("text/plain");
+			PrintWriter out = resp.getWriter();
+			out.println(e.getMsg());
+			return;
+		} catch (IncompatibleModuleException e) {
 			resp.setContentType("text/plain");
 			PrintWriter out = resp.getWriter();
 			out.println(e.getMsg());
