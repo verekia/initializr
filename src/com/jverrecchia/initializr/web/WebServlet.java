@@ -1,6 +1,7 @@
 package com.jverrecchia.initializr.web;
 
 import java.io.IOException;
+import java.util.Collections;
 import java.util.List;
 
 import javax.servlet.RequestDispatcher;
@@ -23,6 +24,7 @@ public class WebServlet extends HttpServlet {
 		Mode mode = ModeSelector.getMode(req.getParameter("mode"));
 		
 		List<Module> modulesList = ModulesRegistry.getModulesList();
+		Collections.sort(modulesList);
 		req.setAttribute("modules", modulesList);
 		req.setAttribute("mode", mode);
 		RequestDispatcher dispatch = req.getRequestDispatcher("index.jsp");

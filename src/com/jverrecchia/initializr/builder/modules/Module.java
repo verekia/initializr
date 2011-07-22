@@ -2,7 +2,7 @@ package com.jverrecchia.initializr.builder.modules;
 
 import java.util.List;
 
-public class Module { 
+public class Module implements Comparable<Module>{ 
 	private String name;
 	private String id;
 	private String author;
@@ -54,4 +54,12 @@ public class Module {
 	public List<String> getIncompatibilities() {
 	    return incompatibilities;
 	}
+	
+	@Override
+	public int compareTo(Module o) {
+	    int alphaCompare = this.getId().compareTo(o.getId());
+	    return alphaCompare;
+	}
+	
+	
 }
