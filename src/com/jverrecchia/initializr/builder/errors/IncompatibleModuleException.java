@@ -1,6 +1,6 @@
 package com.jverrecchia.initializr.builder.errors;
 
-public class ModuleNotFoundException extends Exception {
+public class IncompatibleModuleException extends Exception {
 
     /**
      * 
@@ -8,8 +8,8 @@ public class ModuleNotFoundException extends Exception {
     private static final long serialVersionUID = 4450562722931055192L;
     private String msg;
 
-    public ModuleNotFoundException(String name) {
-	this.setMsg("The module named \"" + name + "\" doesn't exist :)");
+    public IncompatibleModuleException(String firstModuleName, String secondModuleName) {
+	this.setMsg("The module named \"" + firstModuleName + "\" is incompatible with the module named \"" + secondModuleName + "\"");
     }
 
     public void setMsg(String msg) {

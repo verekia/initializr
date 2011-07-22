@@ -9,6 +9,7 @@ public class Module {
 	private String url;
 	private List<Module> requires;
 	private List<Insert> inserts;
+	private List<String> incompatibilities;
 	// private List<insertion> (before after...)
 	
 	public String getName() {
@@ -46,5 +47,11 @@ public class Module {
 	}
 	public List<Insert> getInserts() {
 		return inserts;
+	}
+	public void setIncompatibilities(List<String> incompatibilities) {
+	    this.incompatibilities = incompatibilities;
+	}
+	public List<String> getIncompatibilities() {
+	    return incompatibilities;
 	}
 }

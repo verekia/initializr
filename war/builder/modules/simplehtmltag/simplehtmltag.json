@@ -8,5 +8,6 @@
 			"what" : "simplehtmltag.html",
 			"where" : "index.html/htmltag"
 		}
-	]
+	],
+	"incompatibilities" : ["h5bp-oldiecond", "h5bp-iecond"]
 }

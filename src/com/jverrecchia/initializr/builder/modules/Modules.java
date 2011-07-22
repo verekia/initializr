@@ -1,6 +1,5 @@
 package com.jverrecchia.initializr.builder.modules;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -48,6 +47,10 @@ public class Modules {
 	}
 
 
+	private void checkIncompatiblesModules(){
+	    
+	}
+	
 	public List<Module> getModules() {
 		return modules;
 	}

@@ -3,7 +3,7 @@ package com.jverrecchia.initializr.test.mode;
 import junit.framework.TestCase;
 
 import com.jverrecchia.initializr.builder.mode.Boilerplate;
-import com.jverrecchia.initializr.builder.mode.Empty;
+import com.jverrecchia.initializr.builder.mode.Custom;
 import com.jverrecchia.initializr.builder.mode.Initializr;
 import com.jverrecchia.initializr.builder.mode.ModeSelector;
 
@@ -16,12 +16,12 @@ public class ModeTest extends TestCase {
 
     public void testModeEmpty() {
 	assert (ModeSelector.getMode("empty").getClass()
-		.equals(Empty.class));
+		.equals(Custom.class));
     }    
     
     public void testModeBlabla() {
 	assert (ModeSelector.getMode("blabla").getClass()
-		.equals(Empty.class));
+		.equals(Custom.class));
     }
 
     public void testModeInitializrNull() {

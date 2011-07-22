@@ -6,7 +6,7 @@ public class ModeSelector {
 		if (param != null && param.equals("boilerplate"))
 			return new Boilerplate();
 		if (param != null)
-			return new Empty();
+			return new Custom();
 		return new Initializr();
 	}
 

@@ -1,4 +1,7 @@
-<%@ page import="com.jverrecchia.initializr.builder.mode.Mode" %>
+<%@ page import="com.jverrecchia.initializr.builder.mode.Mode,
+				com.jverrecchia.initializr.builder.Const,
+				com.jverrecchia.initializr.builder.modules.*,
+				java.util.List" %>
 <!doctype html> 
 <html lang="en">
 <head>
@@ -9,17 +12,20 @@
 <form action="builder">
 <input type="hidden" name="print" />
 
-<h1>Mode : <%= ((Mode)request.getAttribute("mode")).getName() %></h1>
+<h1><%= ((Mode)request.getAttribute("mode")).getName() %></h1>
+<p><%= ((Mode)request.getAttribute("mode")).getFileName() + "-" + Const.version + ".zip" %></p>
 
 <h1>Modules</h1>
-<h2>HTML5 polyfill</h2>
-<label for="modernizr">Modernizr</label><input type="checkbox" id="modernizr" name="modernizr" value="" />
-<label for="html5shiv">HTML5shiv (TODO)</label><input type="checkbox" id="html5shiv" name="html5shiv" value="" />
-
-<h1>Favicons</h1>
-<label for="favicon">Favicon</label><input type="checkbox" id="favicon" name="favicon" value="" />
-<label for="appletouchicons">Apple Touch Icons</label><input type="checkbox" id="appletouchicons" name="appletouchicons" value="" />
-
+<table>
+<%
+List<Module> modules = (List<Module>)request.getAttribute("modules");
+for (Module currentModule : modules){
+	out.print("<tr><td>" + currentModule.getName() + 
+		"</td><td>" + currentModule.getId() + "</td><td>"
+		+ currentModule.getAuthor() + "</td></tr>");
+}
+%>
+</table>
 
 <br /><input type="submit" />
 </form>

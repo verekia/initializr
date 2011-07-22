@@ -1,7 +1,10 @@
 package com.jverrecchia.initializr.builder.modules;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.jverrecchia.initializr.builder.errors.ModuleNotFoundException;
 
 public class ModulesRegistry { 
 	public static List<Module> modules;
@@ -20,6 +23,20 @@ public class ModulesRegistry {
 			}
 		}
 		return foundModules;
+	}
+	
+	public static List<Module> getModulesList(){
+	    File modulesDirectory = new File("builder/modules");
+	    String[] modulesNamesList = modulesDirectory.list();
+	    List<Module> modulesList = new ArrayList<Module>();
+	    for (String currentModuleName : modulesNamesList){
+		try {
+		    modulesList.add(ModuleReader.readModuleJson(currentModuleName));
+		} catch (ModuleNotFoundException e) {
+		    e.printStackTrace();
+		}
+	    }
+	    return modulesList;
 	}
 
 }
