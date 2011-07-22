@@ -1,3 +1,4 @@
+<%@ page import="com.jverrecchia.initializr.builder.mode.Mode" %>
 <!doctype html> 
 <html lang="en">
 <head>
@@ -8,7 +9,7 @@
 <form action="builder">
 <input type="hidden" name="print" />
 
-<h1>Mode : </h1>
+<h1>Mode : <%= ((Mode)request.getAttribute("mode")).getName() %></h1>
 
 <h1>Modules</h1>
 <h2>HTML5 polyfill</h2>

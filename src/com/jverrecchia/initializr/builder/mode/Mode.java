@@ -11,6 +11,7 @@ import com.jverrecchia.initializr.builder.modules.Modules;
 public abstract class Mode { 
 
 	private String name;
+	private String fileName;
 	private List<String> defaultModulesNames = new ArrayList<String>();
 	private List<File> files = new ArrayList<File>();
 
@@ -45,5 +46,13 @@ public abstract class Mode {
 
 	public List<String> getDefaultModulesNames() {
 		return defaultModulesNames;
+	}
+
+	public void setFileName(String fileName) {
+	    this.fileName = fileName;
+	}
+
+	public String getFileName() {
+	    return fileName;
 	}
 }

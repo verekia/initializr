@@ -5,7 +5,8 @@ import com.jverrecchia.initializr.builder.files.File;
 public class Boilerplate extends Mode { 
 	
 	public Boilerplate(){
-		this.setName("boilerplate-initializr");
+		this.setName("Boilerplate Custom");
+		this.setFileName("boilerplate-initializr");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
 		this.getFiles().add(new File("css/style.css", "builder/templates/style.css", true, true));
 		this.getDefaultModulesNames().add("h5bp-content");

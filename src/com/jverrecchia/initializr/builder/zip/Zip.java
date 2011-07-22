@@ -24,7 +24,7 @@ public class Zip {
 		this.mode = mode;
 		this.resp = resp;
 		this.setZipFiles(zipFiles);
-		this.filename = this.mode.getName() + "-" + Const.version + ".zip";
+		this.filename = this.mode.getFileName() + "-" + Const.version + ".zip";
 	}
 	
 	
