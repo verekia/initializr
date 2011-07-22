@@ -20,9 +20,18 @@
 <%
 List<Module> modules = (List<Module>)request.getAttribute("modules");
 for (Module currentModule : modules){
+    String currentModuleIncompatibilities = "";
+    if (currentModule.getIncompatibilities() != null){
+    for (String currentIncompatibility : currentModule.getIncompatibilities()){
+		currentModuleIncompatibilities += currentIncompatibility + ", ";
+    }
+    if (currentModule.getIncompatibilities().size() > 1)
+	currentModuleIncompatibilities = currentModuleIncompatibilities.substring(0, currentModuleIncompatibilities.length() - 2);
+    }
+    
 	out.print("<tr><td>" + currentModule.getName() + 
 		"</td><td>" + currentModule.getId() + "</td><td>"
-		+ currentModule.getAuthor() + "</td></tr>");
+		+ currentModule.getAuthor() + "</td><td>" + currentModuleIncompatibilities + "</td></tr>");
 }
 %>
 </table>
