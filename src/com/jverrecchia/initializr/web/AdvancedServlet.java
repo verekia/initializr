@@ -15,7 +15,7 @@ import com.jverrecchia.initializr.builder.mode.ModeSelector;
 import com.jverrecchia.initializr.builder.modules.Module;
 import com.jverrecchia.initializr.builder.modules.ModulesRegistry;
 
-public class WebServlet extends HttpServlet { 
+public class AdvancedServlet extends HttpServlet { 
 	private static final long serialVersionUID = -1029291219058930682L;
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
@@ -27,7 +27,7 @@ public class WebServlet extends HttpServlet {
 		Collections.sort(modulesList);
 		req.setAttribute("modules", modulesList);
 		req.setAttribute("mode", mode);
-		RequestDispatcher dispatch = req.getRequestDispatcher("index.jsp");
+		RequestDispatcher dispatch = req.getRequestDispatcher("front/advanced.jsp");
 		dispatch.forward(req, resp);
 	}
 }

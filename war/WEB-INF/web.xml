@@ -11,8 +11,13 @@
   </servlet>
 
   <servlet>
-    <servlet-name>webServlet</servlet-name>
-    <servlet-class>com.jverrecchia.initializr.web.WebServlet</servlet-class>
+    <servlet-name>advancedServlet</servlet-name>
+    <servlet-class>com.jverrecchia.initializr.web.AdvancedServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>homeServlet</servlet-name>
+    <servlet-class>com.jverrecchia.initializr.web.HomeServlet</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -21,7 +26,12 @@
   </servlet-mapping>
 
   <servlet-mapping>
-    <servlet-name>webServlet</servlet-name>
+    <servlet-name>advancedServlet</servlet-name>
+    <url-pattern>/advanced</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>homeServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
 

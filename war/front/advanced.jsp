@@ -2,18 +2,7 @@
 				com.jverrecchia.initializr.builder.Const,
 				com.jverrecchia.initializr.builder.modules.*,
 				java.util.List" %>
-<!doctype html> 
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-    <title>Initializr - Start your HTML5 project in 15 seconds!</title>
-    <style>
-    	.default{
-    		color:blue;
-    	}
-    </style>
-</head>
-<body>
+<%@ include file="header.jsp" %>
 
 <h1>Initializr - API & Docs</h1>
 
@@ -46,7 +35,11 @@ for (Module currentModule : modules){
 	<button id="print">Print</button><br />
 	<input id="downloadurl" type="text" style="width:900px" />
 	<button id="download">Download</button>
+	
 </div>
+
+<%@ include file="footer.jsp" %>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.min.js"><\/script>')</script>
 

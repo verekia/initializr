@@ -1,0 +1,431 @@
+
+/* ==== Scroll down to find where to put your styles :) ==== */
+
+
+/* 	HTML5 Boilerplate
+ 
+	html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+	v1.4 2009-07-27 | Authors: Eric Meyer & Richard Clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}                  
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display:block;
+}
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+
+/* End of Reset CSS 
+
+fonts.css from the YUI Library: developer.yahoo.com/yui/ */
+
+body { font:13px/1.231 sans-serif; *font-size:small; } /* hack retained to preserve specificity */
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+
+/* 
+ * HTML5 Boilerplate - minimal base styles 
+ */
+
+body, select, input, textarea { 
+  color: #444; 
+  /* font-family: Georgia, serif;  */   
+}
+h1,h2,h3,h4,h5,h6 { font-weight: bold; }
+html { overflow-y: scroll; }
+a:hover, a:active { outline: none; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+ul, ol { margin-left: 1.8em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; } 
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td, td img { vertical-align: top; } 
+sub { vertical-align: sub; font-size: smaller; }
+sup { vertical-align: super; font-size: smaller; }
+pre { 
+  padding: 15px; 
+  white-space: pre; /* CSS2 */
+  white-space: pre-wrap; /* CSS 2.1 */
+  white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+  word-wrap: break-word; /* IE */
+}
+textarea { overflow: auto; } /* thnx ivannikolic! www.sitepoint.com/blogs/2010/08/20/ie-remove-textarea-scrollbars/ */
+.ie6 legend, .ie7 legend { margin-left: -7px; } /* thnx ivannikolic! */
+input[type="radio"] { vertical-align: text-bottom; }
+input[type="checkbox"] { vertical-align: bottom; }
+.ie7 input[type="checkbox"] { vertical-align: baseline; }
+.ie6 input { vertical-align: text-bottom; }
+label, input[type=button], input[type=submit], button { cursor: pointer; }
+button, input, select, textarea { margin: 0; }
+input:valid, textarea:valid   {  }
+input:invalid, textarea:invalid { 
+      border-radius: 1px;
+    -moz-box-shadow: 0px 0px 5px red; 
+ -webkit-box-shadow: 0px 0px 5px red; 
+         box-shadow: 0px 0px 5px red;
+}
+.no-boxshadow input:invalid, 
+.no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+/* By default the selection color is pink */
+::-moz-selection{ background: #f16529; color:#fff; text-shadow: none; }
+::selection { background:#f16529; color:#fff; text-shadow: none; } 
+a:link { -webkit-tap-highlight-color: #FF5E99; } 
+button {  width: auto; overflow: visible; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+
+/* 
+ * Non-semantic helper classes 
+ */
+
+/* for image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+
+/* Hide for both screenreaders and browsers */
+.hidden { display: none; visibility: hidden; } 
+
+/* Hide only visually, but have it available for screenreaders */
+.visuallyhidden { position: absolute !important;    
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Clearfix */
+.clearfix:before, .clearfix:after {
+  content: "\0020"; display: block; height: 0; visibility: hidden;	
+} 
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+/*
+    // ========================================== \\
+   ||                                              ||
+   ||               Your styles !                  ||
+   ||                                              ||
+    \\ ========================================== //
+*/
+
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('fonts/Chunkfive-webfont.eot?') format('eot'),
+         url('fonts/Chunkfive-webfont.woff') format('woff'),
+         url('fonts/Chunkfive-webfont.ttf') format('truetype'),
+         url('fonts/Chunkfive-webfont.svg#webfont90E2uSjN') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LeagueGothicRegular';
+    src: url('fonts/League_Gothic-webfont.eot?') format('eot'),
+         url('fonts/League_Gothic-webfont.woff') format('woff'),
+         url('fonts/League_Gothic-webfont.ttf') format('truetype'),
+         url('fonts/League_Gothic-webfont.svg#webfontFHzvtkso') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	text-shadow:0 0 1px transparent;
+	font-family:Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+.wrapper{
+	margin:auto;
+	width:960px;
+}
+
+#header-container{
+	background-color:#f16529;
+	height:90px;
+	border-bottom:20px solid #e44d26;
+	margin-bottom:50px;
+	-webkit-box-shadow:0 0 40px #ccc;
+	   -moz-box-shadow:0 40px 40px -40px #ccc;
+	        box-shadow:0 0 40px #ccc;
+}
+
+
+nav{
+	font-family:'LeagueGothicRegular', Arial;
+	font-size: 40px;
+	color:white;
+	float:right;
+	margin-top:28px;
+	font-weight: normal;
+	margin-right:45px;
+	text-shadow:0 -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+header h2{
+	text-align:center;
+}
+
+nav ul li{
+	display:inline;
+	margin-left:20px;
+}
+
+h2, h3{
+	margin:20px 0;
+}
+
+#title, h2, h3{
+	font-weight:normal;	
+}
+
+#title{
+	font-family:'ChunkFiveRegular', Arial;
+	font-size: 70px;
+	padding-top:5px;
+	color:white;
+	float:left;
+	text-shadow:0 -1px 2px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+	font-family:'LeagueGothicRegular', Arial;
+	font-size: 40px;
+}
+
+#slogan{
+	margin-bottom:50px;
+	padding-bottom:50px;
+	-webkit-box-shadow:0 45px 60px -49px #AAA;
+	   -moz-box-shadow:0 45px 60px -49px #AAA;
+	        box-shadow:0 45px 60px -49px #AAA;	
+}
+
+#main h3{
+	font-family:'LeagueGothicRegular', Arial;
+	font-size: 40px;
+}
+
+#main p, #guides ul{
+	font:16px/26px Helvetica, Helvetica Neue, Arial;
+	width:620px;
+	text-shadow:none;
+}
+
+#guides ul{
+	margin:20px 20px 20px 40px;
+}
+
+#main header h2{
+
+}
+
+#main header{
+	margin-bottom:50px;
+	
+	-webkit-box-shadow:0 45px 60px -60px #AAA;
+	   -moz-box-shadow:0 45px 60px -60px #AAA;
+	        box-shadow:0 45px 60px -60px #AAA;
+}
+
+.option{
+	width:320px;
+	text-align:center;
+	float:left;
+	font-family:'LeagueGothicRegular', Arial;
+	font-size: 40px;	
+}
+
+.hint{
+	color:#bbb;
+	margin-bottom:20px;
+}
+
+.orangeblock{
+	display:block;
+	width:250px;
+	padding:20px;
+	text-align:center;
+	text-decoration:none;
+	font-family:'ChunkFiveRegular', Arial;
+	font-size: 30px;
+	color:white;
+	margin-bottom:50px;
+	-webkit-box-shadow:0px 15px 20px -10px #AAA;
+	   -moz-box-shadow:0px 15px 20px -10px #AAA;
+	        box-shadow:0px 15px 20px -10px #AAA;
+	background-color:#bbb;
+	border-bottom:20px solid #aaa;
+	float:left;
+	margin-right:40px;
+	background-color:#f16529;
+	border-bottom:20px solid #e44d26;
+}
+
+#builder a.selected{
+	
+
+}
+
+#builder #download{
+	font-size: 50px;
+	width:580px;
+	font-size: 74px;
+	float:none;
+	margin-top:40px;
+	height:110px;
+	padding-top:40px;
+}
+
+#builder #download img{
+	float:right;
+	margin-right:10px;
+	position:relative;
+	bottom:10px;
+}
+
+#builder h3{
+	clear:both;
+}
+
+#builder section{
+	width:660px;
+	-webkit-box-shadow:0 45px 60px -60px #AAA;
+	   -moz-box-shadow:0 45px 60px -60px #AAA;
+	        box-shadow:0 45px 60px -60px #AAA;
+	        padding-bottom:0px;
+}
+
+
+#footer-container{
+	background-color:#f16529;
+	height:240px;
+	border-top:20px solid #e44d26;
+	margin-top:50px;
+	-webkit-box-shadow:0 0 40px #AAA;
+	   -moz-box-shadow:0 -40px 40px -40px #AAA;
+	        box-shadow:0 0 40px #AAA;
+}
+
+#social{
+	float:right;
+	margin:0px 30px 0 0;
+}
+
+#share{
+	float:right;
+}
+
+.facebook{
+}
+
+#follow{
+	clear:right;
+	padding-top:4px;
+	margin-bottom:10px;
+}
+
+#follow ul{
+	list-style-type:none;
+	padding-left:0px;
+	margin-left:0;
+}
+
+/* #follow ul a{ */
+/* 	display:block; */
+/* 	color:#186487; */
+/* 	text-shadow:0px -1px rgba(74, 134, 162, 0.2), */
+/* 	            0px 2px 2px rgba(255, 255, 255, 0.8); */
+/* 	padding:4px 14px; */
+/* 	border:1px solid #a4cce5; */
+/* 	margin-bottom:5px; */
+/* 	font-weight: bold; */
+/* 	text-decoration:none; */
+/* 	background-color:#d5e6ef; */
+	
+/* 	-webkit-border-radius:3px; */
+/* 	-moz-border-radius:3px; */
+/* 	border-radius:3px; */
+
+/* 	-webkit-box-shadow: inset 0px 25px 15px -15px #f2f8fc; */
+/* } */
+#follow ul li{
+	display:inline;
+}
+
+#follow ul a{
+	display:inline;
+	color:#bbb;
+	font-size:18px;
+	margin-bottom:5px;
+	font-weight: bold;
+	text-decoration:none;
+	margin-right:24px;
+}
+
+#follow ul a:hover{
+	color:#0b3752;
+}
+
+/*
+ *  CSS3 Media queries
+ */
+
+@media all and (orientation:portrait) { 
+  
+}
+
+@media all and (orientation:landscape) { 
+  
+}
+
+@media screen and (max-device-width: 480px) {
+  
+}
+
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  .ir a:after { content: ""; }  /* Don't show links for images */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
+
