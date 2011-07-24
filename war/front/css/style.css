@@ -281,7 +281,7 @@ h2{
 	text-decoration:none;
 	font-family:'ChunkFiveRegular', Arial;
 	font-size: 30px;
-	color:white;
+	color:white !important;
 	margin-bottom:50px;
 	-webkit-box-shadow:0px 15px 20px -10px #AAA;
 	   -moz-box-shadow:0px 15px 20px -10px #AAA;

@@ -10,11 +10,13 @@
 		</header>
 <div id="options">
 	<div id="leftoptions" class="option">1 second<div class="hint">featured template</div>
-	<a class="orangeblock" href="#">Download</a>
+	<a class="orangeblock" href="/builder">Download!</a>
 	
 	</div>
 	<div id="centeroptions" class="option">15 seconds<div class="hint">simple custom'</div></div>
-	<div id="rightoptions" class="option">1 minute<div class="hint">advanced custom'</div></div>
+	<div id="rightoptions" class="option">1 minute<div class="hint">advanced custom'</div>
+	<a class="orangeblock" href="/advanced">Configure...</a>
+	</div>
 </div>
 <div class="clearfix"></div>
 
