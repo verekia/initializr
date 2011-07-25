@@ -19,7 +19,7 @@
 
 <!-- Place this tag where you want the +1 button to render -->
 <!-- <g:plusone size="medium"></g:plusone>				 -->
-					<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="initializr" data-related="verekia">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://initializr.com" data-count="horizontal" data-via="initializr" data-related="verekia:Creator of Initializr">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 					<iframe class="facebook" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Finitializr.com&amp;layout=button_count&amp;show_faces=false&amp;width=120&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>		
 				</div>
 			</aside>	
@@ -30,9 +30,9 @@
 			<h2 id="slogan">Start an HTML5 project in...</h2>
 		</header>
 <div id="options">
-	<a id="leftoptions" class="option" href="#"><span class="hint">1 second</span><br />featured template</a>
-	<a id="centeroptions" class="option" href="#"><span class="hint">15 seconds</span><br />simple custom'</a>
-	<a id="rightoptions" class="option" href="#"><span class="hint">1 minute</span><br />advanced custom'</a>
+	<a id="leftoptions" class="option" href="/builder"><span class="hint">1 second</span><br />featured template</a>
+	<a id="centeroptions" class="option" href="#custom"><span class="hint">15 seconds</span><br />simple custom'</a>
+	<a id="rightoptions" class="option" href="/advanced"><span class="hint">1 minute</span><br />advanced custom'</a>
 <!-- 	<a class="orangeblock" href="/advanced">Configure...</a> -->
 	</div>
 </div>
