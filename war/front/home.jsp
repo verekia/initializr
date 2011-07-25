@@ -3,6 +3,27 @@
 				com.jverrecchia.initializr.builder.modules.*,
 				java.util.List" %>
 <%@ include file="header.jsp" %>
+	<header>
+			<aside id="social">
+
+				<div id="follow">
+<!-- 					<img src="/front/img/initializr-twitter.png" alt="Twitter icon" /> -->
+					<ul>
+					<li><a href="http://twitter.com/#!/initializr">@initializr</a></li>
+					<li><a href="http://twitter.com/#!/verekia">@verekia</a></li>
+					</ul>
+				</div>
+				<div id="share">
+<!-- Place this tag in your head or just before your close body tag -->
+<!-- <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script> -->
+
+<!-- Place this tag where you want the +1 button to render -->
+<!-- <g:plusone size="medium"></g:plusone>				 -->
+					<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="initializr" data-related="verekia">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+					<iframe class="facebook" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Finitializr.com&amp;layout=button_count&amp;show_faces=false&amp;width=120&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:120px; height:21px;" allowTransparency="true"></iframe>		
+				</div>
+			</aside>	
+<a href="https://github.com/verekia/initializr"><img style="position: fixed; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
 
 			<p>Initializr is an <strong>HTML5 templates generator</strong> to help you getting started with an HTML5 project. It is built on <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, a powerful HTML5 template created by <a href="http://paulirish.com/">Paul Irish</a> and <a href="http://nimbupani.com/">Divya Manian</a>. Initializr will generate for you a clean customizable template based on Boilerplate with just what you need to start.</p>
 	
@@ -10,12 +31,12 @@
 		</header>
 <div id="options">
 	<div id="leftoptions" class="option">1 second<div class="hint">featured template</div>
-	<a class="orangeblock" href="/builder">Download!</a>
+<!-- 	<a class="orangeblock" href="/builder">Download!</a> -->
 	
 	</div>
 	<div id="centeroptions" class="option">15 seconds<div class="hint">simple custom'</div></div>
 	<div id="rightoptions" class="option">1 minute<div class="hint">advanced custom'</div>
-	<a class="orangeblock" href="/advanced">Configure...</a>
+<!-- 	<a class="orangeblock" href="/advanced">Configure...</a> -->
 	</div>
 </div>
 <div class="clearfix"></div>

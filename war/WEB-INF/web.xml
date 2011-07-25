@@ -16,6 +16,16 @@
   </servlet>
 
   <servlet>
+    <servlet-name>newsServlet</servlet-name>
+    <servlet-class>com.jverrecchia.initializr.web.NewsServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>aboutServlet</servlet-name>
+    <servlet-class>com.jverrecchia.initializr.web.AboutServlet</servlet-class>
+  </servlet>
+
+  <servlet>
     <servlet-name>homeServlet</servlet-name>
     <servlet-class>com.jverrecchia.initializr.web.HomeServlet</servlet-class>
   </servlet>
@@ -29,6 +39,16 @@
     <servlet-name>advancedServlet</servlet-name>
     <url-pattern>/advanced</url-pattern>
   </servlet-mapping>
+ 
+  <servlet-mapping>
+    <servlet-name>newsServlet</servlet-name>
+    <url-pattern>/news</url-pattern>
+  </servlet-mapping> 
+ 
+  <servlet-mapping>
+    <servlet-name>aboutServlet</servlet-name>
+    <url-pattern>/about</url-pattern>
+  </servlet-mapping>  
   
   <servlet-mapping>
     <servlet-name>homeServlet</servlet-name>
