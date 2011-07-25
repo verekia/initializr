@@ -60,6 +60,7 @@ public class TemplateFile {
 						String insertString = null;
 						for (Insert currentInsert : inserts){
 							if (currentInsert.getType() == null || !currentInsert.getType().equals("file")){
+							    if (currentInsert.getWhere().equals(foundTag))
 								insertString = Utils.readFileAsString("builder/modules/" + currentModule.getId() + "/" + currentInsert.getWhat());
 							}
 						}
