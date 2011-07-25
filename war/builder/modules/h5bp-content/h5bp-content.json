@@ -8,5 +8,6 @@
 			"what" : "content.html",
 			"where" : "index.html/body/content"
 		}
-	]
+	],
+	"incompatibilities" : ["izr-samplepage"]
 }

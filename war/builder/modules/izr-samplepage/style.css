@@ -1,0 +1,95 @@
+/* ==================
+   Initializr Theme
+   ================== */
+
+
+body{
+	font-family:Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+
+.wrapper{
+	margin:auto;
+	width:960px;
+}
+
+#header-container{
+	background-color:#f16529;
+	height:130px;
+	border-bottom:20px solid #e44d26;
+	margin-bottom:50px;
+	-webkit-box-shadow:0 40px 40px -40px #AAA;
+	   -moz-box-shadow:0 40px 40px -40px #AAA;
+	        box-shadow:0 40px 40px -40px #AAA;
+}
+
+h2, h3{margin:30px 0;}
+h2{font-size: 40px;}
+h3{font-size: 30px;}
+#title, h2, h3{font-weight:normal;}
+
+#title{
+	font-size: 60px;
+	color:white;
+	float:left;
+}
+
+header nav{
+	float:right;
+	margin-top:100px;
+}
+
+header nav ul li{
+	display:inline;
+}
+
+nav a{
+	padding:20px;
+	color:white;
+	text-decoration:none;
+	background-color:#e44d26;
+}
+
+aside{
+	color:white;
+	padding:20px;
+	float:right;
+	height:500px;
+	width:200px;
+	background-color:#f16529;
+	border-bottom:20px solid #e44d26;
+	margin-bottom:50px;
+	-webkit-box-shadow:0 0px 40px -10px #AAA;
+	   -moz-box-shadow:0 0px 40px -10px #AAA;
+	        box-shadow:0 0px 40px -10px #AAA;
+}
+
+#main p{
+	font:16px/26px Helvetica, Helvetica Neue, Arial;
+	width:620px;
+}
+
+article header{
+	margin-bottom:50px;
+	padding-bottom:30px;
+	width:700px;
+	-webkit-box-shadow:0 45px 60px -60px #AAA;
+	   -moz-box-shadow:0 45px 60px -60px #AAA;
+	        box-shadow:0 45px 60px -60px #AAA;
+}
+
+#footer-container{
+	background-color:#f16529;
+	height:240px;
+	border-top:20px solid #e44d26;
+	margin-top:50px;
+	-webkit-box-shadow:0 -40px 40px -40px #AAA;
+	   -moz-box-shadow:0 -40px 40px -40px #AAA;
+	        box-shadow:0 -40px 40px -40px #AAA;
+}
+
+#footer-container footer{
+	color:white;
+}
+
+
+

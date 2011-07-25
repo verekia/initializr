@@ -38,12 +38,20 @@ for (Module currentModule : modules){
 	
 </div>
 
-<%@ include file="footer.jsp" %>
+
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.min.js"><\/script>')</script>
 
 <script>
+var initializrBuilderType = 'advanced';
+var initializrBuilderMode = 'custom';
+</script>
+
+<%@ include file="footer.jsp" %>
+
+<script>
+/*
 $(function(){
 	var beginurl = 'http://jverrecchia-initializr.appspot.com/builder?';
 	var urlparameters = "";
@@ -151,7 +159,7 @@ $(function(){
 		$('#downloadurl').attr('value', beginurl + urlparameters);
 	}
 });
-
+*/
 </script>
 
 </body>

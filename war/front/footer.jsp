@@ -1,0 +1,1 @@
+<script src="/front/js/script.js"></script>

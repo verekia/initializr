@@ -14,7 +14,6 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("h5bp-csshelpers");
 		this.getDefaultModulesNames().add("h5bp-mediaqueries");
 		this.getDefaultModulesNames().add("h5bp-mediaqueryprint");		
-		this.getDefaultModulesNames().add("h5bp-primarystyles");
 		this.getDefaultModulesNames().add("h5bp-favicon");
 		this.getDefaultModulesNames().add("h5bp-appletouchicons");
 		this.getDefaultModulesNames().add("h5bp-adobecrossdomain");

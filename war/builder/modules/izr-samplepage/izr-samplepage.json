@@ -1,0 +1,17 @@
+{
+	"author" : "Jonathan Verrecchia",
+	"name" : "Initializr Sample Page",
+	"id" : "izr-samplepage",
+	"inserts" :
+	[
+		{
+			"what" : "index.html",
+			"where" : "index.html/body/content"
+		},
+		{
+			"what" : "style.css",
+			"where" : "style.css/primary"
+		}
+	],
+	"incompatibilities" : ["h5bp-content"]
+}
