@@ -2,6 +2,7 @@ Docs
 Dire qu'IZR est toujours basé sur Boilerplate et que la Boilerplate Edition
 correspond au custom boilerplate, et qu'il n'inclut pas build, demo, test
 
+Remettre le jqtest
 
 inline injections
 mettre en place un systeme de sets qui activent / désactivent

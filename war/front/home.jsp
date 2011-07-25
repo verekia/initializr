@@ -59,86 +59,54 @@
 		class="hint">1 minute</span><br />advanced custom'</a>
 	<!-- 	<a class="orangeblock" href="/advanced">Configure...</a> -->
 </div>
-</div>
-<div class="clearfix"></div>
 
-<table style="margin-bottom: 100px">
+<div id="simplecustom">
 
-	<tr><td></td><td></td></tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='h5bp-analytics' />
-		</td>
-		<td>Analytics</td>
-	</tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='h5bp-chromeframe' />
-		</td>
-		<td>Chrome Frame</td>
-	</tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='h5bp-content' />
-		</td>
-		<td>Basic Content</td>
-	</tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='h5bp-scripts' />
-		</td>
-		<td>Boilerplate Scripts</td>
-	</tr>
-
-	<tr>
-		<td><input class='select' type='checkbox' id='html5shiv' />
-		</td>
-		<td>HTML5 Shiv</td>
-	</tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='izr-jqtest' />
-		</td>
-		<td>jQuery Loading Test</td>
-	</tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='izr-styles' />
-		</td>
-		<td>Initializr CSS</td>
-	</tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='jquery' />
-		</td>
-		<td>jQuery</td>
-	</tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='modernizr' />
-		</td>
-		<td>Modernizr</td>
-	</tr>
-	<tr>
-		<td><input class='select' type='checkbox' id='respond' />
-		</td>
-		<td>Respond.js</td>
-	</tr>
-	<tr><td></td><td>Server Configuration</td></tr>
-		<tr>
-		
-		<td><input class='select' type='checkbox' id='h5bp-htaccess' />
-		</td>
-		<td>Htaccess Apache Configugation File</td>
-	</tr>
-		<tr>
-		<td><input class='select' type='checkbox' id='h5bp-webconfig' />
-		</td>
-		<td>Web.config Configugation File</td>
-	</tr>
-		<tr>
-		<td><input class='select' type='checkbox' id='h5bp-nginx' />
-		</td>
-		<td>Nginx Configugation File</td>
-	</tr>
-</table>
-
-	<input id="downloadurl" type="text" style="width:900px" />
-	<button id="download">Download</button>
+	<h4>HTML/CSS</h4>
+		<input class='select' type='checkbox' id='h5bp-content' />
+		No Content
+		<br />
+		<input class='select' type='checkbox' id='izr-samplepage' />
+		Initializr Sample Page
+	<h4>Google Services</h4>
+	<input class='select' type='checkbox' id='h5bp-analytics' />
+	Analytics
+	<br />
+	<input class='select' type='checkbox' id='h5bp-chromeframe' />
+	Suggest Chrome Frame
+	<h4>JavaScript</h4>
+	<input class='select' type='checkbox' id='h5bp-scripts' />
+	Boilerplate Scripts
+	<br />
+	<input class='select' type='checkbox' id='jquery' />
+	jQuery
+	<h4>HTML5 Compatibility</h4>
+	<input class='select' type='checkbox' id='modernizr' />
+	Modernizr
+	<br />
+	<input class='select' type='checkbox' id='html5shiv' />
+	HTML5 Shiv
+	<br />
+	<input class='select' type='checkbox' id='respond' />
+	Respond.js
+	<h4>Server Configuration</h4>
+	<input class='select' type='checkbox' id='h5bp-htaccess' />
+	Htaccess Apache Configugation File
+	<br />
+	<input class='select' type='checkbox' id='h5bp-webconfig' />
+	Web.config Configugation File
+	<br />
+	<input class='select' type='checkbox' id='h5bp-nginx' />
+	Nginx Configugation File
 	
 
+	<input id="downloadurl" type="text" style="width:300px" />
+	<button id="download">Download</button>
+	
+</div>
+
+</div>
+<div class="clearfix"></div>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>

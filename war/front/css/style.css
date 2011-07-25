@@ -212,7 +212,7 @@ h2, h3{
 	margin:20px 0;
 }
 
-#title, h2, h3{
+#title, h2, h3, h4{
 	font-weight:normal;	
 }
 
@@ -225,7 +225,7 @@ h2, h3{
 	text-shadow:0 -1px 2px rgba(0, 0, 0, 0.2);
 }
 
-h2{
+h2, h4{
 	font-family:'LeagueGothicRegular', Arial;
 	font-size: 40px;
 }
@@ -241,6 +241,15 @@ h2{
 #main h3{
 	font-family:'LeagueGothicRegular', Arial;
 	font-size: 40px;
+}
+
+h4{
+	font-size:26px;
+	margin:10px;
+}
+
+#simplecustom h4:first-child{
+	margin-top:0;
 }
 
 #main p, #guides ul{
@@ -352,6 +361,14 @@ h2{
 	margin-right:40px;
 	background-color:#f16529;
 	border-bottom:20px solid #e44d26;
+}
+
+#simplecustom{
+	display:none;
+	width:320px;
+	margin:auto;
+	position:relative;
+	top:20px;
 }
 
 #builder a.selected{
