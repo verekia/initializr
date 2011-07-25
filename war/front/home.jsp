@@ -30,12 +30,9 @@
 			<h2 id="slogan">Start an HTML5 project in...</h2>
 		</header>
 <div id="options">
-	<div id="leftoptions" class="option">1 second<div class="hint">featured template</div>
-<!-- 	<a class="orangeblock" href="/builder">Download!</a> -->
-	
-	</div>
-	<div id="centeroptions" class="option">15 seconds<div class="hint">simple custom'</div></div>
-	<div id="rightoptions" class="option">1 minute<div class="hint">advanced custom'</div>
+	<a id="leftoptions" class="option" href="#"><span class="hint">1 second</span><br />featured template</a>
+	<a id="centeroptions" class="option" href="#"><span class="hint">15 seconds</span><br />simple custom'</a>
+	<a id="rightoptions" class="option" href="#"><span class="hint">1 minute</span><br />advanced custom'</a>
 <!-- 	<a class="orangeblock" href="/advanced">Configure...</a> -->
 	</div>
 </div>

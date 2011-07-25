@@ -232,7 +232,7 @@ h2{
 
 #slogan{
 	margin-top:10px;
-	padding-bottom:30px;
+	padding-bottom:10px 0;
 	-webkit-box-shadow:0 45px 60px -49px #AAA;
 	   -moz-box-shadow:0 45px 60px -49px #AAA;
 	        box-shadow:0 45px 60px -49px #AAA;	
@@ -258,24 +258,79 @@ h2{
 }
 
 #main header{
-	margin-bottom:50px;
+/* 	margin-bottom:50px; */
 	
-	-webkit-box-shadow:0 45px 60px -60px #AAA;
-	   -moz-box-shadow:0 45px 60px -60px #AAA;
-	        box-shadow:0 45px 60px -60px #AAA;
+/* 	-webkit-box-shadow:0 45px 60px -60px #AAA; */
+/* 	   -moz-box-shadow:0 45px 60px -60px #AAA; */
+/* 	        box-shadow:0 45px 60px -60px #AAA; */
 }
 
 .option{
-	width:320px;
+	width:280px;
+	margin:0 10px;
 	text-align:center;
 	float:left;
 	font-family:'LeagueGothicRegular', Arial;
 	font-size: 40px;	
+	padding:10px;
+	
+	-webkit-box-shadow:0 35px 30px -30px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:0 35px 30px -30px rgba(0, 0, 0, 0.1);
+	box-shadow:0 35px 30px -30px rgba(0, 0, 0, 0.1);
+	
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+
+.no-transform .option:hover{
+	margin-top:10px;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	-webkit-transition:all 0.5s ease;
+	transition:all 0.5s ease;	
+}
+
+.option:hover{
+	-webkit-box-shadow:0 3px 5px -3px rgba(0, 0, 0, 0.1);	
+	-moz-box-shadow:0 3px 5px -3px rgba(0, 0, 0, 0.1);	
+	box-shadow:0 3px 5px -3px rgba(0, 0, 0, 0.1);	
+	
+	-webkit-transform:translateY(5px);
+	-moz-transform:translateY(5px);
+	-o-transform:translateY(5px);
+	transform:translateY(5px);
+	-webkit-transform:translateY(5px) translateZ(0);
+	-moz-transform:translateY(5px) translateZ(0);
+	-o-transform:translateY(5px) translateZ(0);
+	transform:translateY(5px) translateZ(0);	
+	
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+
+.no-csstransitions .option{
+		-webkit-box-shadow:0 35px 30px -30px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow:0 35px 30px -30px rgba(0, 0, 0, 0.1);
+	box-shadow:0 35px 30px -30px rgba(0, 0, 0, 0.1);
+}
+
+
+#options a{
+	text-decoration: none !important;
+	color:#bbb;
 }
 
 .hint{
-	color:#bbb;
-	margin-bottom:20px;
+	color:#444;
+
+}
+
+#main #options .option:hover{
+	color:#F16529;
 }
 
 .orangeblock{
