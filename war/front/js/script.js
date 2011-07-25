@@ -36,10 +36,6 @@ $(function(){
 				'enabled' : false,
 				'default' : []
 			},
-			'h5bp-primarystyles' : {
-				'enabled' : false,
-				'default' : []
-			},
 			'h5bp-readmemd' : {
 				'enabled' : false,
 				'default' : []
@@ -64,7 +60,7 @@ $(function(){
 				'enabled' : false,
 				'default' : []
 			},
-			'izr-styles' : {
+			'izr-samplepage' : {
 				'enabled' : false,
 				'default' : []
 			},
@@ -103,14 +99,13 @@ $(function(){
 				'h5bp-mediaqueryprint' : {'enabled' : false, 'default' : ['h5bp']},
 				'h5bp-nginx' : {'enabled' : false, 'default' : []},
 				'h5bp-oldiecond' : {'enabled' : false, 'default' : []},
-				'h5bp-primarystyles' : {'enabled' : false, 'default' : ['h5bp']},
 				'h5bp-readmemd' : {'enabled' : false, 'default' : []},
 				'h5bp-robots' : {'enabled' : false, 'default' : ['h5bp']},
 				'h5bp-scripts' : {'enabled' : false, 'default' : []},
 				'h5bp-webconfig' : {'enabled' : false, 'default' : []},
 				'html5shiv' : {'enabled' : false, 'default' : []},
 				'izr-jqtest' : {'enabled' : false, 'default' : []},
-				'izr-styles' : {'enabled' : false, 'default' : ['izr']},
+				'izr-samplepage' : {'enabled' : false, 'default' : []},
 				'jquery' : {'enabled' : false, 'default' : []},
 				'modernizr' : {'enabled' : false, 'default' : []},
 				'respond' : {'enabled' : false, 'default' : []},

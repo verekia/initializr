@@ -81,11 +81,6 @@
 		<td>Basic Content</td>
 	</tr>
 	<tr>
-		<td><input class='select' type='checkbox' id='h5bp-primarystyles' />
-		</td>
-		<td>Primary Styles</td>
-	</tr>
-	<tr>
 		<td><input class='select' type='checkbox' id='h5bp-scripts' />
 		</td>
 		<td>Boilerplate Scripts</td>
