@@ -14,5 +14,6 @@
 			"where" : "js/script.js",
 			"type" : "file"
 		}	
-	]
+	],
+	"incompatibilities" : ["h5bp-scripts"]
 }

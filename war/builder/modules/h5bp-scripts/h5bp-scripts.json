@@ -20,5 +20,6 @@
 			"where" : "js/plugins.js",
 			"type" : "file"
 		}		
-	]
+	],
+	"incompatibilities" : ["izr-emptyscript"]
 }

@@ -39,18 +39,12 @@
 		Initializr Sample Page
 		</li>
 	</ul>
-	<h4>Google Services</h4>
-	<ul><li>
-	<input class='select' type='checkbox' id='h5bp-analytics' />
-	Analytics
-	</li>
-	<li>
-	<input class='select' type='checkbox' id='h5bp-chromeframe' />
-	Suggest Chrome Frame
-	</li>
-	</ul>
 	<h4>JavaScript</h4>
 	<ul>
+	<li>
+	<input class='select' type='checkbox' id='izr-emptyscript' />
+	Empty JavaScript File
+	</li>
 	<li>
 	<input class='select' type='checkbox' id='h5bp-scripts' />
 	Boilerplate Scripts
@@ -75,6 +69,16 @@
 	Respond.js
 	</li>
 	</ul>
+	<h4>Google Services</h4>
+	<ul><li>
+	<input class='select' type='checkbox' id='h5bp-analytics' />
+	Analytics
+	</li>
+	<li>
+	<input class='select' type='checkbox' id='h5bp-chromeframe' />
+	Suggest Chrome Frame
+	</li>
+	</ul>
 	<h4>Server Configuration</h4>
 	<ul>
 	<li>
@@ -92,7 +96,7 @@
 	</ul>
 
 	<input id="downloadurl" type="text" style="width:300px" />
-	<button id="download" class="orangeblock">Download</button>
+	<button id="download" class="orangeblock" style="width:320px">Download!</button>
 	
 </div>
 

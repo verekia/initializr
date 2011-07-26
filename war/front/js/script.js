@@ -59,6 +59,10 @@ $(function() {
 			'enabled' : false,
 			'default' : []
 		},
+		'izr-emptyscript' : {
+			'enabled' : false,
+			'default' : []
+		},
 		'jquery' : {
 			'enabled' : false,
 			'default' : []
@@ -100,6 +104,7 @@ $(function() {
 			'h5bp-webconfig' : {'enabled' : false, 'default' : []},
 			'html5shiv' : {'enabled' : false, 'default' : []},
 			'izr-samplepage' : {'enabled' : false, 'default' : []},
+			'izr-emptyscript' : {'enabled' : false, 'default' : []},
 			'jquery' : {'enabled' : false, 'default' : []},
 			'modernizr' : {'enabled' : false, 'default' : []},
 			'respond' : {'enabled' : false, 'default' : []},
