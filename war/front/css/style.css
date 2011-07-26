@@ -328,6 +328,11 @@ h4{
 	transition:all 0.3s ease;
 }
 
+#centeroptions{
+	background:transparent;
+	border:none;
+}
+
 .no-csstransitions .option{
 		-webkit-box-shadow:0 35px 30px -30px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow:0 35px 30px -30px rgba(0, 0, 0, 0.1);
@@ -335,7 +340,7 @@ h4{
 }
 
 
-#options a{
+#options a, #centeroptions{
 	text-decoration: none !important;
 	color:#bbb;
 }

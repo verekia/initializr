@@ -19,9 +19,9 @@
 </header>
 <div id="options">
 	<a id="leftoptions" class="option" href="/builder?izr-samplepage&h5bp-chromeframe&h5bp-analytics&modernizr&respond&jquery"><span
-		class="hint">1 second</span><br />featured template</a> <a
-		id="centeroptions" class="option" href="#custom"><span
-		class="hint">15 seconds</span><br />simple custom'</a> <a
+		class="hint">1 second</span><br />featured template</a> <button
+		id="centeroptions" class="option"><span
+		class="hint">15 seconds</span><br />simple custom'</button> <a
 		id="rightoptions" class="option" href="/advanced"><span
 		class="hint">1 minute</span><br />advanced custom'</a>
 	<!-- 	<a class="orangeblock" href="/advanced">Configure...</a> -->
