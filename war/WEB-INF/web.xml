@@ -21,8 +21,8 @@
   </servlet>
 
   <servlet>
-    <servlet-name>aboutServlet</servlet-name>
-    <servlet-class>com.jverrecchia.initializr.web.AboutServlet</servlet-class>
+    <servlet-name>docsServlet</servlet-name>
+    <servlet-class>com.jverrecchia.initializr.web.DocsServlet</servlet-class>
   </servlet>
 
   <servlet>
@@ -46,8 +46,8 @@
   </servlet-mapping> 
  
   <servlet-mapping>
-    <servlet-name>aboutServlet</servlet-name>
-    <url-pattern>/about</url-pattern>
+    <servlet-name>docsServlet</servlet-name>
+    <url-pattern>/docs</url-pattern>
   </servlet-mapping>  
   
   <servlet-mapping>

@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class AboutServlet extends HttpServlet { 
+public class DocsServlet extends HttpServlet { 
 	private static final long serialVersionUID = -1029291219058930682L;
 
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 	throws ServletException, IOException {
 
-		RequestDispatcher dispatch = req.getRequestDispatcher("front/about.jsp");
+		RequestDispatcher dispatch = req.getRequestDispatcher("front/docs.jsp");
 		dispatch.forward(req, resp);
 	}
 }
