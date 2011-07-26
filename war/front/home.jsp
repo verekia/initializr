@@ -9,8 +9,8 @@
 	Initializr is an <strong>HTML5 templates generator</strong> to help you
 	getting started with an HTML5 project. It is built on <a
 		href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, a powerful
-	HTML5 template created by <a href="http://paulirish.com/">Paul
-		Irish</a> and <a href="http://nimbupani.com/">Divya Manian</a>. Initializr
+	HTML5 template created by <a href="http://twitter.com/#!/paul_irish">Paul
+		Irish</a> and <a href="http://twitter.com/#!/divya">Divya Manian</a>. Initializr
 	will generate for you a clean customizable template based on
 	Boilerplate with just what you need to start.
 </p>
@@ -30,45 +30,69 @@
 <div id="simplecustom">
 
 	<h4>HTML/CSS</h4>
+	<ul><li>
 		<input class='select' type='checkbox' id='h5bp-content' />
 		No Content
-		<br />
+		</li>
+		<li>
 		<input class='select' type='checkbox' id='izr-samplepage' />
 		Initializr Sample Page
+		</li>
+	</ul>
 	<h4>Google Services</h4>
+	<ul><li>
 	<input class='select' type='checkbox' id='h5bp-analytics' />
 	Analytics
-	<br />
+	</li>
+	<li>
 	<input class='select' type='checkbox' id='h5bp-chromeframe' />
 	Suggest Chrome Frame
+	</li>
+	</ul>
 	<h4>JavaScript</h4>
+	<ul>
+	<li>
 	<input class='select' type='checkbox' id='h5bp-scripts' />
 	Boilerplate Scripts
-	<br />
+	</li>
+	<li>
 	<input class='select' type='checkbox' id='jquery' />
 	jQuery
+	</li>
+	</ul>
 	<h4>HTML5 Compatibility</h4>
+	<ul>
+	<li>
 	<input class='select' type='checkbox' id='modernizr' />
 	Modernizr
-	<br />
+	</li>
+	<li>
 	<input class='select' type='checkbox' id='html5shiv' />
 	HTML5 Shiv
-	<br />
+	</li>
+	<li>
 	<input class='select' type='checkbox' id='respond' />
 	Respond.js
+	</li>
+	</ul>
 	<h4>Server Configuration</h4>
+	<ul>
+	<li>
 	<input class='select' type='checkbox' id='h5bp-htaccess' />
 	Htaccess Apache Configugation File
-	<br />
+	</li>
+	<li>
 	<input class='select' type='checkbox' id='h5bp-webconfig' />
 	Web.config Configugation File
-	<br />
+	</li>
+	<li>
 	<input class='select' type='checkbox' id='h5bp-nginx' />
 	Nginx Configugation File
-	
+	</li>
+	</ul>
 
 	<input id="downloadurl" type="text" style="width:300px" />
-	<button id="download">Download</button>
+	<button id="download" class="orangeblock">Download</button>
 	
 </div>
 

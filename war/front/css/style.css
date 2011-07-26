@@ -363,6 +363,7 @@ h4{
 	   -moz-box-shadow:0px 15px 20px -10px #AAA;
 	        box-shadow:0px 15px 20px -10px #AAA;
 	background-color:#bbb;
+	border:0;
 	border-bottom:20px solid #aaa;
 	float:left;
 	margin-right:40px;
@@ -376,6 +377,15 @@ h4{
 	margin:auto;
 	position:relative;
 	top:20px;
+}
+
+#simplecustom ul li{
+	font-size:16px;
+	list-style-type:none;
+}
+
+#simplecustom input{
+	margin-right:10px;
 }
 
 #builder a.selected{
