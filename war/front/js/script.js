@@ -6,6 +6,8 @@ $(function() {
 	var mode;
 	var modules;
 	
+	var simpleDefaultModules = ['izr-samplepage', 'izr-emptyscript', 'jquery', 'modernizr', 'respond'];
+	
 	var simpleModules = {
 		'h5bp-analytics' : {
 			'enabled' : false,
@@ -122,8 +124,7 @@ $(function() {
 		modules = simpleModules;
 	if (initializrBuilderType == 'advanced')
 		modules = advancedModules;
-	
-	updateCheckBoxes();
+
 
 	$('.mode').click(function() {
 		mode = $(this).attr('value');
@@ -137,6 +138,7 @@ $(function() {
 			modules[$(this).attr('id')].enabled = true;
 		else
 			modules[$(this).attr('id')].enabled = false;
+		updateData();
 		updateURLs();
 	});
 
@@ -150,7 +152,7 @@ $(function() {
 	});
 
 	function updateMode() {
-		for (curModule in modules) {
+		for (var curModule in modules) {
 			if ($.inArray(mode, modules[curModule]['default']) >= 0) {
 				modules[curModule].enabled = true;
 			} else
@@ -158,8 +160,26 @@ $(function() {
 		}
 	}
 
+	function loadDefaultModules(){
+		if (initializrBuilderType == 'simple'){
+			for (var currentModuleDefault in simpleDefaultModules){
+				modules[simpleDefaultModules[currentModuleDefault]].enabled = true;
+			}
+		}
+	}
+	
+	function updateData(){
+		/*for (var curModule in modules) {
+			modules[curModule].enabled = $("#" + curModule).prop('checked');
+		}*/
+		// updates the form too
+		for (var curModule in modules) {
+			$('#' + curModule).prop('checked', modules[curModule].enabled);
+		}		
+	}
+	
 	function updateCheckBoxes(disableDefaults) {
-		for (curModule in modules) {
+		for (var curModule in modules) {
 			if (modules[curModule].enabled) {
 				$('#' + curModule).prop('checked', true);
 				if (disableDefaults)
@@ -182,7 +202,7 @@ $(function() {
 		else if (mode != 'izr')
 			urlparameters = 'mode=custom&';
 
-		for (curModule in modules) {
+		for (var curModule in modules) {
 			if (modules[curModule].enabled == true
 					&& $.inArray(mode, modules[curModule]['default']) == -1)
 				urlparameters += curModule + '&';
@@ -197,7 +217,12 @@ $(function() {
 	}
 	
 	$('#centeroptions').click(function(){
-		$('#simplecustom').slideDown('normal');
+		$('#simplecustom').slideDown('normal', function(){
+			loadDefaultModules();	
+			updateData();
+			updateURLs();
+			//updateCheckBoxes();
+		});
 	});
 }
 });	

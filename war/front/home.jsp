@@ -31,22 +31,22 @@
 
 	<h4>HTML/CSS</h4>
 	<ul><li>
-		<input class='select' type='checkbox' id='h5bp-content' />
+		<input class='select' type="radio" name="htmlcss" id='h5bp-content' />
 		No Content
 		</li>
 		<li>
-		<input class='select' type='checkbox' id='izr-samplepage' />
+		<input class='select' type='radio' name="htmlcss" id='izr-samplepage' />
 		Initializr Sample Page
 		</li>
 	</ul>
 	<h4>JavaScript</h4>
 	<ul>
 	<li>
-	<input class='select' type='checkbox' id='izr-emptyscript' />
+	<input class='select' type='radio' name="js" id='izr-emptyscript' />
 	Empty JavaScript File
 	</li>
 	<li>
-	<input class='select' type='checkbox' id='h5bp-scripts' />
+	<input class='select' type='radio' name="js" id='h5bp-scripts' />
 	Boilerplate Scripts
 	</li>
 	<li>
@@ -57,11 +57,11 @@
 	<h4>HTML5 Compatibility</h4>
 	<ul>
 	<li>
-	<input class='select' type='checkbox' id='modernizr' />
+	<input class='select' type='radio' name="polyfill" id='modernizr' />
 	Modernizr
 	</li>
 	<li>
-	<input class='select' type='checkbox' id='html5shiv' />
+	<input class='select' type='radio' name="polyfill" id='html5shiv' />
 	HTML5 Shiv
 	</li>
 	<li>
@@ -95,8 +95,9 @@
 	</li>
 	</ul>
 
-	<input id="downloadurl" type="text" style="width:300px" />
+<!-- 	<input id="downloadurl" type="text" style="width:300px" /> -->
 	<button id="download" class="orangeblock" style="width:320px">Download!</button>
+	<button id="print" class="orangeblock" style="width:320px">What's inside?</button>
 	
 </div>
 
