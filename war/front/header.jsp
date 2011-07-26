@@ -16,9 +16,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	
+	<link href='http://fonts.googleapis.com/css?family=Nunito&v2' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/front/css/style.css?v=5">
-
+	
 	<script src="/front/js/libs/modernizr-1.6.min.js"></script>
 	
 	<script type="text/javascript">

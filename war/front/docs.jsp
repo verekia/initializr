@@ -42,6 +42,15 @@ easily</em> by contributing to Initializr on <a href="https://github.com/verekia
 <p>You can send me emails at <span id="email"></span>, or follow <a href="http://twitter.com/#!/initializr">@initializr</a> and <a href="http://twitter.com/#!/verekia">@verekia</a>.</p>
 
 </article>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script>
+	window.jQuery
+			|| document
+					.write('<script src="js/libs/jquery-1.6.1.min.js"><\/script>')
+</script>
+
+
 <%@ include file="footer.jsp" %>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>

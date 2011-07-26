@@ -106,6 +106,8 @@ $(function() {
 			'simplehtmltag' : {'enabled' : false, 'default' : []}
 		};
 	
+	if (typeof initializrBuilderMode != 'undefined'){
+	
 	if (initializrBuilderMode == 'izr')
 		mode = 'izr';
 	else
@@ -192,6 +194,7 @@ $(function() {
 	$('#centeroptions').click(function(){
 		$('#simplecustom').slideDown('normal');
 	});
+}
 });	
 	
 	/*
