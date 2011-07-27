@@ -40,7 +40,7 @@
 	<div id="header-container">
 		<header class="wrapper">
 
-			<h1 id="title"><a href="/">Initializr</a></h1>
+			<h1 id="title"><a href="/">Initializr 2</a> (beta)</h1>
 <!-- 			<img src="/front/img/html5-logo.png" alt="HTML5 official logo"/> -->
 		<nav>
 		<ul>

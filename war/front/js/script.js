@@ -134,11 +134,8 @@ $(function() {
 	});
 
 	$('.select').click(function() {
-		if ($(this).prop('checked'))
-			modules[$(this).attr('id')].enabled = true;
-		else
-			modules[$(this).attr('id')].enabled = false;
-		updateData();
+		modules[$(this).attr('id')].enabled = $(this).prop('checked');
+		updateData(true);
 		updateURLs();
 	});
 
@@ -164,14 +161,17 @@ $(function() {
 		if (initializrBuilderType == 'simple'){
 			for (var currentModuleDefault in simpleDefaultModules){
 				modules[simpleDefaultModules[currentModuleDefault]].enabled = true;
+				$("#" + currentModuleDefault).prop('checked', true);
 			}
 		}
 	}
 	
-	function updateData(){
-		/*for (var curModule in modules) {
+	function updateData(checkEnabled){
+		if (checkEnabled){
+			for (var curModule in modules) {
 			modules[curModule].enabled = $("#" + curModule).prop('checked');
-		}*/
+			}
+		}
 		// updates the form too
 		for (var curModule in modules) {
 			$('#' + curModule).prop('checked', modules[curModule].enabled);
@@ -219,7 +219,7 @@ $(function() {
 	$('#centeroptions').click(function(){
 		$('#simplecustom').slideDown('normal', function(){
 			loadDefaultModules();	
-			updateData();
+			updateData(false);
 			updateURLs();
 			//updateCheckBoxes();
 		});

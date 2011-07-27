@@ -95,7 +95,8 @@
 	</li>
 	</ul>
 
-<!-- 	<input id="downloadurl" type="text" style="width:300px" /> -->
+	<p style="margin-top:10px">Archive URL (will be removed after the beta)</p>
+	<input style="margin-bottom:20px; width:500px" id="downloadurl" type="text" />
 	<button id="download" class="orangeblock" style="width:320px">Download!</button>
 	<button id="print" class="orangeblock" style="width:320px">What's inside?</button>
 	

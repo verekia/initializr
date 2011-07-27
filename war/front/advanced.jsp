@@ -4,14 +4,15 @@
 				java.util.List" %>
 <%@ include file="header.jsp" %>
 
-<h1>Initializr - API & Docs</h1>
+<h1>Advanced Customization</h1>
+<p style="margin:20px 0">This page allows you to add some modules that are neither available on the simple custom' builder nor HTML5 <a href="http://html5boilerplate.com/#builder-custom">Boilerplate Custom</a>.
+By selecting "Initializr" or "H5BP Custom Builder" options, you'll activate the minimal default configuration of these builders.</p>
 
-
-Custom Build <input type="radio" class="mode" name="mode" value="custom" /><br />
-Initializr <input type="radio" class="mode" name="mode" value="izr" /><br />
-H5BP Custom Builder<input type="radio" class="mode" name="mode" value="h5bp"/>
+<input type="radio" class="mode" name="mode" value="custom" />Custom Build (nothing enabled by default)<br />
+<input type="radio" class="mode" name="mode" value="izr" /> Initializr (similar to simple custom')<br />
+<input type="radio" class="mode" name="mode" value="h5bp"/> H5BP Custom Builder (similar to html5boilerplate.com)
 <br /><br />
-<table style="margin-bottom:100px">
+<table style="margin-bottom:20px">
 <thead><tr><td></td><td>Fancy name</td><td>ID</td><td>This module is incompatible with</td></tr></thead>
 <%
 List<Module> modules = (List<Module>)request.getAttribute("modules");
@@ -30,14 +31,12 @@ for (Module currentModule : modules){
 }
 %>
 </table>
-<div style="position:fixed; bottom:0; background:#ddd">
+	<p style="margin-top:10px">Pretty print URL (will be removed after the beta)</p>
 	<input id="printurl" type="text" style="width:900px" />
-	<button id="print">Print</button><br />
-	<input id="downloadurl" type="text" style="width:900px" />
-	<button id="download">Download</button>
-	
-</div>
-
+		<p style="margin-top:10px">Archive URL (will be removed after the beta)</p>
+	<input id="downloadurl" type="text" style="width:900px; margin-bottom:20px;" />
+	<button id="download" class="orangeblock" style="width:320px">Download!</button>
+	<button id="print" class="orangeblock" style="width:320px">What's inside?</button>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
