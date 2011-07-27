@@ -1,4 +1,4 @@
-# Initializr 2.0 
+# Initializr 2
 
 ## Documentation
 
@@ -22,6 +22,12 @@ You can still display the content before downloading it with the print parameter
 
 http://jverrecchia-initializr.appspot.com/builder?mode=boilerplate&print
 
+### 100% Custom Edition
+
+You can also get an empty archive which doesn't have any module activated by default with the mode=custom parameter:
+
+http://jverrecchia-initializr.appspot.com/builder?mode=custom&print
+
 ### Modules
 
 Modules are just portions of code that will be included in your archive. If you want
@@ -29,47 +35,37 @@ to add a module to your archive, just add the name of the module as a GET parame
 
 http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 
-26 modules are currently available ("B" means that it's by default in the Boilerplate Edition):
+#### Available modules
 
-#### HTML5 Boilerplate minimal default config
+"h5bp means they come from HTML5 Boilerplate, and "izr" are specific to Initializr.
 
 <ul>
 <li>h5bp-404</li>
 <li>h5bp-adobecrossdomain</li>
+<li>h5bp-analytics</li>
 <li>h5bp-appletouchicons</li>
+<li>h5bp-chromeframe</li>
 <li>h5bp-content</li>
 <li>h5bp-css</li>
 <li>h5bp-csshelpers</li>
 <li>h5bp-favicon</li>
+<li>h5bp-htaccess</li>
 <li>h5bp-humans</li>
+<li>h5bp-iecond</li>
 <li>h5bp-mediaqueries</li>
 <li>h5bp-mediaqueryprint</li>
-<li>h5bp-primarystyles</li>
-<li>h5bp-robots</li>
-</ul>
-
-#### HTML5 Boilerplate available modules
-
-<ul>
-<li>h5bp-htaccess</li>
-<li>h5bp-chromeframe</li>
-<li>h5bp-scripts</li>
-<li>h5bp-iecond</li>
 <li>h5bp-nginx</li>
-<li>h5bp-webconfig</li>
-<li>h5bp-readmemd</li>
-<li>h5bp-analytics</li>
 <li>h5bp-oldiecond</li>
-<li>   simplehtmltag</li>
-<li>   html5shiv</li>
-<li>   jquery</li>
-<li>   modernizr</li>
-<li>   respond</li>
-</ul>
-
-#### Initializr specific modules
-
-<ul>
-<li>izr-styles</li>
+<li>h5bp-readmemd</li>
+<li>h5bp-robots</li>
+<li>h5bp-scripts</li>
+<li>h5bp-webconfig</li>
+<li>izr-emptyscript</li>
 <li>izr-jqtest</li>
+<li>izr-samplepage</li>
+<li>html5shiv</li>
+<li>jquery</li>
+<li>modernizr</li>
+<li>respond</li>
+<li>simplehtmltag</li>
 </ul>
