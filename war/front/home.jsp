@@ -18,7 +18,7 @@
 <h2 id="slogan">Start an HTML5 project in...</h2>
 </header>
 <div id="options">
-	<a id="leftoptions" class="option" href="/builder?izr-samplepage&h5bp-chromeframe&h5bp-analytics&modernizr&respond&jquery"><span
+	<a id="leftoptions" class="option" href="/builder?izr-samplepage&izr-emptyscript&h5bp-chromeframe&h5bp-analytics&modernizr&respond&jquery"><span
 		class="hint">1 second</span><br />featured template</a> <button
 		id="centeroptions" class="option"><span
 		class="hint">15 seconds</span><br />simple custom'</button> <a
