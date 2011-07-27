@@ -37,7 +37,7 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 
 #### Available modules
 
-"h5bp means they come from HTML5 Boilerplate, and "izr" are specific to Initializr.
+"h5bp" means they come from HTML5 Boilerplate, and "izr" are specific to Initializr.
 
 <ul>
 <li>h5bp-404</li>
