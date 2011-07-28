@@ -61,7 +61,6 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 <li>h5bp-scripts</li>
 <li>h5bp-webconfig</li>
 <li>izr-emptyscript</li>
-<li>izr-jqtest</li>
 <li>izr-samplepage</li>
 <li>html5shiv</li>
 <li>jquery</li>

@@ -6,7 +6,7 @@ $(function() {
 	var mode;
 	var modules;
 	
-	var simpleDefaultModules = ['izr-samplepage', 'izr-emptyscript', 'jquery', 'modernizr', 'respond'];
+	var simpleDefaultModules = ['izr-samplepage', 'izr-emptyscript', 'jquery', 'modernizr', 'respond', 'h5bp-chromeframe', 'h5bp-analytics'];
 	
 	var simpleModules = {
 		'h5bp-analytics' : {

@@ -7,10 +7,10 @@
 <h1>Advanced Customization</h1>
 <p style="margin:20px 0">This page allows you to add some modules that are neither available on the simple custom' builder nor HTML5 <a href="http://html5boilerplate.com/#builder-custom">Boilerplate Custom</a>.
 By selecting "Initializr" or "H5BP Custom Builder" options, you'll activate the minimal default configuration of these builders.</p>
-
+<div id="advanced">
 <input type="radio" class="mode" name="mode" value="custom" />Custom Build (nothing enabled by default)<br />
-<input type="radio" class="mode" name="mode" value="izr" /> Initializr (similar to simple custom')<br />
-<input type="radio" class="mode" name="mode" value="h5bp"/> H5BP Custom Builder (similar to html5boilerplate.com)
+<input type="radio" class="mode" name="mode" value="izr" />Initializr (similar to simple custom')<br />
+<input type="radio" class="mode" name="mode" value="h5bp"/>H5BP Custom Builder (similar to html5boilerplate.com)
 <br /><br />
 <table style="margin-bottom:20px">
 <thead><tr><td></td><td>Fancy name</td><td>ID</td><td>This module is incompatible with</td></tr></thead>
@@ -38,7 +38,7 @@ for (Module currentModule : modules){
 	<button id="download" class="orangeblock" style="width:320px">Download!</button>
 	<button id="print" class="orangeblock" style="width:320px">What's inside?</button>
 
-
+</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.1.min.js"><\/script>')</script>
 
