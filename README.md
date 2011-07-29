@@ -26,7 +26,8 @@ Initializr uses "modules", which are code snippets or files (or both) that will 
 
 The "modernizr" module, for instance, adds the following line in index.html:
 
-<pre><code><script src="js/libs/modernizr-2.0.min.js"></script></code></pre>
+<pre>%3Cscript src="js/libs/modernizr-2.0.min.js"%3E%3C/script%3E</pre>
+<code>%3Cscript src="js/libs/modernizr-2.0.min.js"%3E%3C/script%3E</code>
 
 and also adds modernizr-2.0.min.js in the js/libs directory.
 
