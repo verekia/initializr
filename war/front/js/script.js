@@ -125,6 +125,10 @@ $(function() {
 	if (initializrBuilderType == 'advanced')
 		modules = advancedModules;
 
+	$('#leftoptions').click(function(){
+		_gaq.push(['_trackEvent', 'DL featured', 'clicked']);
+	});
+
 
 	$('.mode').click(function() {
 		mode = $(this).attr('value');
@@ -142,10 +146,12 @@ $(function() {
 	$("#print").click(function() {
 		updateURLs();
 		window.location = (beginurl + 'print&' + urlparameters);
+		_gaq.push(['_trackEvent', initializrBuilderMode + ' ' + initializrBuilderType + ' Print ' + urlparameters, 'clicked']);
 	});
 	$("#download").click(function() {
 		updateURLs();
 		window.location = (beginurl + urlparameters);
+		_gaq.push(['_trackEvent', initializrBuilderMode + ' ' + initializrBuilderType + ' DL ' + urlparameters, 'clicked']);
 	});
 
 	function updateMode() {
@@ -223,6 +229,7 @@ $(function() {
 			updateURLs();
 			//updateCheckBoxes();
 		});
+		_gaq.push(['_trackEvent', 'Simple Custom', 'clicked']);
 	});
 }
 });	
