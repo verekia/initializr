@@ -43,7 +43,7 @@ Let's take a look at what contains <a href="https://github.com/verekia/initializ
 <ul>
 	<li><code>modernizr-2.0.min.js</code> - It's the actual Modernizr JS file,</li>
 	<li><code>modernizr.html</code> - It's the file containing the HTML JavaScript code inclusion,</li>
-	<li><code>modernizr.json</code> - Here is the interesting stuff! Let's take a closer look to this file:</li>
+	<li><code>modernizr.json</code> - Here is the interesting stuff! Let's take a closer look at this file:</li>
 </ul> 
 
 <pre>
@@ -68,20 +68,18 @@ Let's take a look at what contains <a href="https://github.com/verekia/initializ
 }
 </pre>
 
-We can see that a module configuration file is actually a simple JSON which contains the following members:
+We can see that a module configuration file is actually a simple JSON containing the following members:
 <ul>
-	<li><code>author</code>: The name of the author of the module (you)</li>
-	<li><code>name</code>: The "Fancy name" of the module</li>
+	<li><code>author</code>: The name of the author of the module (you),</li>
+	<li><code>name</code>: The "Fancy name" of the module,</li>
 	<li><code>id</code>: The unique id of the module (prefixed with h5bp- or izr- if it's from HTML5 Boilerplate or Initializr,</li>
-	<li><code>inserts</code>: A set of insertions of code snippets or file</li>
+	<li><code>inserts</code>: A set of insertions of code snippets or files with the following fields:</li>
 	<ul>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
+		<li><code>what</code>: What code snippet or file is going to be included in the archive (refers to an other file),</li>
+		<li><code>where</code>: In which file and place the code snippet will be injected (<a href="https://github.com/verekia/initializr/tree/master/war/builder/templates">in these files</a>), or the name of the file if it's an entire file,</li>
+		<li><code>type</code>: (optional) specify "file" for this field if the current insertion is an entire file (like modernizr JS file).</li>
 	</ul>
-	<li><code>author</code>: The name of the author of the module (you)</li>
-	<li><code>author</code>: The name of the author of the module (you)</li>
+	<li><code>incompatibilities</code>: An array of modules ids that can't be used with yours.</li>
 </ul>
 
 # Modes
@@ -91,7 +89,7 @@ We can see that a module configuration file is actually a simple JSON which cont
 For instance, on initializr.com, the "Simple Custom'" builder adds many things that you haven't checked
 because it assumes that they're vital and useful for you. It has a default minimal configuration.
 "Default minimal configuration" doesn't mean it's usable, it actually means what will be included in your archive, no matter what options you
-activate or note on these builders.
+activate or not on these builders.
 
 
 There are currently 3 different modes available:
