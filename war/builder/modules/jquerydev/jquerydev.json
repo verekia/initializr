@@ -1,0 +1,19 @@
+{
+	"author" : "Paul Irish",
+	"name" : "jQuery 1.6.2 Dev",
+	"id" : "jquerydev",
+	"inserts" :
+	[
+		{
+			"what" : "jquerydev.html",
+			"where" : "index.html/body/jslib"
+		}
+	,
+		{
+			"what" : "jquery-1.6.2.js",
+			"where" : "js/libs/jquery-1.6.2.js",
+			"type" : "file"
+		}
+	],
+	"incompatibilities" : ["jquery", "jquerymin"]
+}

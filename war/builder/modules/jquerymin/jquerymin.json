@@ -1,0 +1,19 @@
+{
+	"author" : "Paul Irish",
+	"name" : "jQuery 1.6.2 Minified",
+	"id" : "jquerymin",
+	"inserts" :
+	[
+		{
+			"what" : "jquerymin.html",
+			"where" : "index.html/body/jslib"
+		}
+	,
+		{
+			"what" : "jquery-1.6.2.min.js",
+			"where" : "js/libs/jquery-1.6.2.min.js",
+			"type" : "file"
+		}
+	],
+	"incompatibilities" : ["jquery", "jquerydev"]
+}

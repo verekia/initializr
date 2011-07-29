@@ -64,6 +64,8 @@ http://jverrecchia-initializr.appspot.com/builder?print&jquery&modernizr
 <li>izr-samplepage</li>
 <li>html5shiv</li>
 <li>jquery</li>
+<li>jquerydev</li>
+<li>jquerymin</li>
 <li>modernizr</li>
 <li>respond</li>
 <li>simplehtmltag</li>

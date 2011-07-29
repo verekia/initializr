@@ -69,6 +69,14 @@ $(function() {
 			'enabled' : false,
 			'default' : []
 		},
+		'jquerydev' : {
+			'enabled' : false,
+			'default' : []
+		},
+		'jquerymin' : {
+			'enabled' : false,
+			'default' : []
+		},
 		'modernizr' : {
 			'enabled' : false,
 			'default' : []
@@ -108,6 +116,8 @@ $(function() {
 			'izr-samplepage' : {'enabled' : false, 'default' : []},
 			'izr-emptyscript' : {'enabled' : false, 'default' : []},
 			'jquery' : {'enabled' : false, 'default' : []},
+			'jquerydev' : {'enabled' : false, 'default' : []},
+			'jquerymin' : {'enabled' : false, 'default' : []},
 			'modernizr' : {'enabled' : false, 'default' : []},
 			'respond' : {'enabled' : false, 'default' : []},
 			'simplehtmltag' : {'enabled' : false, 'default' : []}
