@@ -73,8 +73,8 @@ We can see that a module configuration file is actually a simple JSON containing
 	<li><code>author</code>: The name of the author of the module (you),</li>
 	<li><code>name</code>: The "Fancy name" of the module,</li>
 	<li><code>id</code>: The unique id of the module (prefixed with h5bp- or izr- if it's from HTML5 Boilerplate or Initializr),</li>
-	<li><code>inserts</code>: A set of insertions of code snippets or files with the following fields:</li>
 	<li><code>incompatibilities</code>: An array of modules ids that can't be used with yours.</li>
+	<li><code>inserts</code>: An array of insertions of code snippets or files with the following fields:</li>
 	<ul>
 		<li><code>what</code>: What code snippet or file is going to be included in the archive (refers to an other file of the same module folder),</li>
 		<li><code>where</code>: In which file and place the code snippet will be injected (<a href="https://github.com/verekia/initializr/tree/master/war/builder/templates">in these files</a>), or the name of the file if it's an entire file,</li>
@@ -89,15 +89,14 @@ To sum up, if you want to create your own module, just create a folder named <co
 "Modes" are a way to enable some modules by default.
 
 For instance, on initializr.com, the "Simple Custom'" builder adds many things that you haven't checked
-because it assumes that they're vital and useful for you. It has a default minimal configuration.
-"Default minimal configuration" doesn't mean it's usable, it actually means what will be included in your archive, no matter what options you
-activate or not on these builders.
-
+because it assumes that they're vital and useful for you: it's its default minimal configuration.
+"Default minimal configuration" doesn't mean it's usable, it actually means "what will be included in your archive, no matter which options you
+activate or not on these builders".
 
 There are currently 3 different modes available:
 <ul>
-<li>"custom" which has no modules enabled by default, it's almost an empty archive,</li>
-<li>"h5bp", which stands for HTML5 Boilerplate and activates a set of modules asked by the HTML5 Boilerplate team,</li>
+<li><code>custom</code> which has no modules enabled by default, it's almost an empty archive,</li>
+<li><code>h5bp</code>, which stands for HTML5 Boilerplate and activates a set of modules asked by the HTML5 Boilerplate team,</li>
 <li>Specifying no mode activates Initializr mode, which activates a minimalistic set of modules.</li>
 
 </ul>
@@ -107,6 +106,6 @@ Initializr mode is the default minimal configuration of Initializr Simple Custom
 
 You can choose a mode by adding a "mode" parameter in the URL:
 <ul>
-	<li>http://www.initializr.com/builder?print&mode=custom</li>
-	<li>http://www.initializr.com/builder?print&mode=h5bp</li>
+	<li><a href="http://www.initializr.com/builder?print&mode=custom">http://www.initializr.com/builder?print&mode=custom</a></li>
+	<li><a href="http://www.initializr.com/builder?print&mode=h5bp">http://www.initializr.com/builder?print&mode=h5bp</a></li>
 </ul>
