@@ -72,14 +72,14 @@ We can see that a module configuration file is actually a simple JSON containing
 <ul>
 	<li><code>author</code>: The name of the author of the module (you),</li>
 	<li><code>name</code>: The "Fancy name" of the module,</li>
-	<li><code>id</code>: The unique id of the module (prefixed with h5bp- or izr- if it's from HTML5 Boilerplate or Initializr,</li>
+	<li><code>id</code>: The unique id of the module (prefixed with h5bp- or izr- if it's from HTML5 Boilerplate or Initializr),</li>
 	<li><code>inserts</code>: A set of insertions of code snippets or files with the following fields:</li>
 	<ul>
-		<li><code>what</code>: What code snippet or file is going to be included in the archive (refers to an other file),</li>
+		<li><code>what</code>: What code snippet or file is going to be included in the archive (refers to an other file of the same module folder),</li>
 		<li><code>where</code>: In which file and place the code snippet will be injected (<a href="https://github.com/verekia/initializr/tree/master/war/builder/templates">in these files</a>), or the name of the file if it's an entire file,</li>
-		<li><code>type</code>: (optional) specify "file" for this field if the current insertion is an entire file (like modernizr JS file).</li>
+		<li><code>type</code>: (optional) specify <code>file</code> for this field if the current insertion is an entire file (like modernizr JS file).</li>
 	</ul>
-	<li><code>incompatibilities</code>: An array of modules ids that can't be used with yours.</li>
+	<li>incompatibilities: An array of modules ids that can't be used with yours.</li>
 </ul>
 
 # Modes
