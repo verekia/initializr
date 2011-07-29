@@ -1,6 +1,6 @@
 # Initializr 2 - Developers Documentation
 
-This documentation is for developers. There is also a more <a href="http://www.initializr.com/docs">users-oriented documentation on initializr.com</a>.
+This documentation is for developers. There is also a more <a href="http://www.initializr.com/docs">users-oriented documentation</a>.
 
 ## Presentation
 
@@ -14,7 +14,7 @@ Just ping this URL to get an archive of Initializr:
 
 http://www.initializr.com/builder
 
-The content of this archive is not relevant because no "module" have been added to it, but you'll understand that in a minute :).
+Please note that the content of this particular archive is not relevant because no "module" have been added to it, but you'll understand that in a minute :).
 
 If you add a ?print parameter, it will display the content of the archive without downloading it:
 
@@ -24,7 +24,7 @@ http://www.initializr.com/builder?print
 
 Initializr uses "modules", which are code snippets or files (or both) that will be included in the archive.
 
-The "modernizr" module, for instance, adds the following line in <code>index.html</code>:
+The <code>modernizr</code> module, for instance, adds the following line in <code>index.html</code>:
 
 <code>\<script src="js/libs/modernizr-2.0.min.js"\>\</script\></code>
 
@@ -42,7 +42,7 @@ A more user-friendly view is also displayed by the <a href="http://www.initializ
 Let's take a look at what contains <a href="https://github.com/verekia/initializr/tree/master/war/builder/modules/modernizr">modules/modernizr</a> on the Git repo:
 <ul>
 	<li><code>modernizr-2.0.min.js</code> - It's the actual Modernizr JS file</li>
-	<li><code>modernizr.html</code> - It's a file containing <pre><script src="js/libs/modernizr-2.0.min.js"></script></pre></li>
+	<li><code>modernizr.html</code> - It's a file containing <code><script src="js/libs/modernizr-2.0.min.js"></script></code></li>
 	<li><code>modernizr.json</code> - Here is the interesting stuff! Let's take a closer look to this file:</li>
 </ul> 
 
