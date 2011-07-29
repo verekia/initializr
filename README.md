@@ -82,6 +82,8 @@ We can see that a module configuration file is actually a simple JSON containing
 	</ul>
 </ul>
 
+To sum up, if you want to create your own module, just create a folder named <code>mymodulename</code>, with a <code>mymodulename.json</code> containing all these fields, and the required files, and send it to me! Or fork, or whatever method you prefer :) I will integrate it into Initializr as fast as possible!
+
 # Modes
 
 "Modes" are a way to enable some modules by default.
