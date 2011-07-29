@@ -42,7 +42,7 @@ A more user-friendly view is also displayed by the <a href="http://www.initializ
 Let's take a look at what contains <a href="https://github.com/verekia/initializr/tree/master/war/builder/modules/modernizr">modules/modernizr</a> on the Git repo:
 <ul>
 	<li><code>modernizr-2.0.min.js</code> - It's the actual Modernizr JS file</li>
-	<li><code>modernizr.html</code> - It's a file containing <code><script src="js/libs/modernizr-2.0.min.js"></script></code></li>
+	<li><code>modernizr.html</code> - It's a file containing <code>\<script src="js/libs/modernizr-2.0.min.js"\>\</script\></code></li>
 	<li><code>modernizr.json</code> - Here is the interesting stuff! Let's take a closer look to this file:</li>
 </ul> 
 
