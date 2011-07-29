@@ -24,12 +24,11 @@ http://www.initializr.com/builder?print
 
 Initializr uses "modules", which are code snippets or files (or both) that will be included in the archive.
 
-The "modernizr" module, for instance, adds the following line in index.html:
+The "modernizr" module, for instance, adds the following line in <code>index.html</code>:
 
-<pre><code>\<script src="js/libs/modernizr-2.0.min.js"\>\</script\></code></pre>
 <code>\<script src="js/libs/modernizr-2.0.min.js"\>\</script\></code>
 
-and also adds modernizr-2.0.min.js in the js/libs directory.
+and also adds <code>modernizr-2.0.min.js</code> in the <code>js/libs</code> directory.
 
 If you want to add a module to your archive, just add the name of the module as a GET parameter:
 
