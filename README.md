@@ -5,7 +5,7 @@ This documentation is for developers. There is also a more <a href="http://www.i
 ## Presentation
 
 Hi! This documentation is here in case you want to get involved in Initializr, use it as an API to generate archives on the fly, or create your
-own options for Initializr (choosing an other JS lib like Mootools, a CSS Framework like Blueprint or 960.gs, etc.).
+own options (choosing an other JS lib like Mootools, a CSS Framework like Blueprint or 960.gs, etc.).
 
 ## The basics
 
@@ -14,7 +14,7 @@ Just ping this URL to get an archive of Initializr:
 
 http://www.initializr.com/builder
 
-(The content of this archive is not relevant because no "module" have been added to it, but you'll understand this in a minute)
+The content of this archive is not relevant because no "module" have been added to it, but you'll understand that in a minute :).
 
 If you add a ?print parameter, it will display the content of the archive without downloading it:
 
@@ -26,7 +26,7 @@ Initializr uses "modules", which are code snippets or files (or both) that will 
 
 The "modernizr" module, for instance, adds the following line in index.html:
 
-<pre><script src="js/libs/modernizr-2.0.min.js"></script></pre>
+<pre><code><script src="js/libs/modernizr-2.0.min.js"></script></code></pre>
 
 and also adds modernizr-2.0.min.js in the js/libs directory.
 
