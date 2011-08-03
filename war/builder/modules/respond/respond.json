@@ -19,5 +19,6 @@
 			"where" : "js/libs/respond.min.js",
 			"type" : "file"
 		}
-	]
+	],
+	"incompatibilities" : ["modernizrrespond"]
 }
