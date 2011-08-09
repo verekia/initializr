@@ -20,5 +20,6 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("h5bp-humans");
 		this.getDefaultModulesNames().add("h5bp-robots");
 		this.getDefaultModulesNames().add("h5bp-404");
+		this.getDefaultModulesNames().add("modernizrrespond");
 	}
 }

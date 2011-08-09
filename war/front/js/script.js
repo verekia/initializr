@@ -120,7 +120,7 @@ $(function() {
 			'jquerymin' : {'enabled' : false, 'default' : []},
 			'modernizr' : {'enabled' : false, 'default' : []},
 			'respond' : {'enabled' : false, 'default' : []},
-			'modernizrrespond' : {'enabled' : false, 'default' : []},
+			'modernizrrespond' : {'enabled' : false, 'default' : ['h5bp']},
 			'simplehtmltag' : {'enabled' : false, 'default' : []}
 		};
 	
