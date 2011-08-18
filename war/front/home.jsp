@@ -83,15 +83,15 @@
 	<ul>
 	<li>
 	<input class='select' type='checkbox' id='h5bp-htaccess' />
-	Htaccess Apache Configugation File
+	Htaccess Apache Configuration File
 	</li>
 	<li>
 	<input class='select' type='checkbox' id='h5bp-webconfig' />
-	Web.config Configugation File
+	Web.config Configuration File
 	</li>
 	<li>
 	<input class='select' type='checkbox' id='h5bp-nginx' />
-	Nginx Configugation File
+	Nginx Configuration File
 	</li>
 	</ul>
 
