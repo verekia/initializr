@@ -174,8 +174,10 @@ body{
 
 #header-container{
 	background-color:#f16529;
+/* 	background:#FF5E99; */
 	height:90px;
 	border-bottom:20px solid #e44d26;
+/* 	border-bottom:20px solid #ee4488; */
 	margin-bottom:50px;
 	-webkit-box-shadow:0 0 40px #ccc;
 	   -moz-box-shadow:0 40px 40px -40px #ccc;
@@ -517,6 +519,23 @@ h4{
 #advanced input{
 	margin-right:20px;
 }
+
+
+/* #birthday{ */
+/* 	font-family:'ChunkFiveRegular'; */
+/* 	font-size:40px; */
+/* 	text-align:center; */
+/* 	color:white; */
+/* 	-webkit-text-stroke:0 transparent; */
+/* 	text-shadow:0 -2px 2px rgba(0, 0, 0, 0.2); */
+/* 	padding:30px; */
+/* 	margin:20px auto; */
+/* 	background:#FF5E99; */
+/* 	border:20px solid #ee4488; */
+/* 	-webkit-box-shadow:0 6px 20px #ccc; */
+/* 	   -moz-box-shadow:0 6px 20px -40px #ccc; */
+/* 	        box-shadow:0 6px 20px #ccc; */
+/* } */
 
 /*
  *  CSS3 Media queries

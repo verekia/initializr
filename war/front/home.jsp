@@ -1,4 +1,4 @@
-<%@ page
+﻿<%@ page
 	import="com.jverrecchia.initializr.builder.mode.Mode,
 				com.jverrecchia.initializr.builder.Const,
 				com.jverrecchia.initializr.builder.modules.*,
@@ -14,6 +14,10 @@
 	will generate for you a clean customizable template based on
 	Boilerplate with just what you need to start.
 </p>
+
+<!-- <div id="birthday"> -->
+<!-- 	 ★ Happy Birthday HTML5 Boilerplate! ★ -->
+<!-- </div> -->
 
 <h2 id="slogan">Start an HTML5 project in...</h2>
 </header>

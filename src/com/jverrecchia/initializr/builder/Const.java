@@ -1,5 +1,5 @@
 package com.jverrecchia.initializr.builder;
 
 public class Const { 
-	final public static String version = "1.5";
+	final public static String version = "2.0";
 }
