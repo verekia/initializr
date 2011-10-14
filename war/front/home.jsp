@@ -6,13 +6,9 @@
 <%@ include file="header.jsp"%>
 <header> 
 <p>
-	Initializr is an <strong>HTML5 templates generator</strong> to help you
-	getting started with an HTML5 project. It is built on <a
-		href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, a powerful
-	HTML5 template created by <a href="http://twitter.com/#!/paul_irish">Paul
-		Irish</a> and <a href="http://twitter.com/#!/divya">Divya Manian</a>. Initializr
-	will generate for you a clean customizable template based on
-	Boilerplate with just what you need to start.
+	Initializr is an <strong>HTML5 templates generator</strong> created by <a href="http://twitter.com/#!/verekia">Jonathan Verrecchia</a>
+	to help you getting started with a new web project based on <a	href="http://html5boilerplate.com/">HTML5 Boilerplate</a>.
+	Initializr will generate for you a clean customizable template with just what you need to start!
 </p>
 
 <!-- <div id="birthday"> -->
