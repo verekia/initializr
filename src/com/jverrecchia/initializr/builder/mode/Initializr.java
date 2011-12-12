@@ -14,7 +14,6 @@ public class Initializr extends Mode{
 		this.getDefaultModulesNames().add("h5bp-iecond");
 		this.getDefaultModulesNames().add("h5bp-css");
 		this.getDefaultModulesNames().add("h5bp-csshelpers");
-		this.getDefaultModulesNames().add("h5bp-mediaqueries");
 		this.getDefaultModulesNames().add("h5bp-mediaqueryprint");		
 		this.getDefaultModulesNames().add("h5bp-favicon");
 

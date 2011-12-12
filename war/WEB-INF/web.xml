@@ -26,6 +26,11 @@
   </servlet>
 
   <servlet>
+    <servlet-name>tryServlet</servlet-name>
+    <servlet-class>com.jverrecchia.initializr.web.TryServlet</servlet-class>
+  </servlet>
+
+  <servlet>
     <servlet-name>homeServlet</servlet-name>
     <servlet-class>com.jverrecchia.initializr.web.HomeServlet</servlet-class>
   </servlet>
@@ -48,6 +53,11 @@
   <servlet-mapping>
     <servlet-name>docsServlet</servlet-name>
     <url-pattern>/docs</url-pattern>
+  </servlet-mapping>  
+  
+  <servlet-mapping>
+    <servlet-name>tryServlet</servlet-name>
+    <url-pattern>/try</url-pattern>
   </servlet-mapping>  
   
   <servlet-mapping>

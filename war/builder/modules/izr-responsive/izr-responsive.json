@@ -1,0 +1,21 @@
+{
+	"author" : "Jonathan Verrecchia",
+	"name" : "Initializr Responsive Template",
+	"id" : "izr-responsive",
+	"inserts" :
+	[
+		{
+			"what" : "index.html",
+			"where" : "index.html/body/content"
+		},
+		{
+			"what" : "style.css",
+			"where" : "style.css/primary"
+		},
+		{
+			"what" : "mediaqueries.css",
+			"where" : "style.css/mediaqueries"
+		}
+	],
+	"incompatibilities" : ["h5bp-content", "h5bp-mediaqueries"]
+}

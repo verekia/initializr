@@ -400,6 +400,10 @@ h4{
 
 }
 
+#simplecustom #download{
+	margin-top:30px;
+}
+
 #builder #download{
 	font-size: 50px;
 	width:580px;

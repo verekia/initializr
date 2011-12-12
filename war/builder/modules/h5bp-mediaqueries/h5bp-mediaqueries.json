@@ -8,5 +8,6 @@
 			"what" : "mediaqueries.css",
 			"where" : "style.css/mediaqueries"
 		}
-	]
+	],
+	"incompatibilities" : ["izr-responsive"]
 }

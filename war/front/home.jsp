@@ -18,7 +18,7 @@
 <h2 id="slogan">Start an HTML5 project in...</h2>
 </header>
 <div id="options">
-	<a id="leftoptions" class="option" href="/builder?izr-samplepage&izr-emptyscript&h5bp-chromeframe&h5bp-analytics&modernizr&respond&jquery"><span
+	<a id="leftoptions" class="option" href="/builder?h5bp-analytics&h5bp-chromeframe&izr-responsive&izr-emptyscript&jquery&modernizrrespond"><span
 		class="hint">1 second</span><br />featured template</a> <button
 		id="centeroptions" class="option"><span
 		class="hint">15 seconds</span><br />simple custom'</button> <a
@@ -36,7 +36,11 @@
 		</li>
 		<li>
 		<input class='select' type='radio' name="htmlcss" id='izr-samplepage' />
-		Initializr Sample Page
+		Basic Sample Page
+		</li>
+		<li>
+		<input class='select' type='radio' name="htmlcss" id='izr-responsive' />
+		<a href="http://verekia.com/initializr/responsive-web-design" target="_blank">Responsive Template</a> - <a href="/try" target="_blank">try me</a>!
 		</li>
 	</ul>
 	<h4>JavaScript</h4>
@@ -57,16 +61,12 @@
 	<h4>HTML5 Compatibility</h4>
 	<ul>
 	<li>
-	<input class='select' type='radio' name="polyfill" id='modernizr' />
-	Modernizr
+	<input class='select' type='radio' name="polyfill" id='modernizrrespond' />
+	Modernizr + Respond.js
 	</li>
 	<li>
 	<input class='select' type='radio' name="polyfill" id='html5shiv' />
 	HTML5 Shiv
-	</li>
-	<li>
-	<input class='select' type='checkbox' id='respond' />
-	Respond.js
 	</li>
 	</ul>
 	<h4>Google Services</h4>
@@ -95,8 +95,8 @@
 	</li>
 	</ul>
 
-	<p style="margin-top:10px">Archive URL (will be removed after the beta)</p>
-	<input style="margin-bottom:20px; width:500px" id="downloadurl" type="text" />
+<!-- 	<p style="margin-top:10px">Archive URL (will be removed after the beta)</p> -->
+<!-- 	<input style="margin-bottom:20px; width:500px" id="downloadurl" type="text" /> -->
 	<button id="download" class="orangeblock" style="width:320px">Download!</button>
 	<button id="print" class="orangeblock" style="width:320px">What's inside?</button>
 	
