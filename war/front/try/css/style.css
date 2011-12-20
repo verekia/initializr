@@ -68,7 +68,7 @@ td { vertical-align: top; }
     Author: Jonathan Verrecchia
    ===================================================== */
 
-body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
+body{ font:16px/24px Helvetica, Helvetica Neue, Arial, sans-serif; }
 
 .wrapper{
 	width:90%;
