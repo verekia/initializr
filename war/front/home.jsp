@@ -15,7 +15,7 @@
 <!-- 	 ★ Happy Birthday HTML5 Boilerplate! ★ -->
 <!-- </div> -->
 
-<div id="responsive-message" class="orangeblock">Cool new stuff: <a target="_blank" href="http://verekia.com/initializr/responsive-web-design">Responsive Template!</a></div>
+<div id="responsive-message" class="orangeblock">Cool new stuff: <a target="_blank" href="http://verekia.com/initializr/responsive-template">Responsive Template!</a></div>
 <h2 id="slogan">Start an HTML5 project in...</h2>
 </header>
 <div id="options">
