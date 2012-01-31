@@ -16,6 +16,32 @@
 			"what" : "mediaqueries.css",
 			"where" : "style.css/mediaqueries"
 		}
+	,
+		{
+			"mode" : "less",
+			"what" : "less-include-mq.less",
+			"where" : "style.less/mediaqueries"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "less-include-global.less",
+			"where" : "style.less/primary"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "mediaqueries.css",
+			"where" : "less/media-queries.less",
+			"type":"file"
+		}		
+	,
+		{
+			"mode" : "less",
+			"what" : "style.css",
+			"where" : "less/global-mobile.less",
+			"type":"file"
+		}		
 	],
-	"incompatibilities" : ["h5bp-content", "h5bp-mediaqueries", "izr-samplepage"]
+	"incompatibilities" : ["h5bp-content", "h5bp-mediaqueries"]
 }
