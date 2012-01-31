@@ -9,5 +9,5 @@
 			"where" : "index.html/body/content"
 		}
 	],
-	"incompatibilities" : ["izr-samplepage"]
+	"incompatibilities" : ["izr-responsive"]
 }
