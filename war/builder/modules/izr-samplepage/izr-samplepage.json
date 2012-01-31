@@ -13,5 +13,5 @@
 			"where" : "style.css/primary"
 		}
 	],
-	"incompatibilities" : ["h5bp-content"]
+	"incompatibilities" : ["h5bp-content", "izr-responsive"]
 }

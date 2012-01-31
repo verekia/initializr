@@ -17,5 +17,5 @@
 			"where" : "style.css/mediaqueries"
 		}
 	],
-	"incompatibilities" : ["h5bp-content", "h5bp-mediaqueries"]
+	"incompatibilities" : ["h5bp-content", "h5bp-mediaqueries", "izr-samplepage"]
 }
