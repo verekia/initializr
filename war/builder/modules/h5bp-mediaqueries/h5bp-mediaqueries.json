@@ -8,6 +8,19 @@
 			"what" : "mediaqueries.css",
 			"where" : "style.css/mediaqueries"
 		}
+	,
+		{
+			"mode" : "less",
+			"what" : "less-include.less",
+			"where" : "style.less/mediaqueries"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "mediaqueries.css",
+			"where" : "less/media-queries.less",
+			"type":"file"
+		}	
 	],
 	"incompatibilities" : ["izr-responsive"]
 }
