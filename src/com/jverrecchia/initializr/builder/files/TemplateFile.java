@@ -6,6 +6,7 @@ import java.io.StringReader;
 import java.util.List;
 
 import com.jverrecchia.initializr.builder.Utils;
+import com.jverrecchia.initializr.builder.mode.Mode;
 import com.jverrecchia.initializr.builder.modules.Insert;
 import com.jverrecchia.initializr.builder.modules.Module;
 import com.jverrecchia.initializr.builder.modules.ModulesRegistry;
@@ -32,7 +33,7 @@ public class TemplateFile {
 		this.content = content;
 	}
 	
-	public void readTemplateFile(){
+	public void readTemplateFile(Mode mode){
 		try {
 			this.setContent(Utils.readFileAsString(templatePath));
 
@@ -59,9 +60,11 @@ public class TemplateFile {
 						List<Insert> inserts = currentModule.getInserts();
 						String insertString = null;
 						for (Insert currentInsert : inserts){
-							if (currentInsert.getType() == null || !currentInsert.getType().equals("file")){
-							    if (currentInsert.getWhere().equals(foundTag))
-								insertString = Utils.readFileAsString("builder/modules/" + currentModule.getId() + "/" + currentInsert.getWhat());
+							if (currentInsert.getMode() == null || currentInsert.getMode().equals(mode.getId())){
+								if (currentInsert.getType() == null || !currentInsert.getType().equals("file")){
+								    if (currentInsert.getWhere().equals(foundTag))
+									insertString = Utils.readFileAsString("builder/modules/" + currentModule.getId() + "/" + currentInsert.getWhat());
+								}
 							}
 						}
 						modulesToInsert += insertString;

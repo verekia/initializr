@@ -1,6 +1,7 @@
 package com.jverrecchia.initializr.builder.modules;
 
 public class Insert { 
+	private String mode;
 	private String what;
 	private String where;
 	private String type;
@@ -22,5 +23,11 @@ public class Insert {
 	}
 	public String getType() {
 		return type;
+	}
+	public String getMode() {
+		return mode;
+	}
+	public void setMode(String mode) {
+		this.mode = mode;
 	}
 }

@@ -3,6 +3,7 @@ package com.jverrecchia.initializr.builder.files;
 import java.io.IOException;
 
 import com.jverrecchia.initializr.builder.Utils;
+import com.jverrecchia.initializr.builder.mode.Mode;
 
 public class ZipFile { 
 	private TemplateFile template;
@@ -30,8 +31,8 @@ public class ZipFile {
 		this.included = included;
 	}
 	
-	public void fillContent(){
-		this.template.readTemplateFile();
+	public void fillContent(Mode mode){
+		this.template.readTemplateFile(mode);
 		this.content = this.template.getZipContent();
 	}
 	public void setTemplate(TemplateFile template) {

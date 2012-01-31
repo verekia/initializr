@@ -6,6 +6,7 @@ public class Less extends Mode{
 	
 	public Less(){
 		this.setName("Less");
+		this.setId("less");
 		this.setFileName("initializr-less-verekia");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
 		this.getFiles().add(new File("less/style.less", "builder/templates/style.less", true, true));

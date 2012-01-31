@@ -10,6 +10,7 @@ import com.jverrecchia.initializr.builder.modules.Modules;
 
 public abstract class Mode { 
 
+	private String id;
 	private String name;
 	private String fileName;
 	private List<String> defaultModulesNames = new ArrayList<String>();
@@ -18,8 +19,10 @@ public abstract class Mode {
 	public void addModulesFiles(Modules modules){
 		for (Module currentModule : modules.getModules()){
 			for (Insert currentInsert : currentModule.getInserts()){
-				if (currentInsert.getType() != null && currentInsert.getType().equals("file"))
-					this.files.add(new File(currentInsert.getWhere(), "builder/modules/" + currentModule.getId() + "/" + currentInsert.getWhat(), true, false));
+				if (currentInsert.getMode() == null || currentInsert.getMode().equals(this.id)){
+					if (currentInsert.getType() != null && currentInsert.getType().equals("file"))
+						this.files.add(new File(currentInsert.getWhere(), "builder/modules/" + currentModule.getId() + "/" + currentInsert.getWhat(), true, false));
+				}
 			}
 		}		
 	}
@@ -54,5 +57,13 @@ public abstract class Mode {
 
 	public String getFileName() {
 	    return fileName;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
 	}
 }
