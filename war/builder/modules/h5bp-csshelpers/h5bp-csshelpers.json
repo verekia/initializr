@@ -8,5 +8,18 @@
 			"what" : "csshelpers.css",
 			"where" : "style.css/csshelpers"
 		}
+	,
+		{
+			"mode" : "less",
+			"what" : "less-include.less",
+			"where" : "style.less/csshelpers"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "csshelpers.css",
+			"where" : "less/helpers.less",
+			"type":"file"
+		}		
 	]
 }
