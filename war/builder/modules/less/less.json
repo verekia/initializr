@@ -1,0 +1,43 @@
+{
+	"author" : "Alexis Sellier",
+	"name" : "Less 1.2.1",
+	"id" : "less",
+	"inserts" :
+	[
+		{
+			"what" : "less.html",
+			"where" : "index.html/head/stylesheet"
+		}
+	,
+		{
+			"what" : "less-1.2.1.min.js",
+			"where" : "js/libs/less-1.2.1.min.js",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "style.less",
+			"where" : "css/style.less",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "../h5bp-css/boilerplatecss.css",
+			"where" : "css/h5bp-normalize.css",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "../h5bp-mediaqueries/mediaqueries.css",
+			"where" : "css/mediaqueries.less",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "../h5bp-mediaqueryprint/mediaqueryprint.css",
+			"where" : "css/h5bp-printstyles.css",
+			"type" : "file"
+		}
+	],
+	"incompatibilities" : ["h5bp-css", "h5bp-mediaqueryprint", "h5bp-mediaqueries"]
+}

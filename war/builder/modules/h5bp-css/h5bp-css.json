@@ -7,6 +7,11 @@
 		{
 			"what" : "boilerplatecss.css",
 			"where" : "style.css/boilerplate"
+		},
+		{
+			"what" : "headinclude.html",
+			"where" : "index.html/head/stylesheet"
 		}
-	]
+	],
+	"incompatibilities" : ["less"]
 }
