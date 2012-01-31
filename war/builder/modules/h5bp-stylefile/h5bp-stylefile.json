@@ -8,5 +8,6 @@
 			"what" : "stylesheetinclude.html",
 			"where" : "index.html/head/stylesheet"
 		}
-	]
+	],
+	"incompatibilities" : ["less"]
 }

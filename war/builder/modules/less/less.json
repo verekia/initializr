@@ -14,5 +14,6 @@
 			"where" : "js/libs/less-1.2.1.min.js",
 			"type" : "file"
 		}
-	]
+	],
+	"incompatibilities":["h5bp-stylefile"]
 }
