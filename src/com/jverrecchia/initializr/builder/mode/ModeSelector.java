@@ -5,9 +5,11 @@ public class ModeSelector {
 	static public Mode getMode(String param) {
 		if (param != null && param.equals("h5bp"))
 			return new Boilerplate();
-		if (param != null)
-			return new Custom();
-		return new Initializr();
+
+		if (param != null && param.equals("less"))
+			return new Less();
+
+		return new Css();
 	}
 
 }

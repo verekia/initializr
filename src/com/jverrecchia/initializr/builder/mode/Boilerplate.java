@@ -6,7 +6,7 @@ public class Boilerplate extends Mode {
 	
 	public Boilerplate(){
 		this.setName("Boilerplate Custom");
-		this.setFileName("boilerplate-initializr");
+		this.setFileName("h5bp-initializr");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
 		this.getFiles().add(new File("css/style.css", "builder/templates/style.css", true, true));
 		this.getDefaultModulesNames().add("h5bp-content");
