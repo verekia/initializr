@@ -11,6 +11,7 @@ public class Boilerplate extends Mode {
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
 		this.getFiles().add(new File("css/style.css", "builder/templates/style.css", true, true));
 		this.getDefaultModulesNames().add("h5bp-content");
+		this.getDefaultModulesNames().add("h5bp-stylefile");
 		this.getDefaultModulesNames().add("h5bp-css");
 		this.getDefaultModulesNames().add("h5bp-csshelpers");
 		this.getDefaultModulesNames().add("h5bp-mediaqueries");

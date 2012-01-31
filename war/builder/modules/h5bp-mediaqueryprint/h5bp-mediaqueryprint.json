@@ -17,8 +17,8 @@
 	,
 		{
 			"mode" : "less",
-			"what" : "../h5bp-mediaqueryprint/mediaqueryprint.css",
-			"where" : "less/printstyles.css",
+			"what" : "mediaqueryprint.css",
+			"where" : "less/print.less",
 			"type":"file"
 		}		
 	]

@@ -1,0 +1,18 @@
+{
+	"author" : "Alexis Sellier",
+	"name" : "Less 1.2.1",
+	"id" : "less",
+	"inserts" :
+	[
+		{
+			"what" : "less.html",
+			"where" : "index.html/head/stylesheet"
+		}
+	,
+		{
+			"what" : "less-1.2.1.min.js",
+			"where" : "js/libs/less-1.2.1.min.js",
+			"type" : "file"
+		}
+	]
+}

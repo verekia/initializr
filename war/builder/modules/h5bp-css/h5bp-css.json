@@ -8,5 +8,19 @@
 			"what" : "boilerplatecss.css",
 			"where" : "style.css/boilerplate"
 		}
+	,
+		{
+			"mode" : "less",
+			"what" : "less-include.less",
+			"where" : "style.less/boilerplate"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "boilerplatecss.css",
+			"where" : "less/normalize.less",
+			"type":"file"
+		}
+		
 	]
 }

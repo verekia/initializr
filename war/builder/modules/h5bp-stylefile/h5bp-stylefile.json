@@ -1,0 +1,12 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Stylesheet File Inclusion",
+	"id" : "h5bp-stylefile",
+	"inserts" :
+	[
+		{
+			"what" : "stylesheetinclude.html",
+			"where" : "index.html/head/stylesheet"
+		}
+	]
+}
