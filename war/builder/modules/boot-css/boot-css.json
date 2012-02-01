@@ -1,0 +1,37 @@
+{
+	"author" : "Twitter Bootstrap",
+	"name" : "Bootstrap 2",
+	"id" : "boot-css",
+	"inserts" :
+	[
+		{
+			"what" : "boot-css.html",
+			"where" : "index.html/head/styleslib"
+		}
+	,
+		{
+			"what" : "bootstrap-responsive.css",
+			"where" : "css/bootstrap-responsive.css",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "bootstrap-responsive.min.css",
+			"where" : "css/bootstrap-responsive.min.css",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "bootstrap.css",
+			"where" : "css/bootstrap.css",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "bootstrap.min.css",
+			"where" : "css/bootstrap.min.css",
+			"type" : "file"
+		}
+	],
+	"incompatibilities" : ["h5bp-css", "h5bp-content", "h5bp-mediaqueries", "h5bp-mediaqueryprint", "h5bp-csshelpers", "izr-responsive"]
+}
