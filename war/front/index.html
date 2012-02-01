@@ -1,130 +1,211 @@
 <!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]--><!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]--><!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]--><!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]--><!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]--><head>
-	<meta charset="UTF-8">
-	
-	<title>Initializr - Start your HTML5 project in 15 seconds!</title>
-	
+<!--[if lt IE 8]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title></title>
 	<meta name="description" content="">
 	<meta name="author" content="">
-	
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-	
-	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png">
-	
-	<link rel="stylesheet" href="css/style.css?v=5">
 
-	<script src="js/libs/modernizr-1.6.min.js"></script>
-	
-	<script type="text/javascript">
-	
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-11028046-9']);
-	  _gaq.push(['_trackPageview']);
-	
-	  (function() {
-	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-	
-	</script>
-	</head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="front/css/style.css?v=2">
+
+	<script src="front/js/libs/modernizr-2.0.6.min.js"></script>
+</head>
 <body>
 	<div id="header-container">
-		<header class="wrapper">
-			<img src="img/html5-logo.png" alt="HTML5 official logo"/>
-			<h1 id="title">Initializr</h1>
+		<header class="wrapper clearfix">
+			<div id="title-container">
+				<h1 id="title">Initializr</h1>
+				<h2>Start an HTML5 project in 15 seconds!</h2>
+			</div>
+			<div id="html5-logo-container">
+				<img src="front/img/html5-logo-165-cut.png" alt="" />
+			</div>
+			<div id="follow-container">
+				<p><a id="author" href="https://twitter.com/verekia" target="_blank">Jonathan Verrecchia</a></p>
+				<div id="follow-iframes-container">
+					<a href="https://twitter.com/verekia" class="twitter-follow-button" data-align="right" data-width="260px" data-show-count="true" data-size="large">Follow @verekia</a>
+					<a href="https://twitter.com/initializr" class="twitter-follow-button" data-align="right" data-width="260px" data-show-count="true" data-size="large">Follow @initializr</a>
+					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+				</div>
+			</div>
 		</header>
 	</div>
-	<div id="main" class="wrapper">
-		<header>
-			<p>Initializr is an <strong>HTML5 templates generator</strong> to help you getting started with an HTML5 project. It is built on <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a>, a powerful HTML5 template created by <a href="http://paulirish.com/">Paul Irish</a> and <a href="http://nimbupani.com/">Divya Manian</a>. Initializr will generate for you a clean customizable template based on Boilerplate with just what you need to start.</p>
-			<aside id="social">
-				<div id="share">
-					<a href="http://twitter.com/share" class="twitter-share-button" data-count="vertical" data-via="initializr" data-related="jverrecchia">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-					<iframe class="facebook" src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Finitializr.com&amp;layout=box_count&amp;show_faces=false&amp;width=80&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:80px; height:65px;" allowTransparency="true"></iframe>		
-				</div>
-				<div id="follow">
-					<img src="img/initializr-twitter.png" alt="Twitter icon" />
+	<div id="main-container">
+		<div id="main" class="wrapper clearfix">
+			<div id="intro" class="clearfix">
+				<div id="badges" class="clearfix">
 					<ul>
-					<li><a href="http://twitter.com/#!/initializr">@initializr</a></li>
-					<li><a href="http://twitter.com/#!/verekia">@verekia</a></li>
+						<li><div class="badge-label">H5BP<br />2.5</div></li>
+						<li><div class="badge-label">Modernizr<br />2.0.6</div></li>
+						<li><div class="badge-label">jQuery<br />1.7.1</div></li>
 					</ul>
 				</div>
-			</aside>		
-			<h2>Start an HTML5 project in 15 seconds!</h2>
-		</header>
-		<div id="builder">
-			<h3>HTML & CSS</h3>
-			<section id="htmlcss">
-				<a id="nocontent" class="selection htmlcss" href="#">No content please!</a>
-				<a id="izrsample" class="selection htmlcss selected" href="#">Initializr sample page</a>
-				<div class="clearfix"></div>
-			</section>
-			<h3>Javascript</h3>
-			<section id="javascript">
-			<a id="nojs" class="selection javascript" href="#">No Javascript!</a>
-			<a id="nojq" class="selection javascript" href="#">No jQuery!</a>
-			<a id="jq" class="selection javascript selected" href="#">I want jQuery minified!</a>
-			<a id="jqdev" class="selection javascript" href="#">I want jQuery unminified!</a>
-				<div class="clearfix"></div>
-			</section>			
-			<h3>Compatibility</h3>
-			<section id="compatibility">
-			<a id="modernizr" class="selection compatibility selected" href="#">Modernizr!</a>
-			<a id="html5shiv" class="selection compatibility" href="#">Just html5shiv</a>		
-				<div class="clearfix"></div>
-			</section>				
-			<h3>Server Configuration</h3>
-			<section id="server">
-			<a id="noserver" class="selection server selected" href="#">No, thanks</a>
-			<a id="htaccess" class="selection server" href="#">.htaccess</a>	
-			<a id="webconfig" class="selection server" href="#">web.config</a>
-			<a id="nginx" class="selection server" href="#">nginx.conf</a>
-				<div class="clearfix"></div>
-			</section>	
-			<h3>Analytics</h3>
-			<section id="analytics">
-			<a id="analytics" class="selection analytics" href="#">Yup</a>
-			<a id="noanalytics" class="selection analytics selected" href="#">Nope</a>
-				<div class="clearfix"></div>
-			</section>						
-			<a href="generate" id="download" class="selected">Download!<img src="img/html5-download.png" alt="Download" /></a>
+				<p>
+					Initializr is an HTML5 templates generator to help you getting started with a new project based on HTML5 Boilerplate. It generates for you a clean customizable template with just what you need to start!
+				</p>
+			</div>
+			<h2 class="separator">
+				1 - Pre-configuration
+			</h2>
+			<div id="preconfig-section" class="clearfix">
+				<div class="preconfig-container blank-background">
+					<button id="preconfig-blank" class="preconfig-block blank-background clearfix">
+						<h3>Classic H5BP</h3>
+					</button>
+					<div class="preconfig-links-container"><a target="_blank" href="http://html5boilerplate.com/docs/" class="first">Docs</a><a target="_blank" href="http://demo.html5boilerplate.com/">Demo</a></div>
+				</div>
+				<div class="preconfig-container initializr-background">
+					<button id="preconfig-initializr" class="preconfig-block initializr-background clearfix">
+						<h3>Responsive</h3>
+					</button>
+					<div class="preconfig-links-container"><a target="_blank" href="http://verekia.com/initializr/responsive-template" class="first">Docs</a><a target="_blank" href="http://www.initializr.com/try">Demo</a></div>
+				</div>
+				<div class="preconfig-container bootstrap-background">
+					<button id="preconfig-bootstrap" class="preconfig-block bootstrap-background clearfix">
+						<h3>Bootstrap 2</h3>
+					</button>
+					<div class="preconfig-links-container"><a target="_blank" href="#" class="first">Docs</a><a target="_blank" href="#">Demo</a></div>
+				</div>
+			</div>
+			<div id="hidden-section">
+				<h2 id="fine-tuning-separator"class="separator">
+					2 - Fine tuning
+				</h2>
+				<div id="customize-section" class="clearfix">
+				
+					<div class="customize-section">
+						<h3>HTML/CSS Template</h3>
+						<label><input type="radio" name="htmlcss" value="h5bp-content">No template</label>
+						<label><input type="radio" name="htmlcss" value="izr-responsive">Mobile-first Responsive</label>
+						<label><input type="radio" name="htmlcss" value="boot-responsive">Responsive Bootstrap 2</label>
+					</div>
+					<div class="customize-section">
+						<h3>HTML5 Polyfills</h3>
+						<label><input type="radio" name="polyfill" value="modernizr">Modernizr</label>
+						<label><input type="radio" name="polyfill" value="html5shiv">HTML5shiv</label>
+						<label><input type="checkbox" value="respond">Respond</label>
+					</div>
+					<div class="customize-section">
+						<h3>Server Config</h3>
+						<label><input type="checkbox" value="h5bp-htaccess">.htaccess</label>
+						<label><input type="checkbox" value="h5bp-nginx">nginx.conf</label>
+						<label><input type="checkbox" value="h5bp-webconfig">web.config</label>
+					</div>
+					<div class="customize-section">
+						<h3>jQuery</h3>
+						<label><input type="checkbox" value="jquerymin">Minified</label>
+						<label><input type="checkbox" value="jquerydev">Development</label>
+					</div>
+					<div class="customize-section">
+						<h3>Stylesheet Language</h3>						
+						<label><input type="radio" name="stylelang" value="css-mode">CSS</label>
+						<label><input type="radio" name="stylelang" value="less-mode">LESS - <a href="http://verekia.com/less-css/dont-read-less-css-tutorial-highly-addictive" target="_blank">Tutorial</a></label>
+					</div>
+					<div class="customize-section">
+						<h3>Google Services</h3>
+						<label><input type="checkbox" value="h5bp-chromeframe">Chrome Frame</label>
+						<label><input type="checkbox" value="h5bp-analytics">Analytics</label>
+					</div>
+					
+					<div class="customize-section">
+						<h3 class="first-h5bp-label">H5BP Optional</h3>
+						<label><input type="checkbox" value="h5bp-build">Build Script</label>
+						<label><input type="checkbox" value="h5bp-iecond">IE Classes</label>
+						<label><input type="checkbox" value="h5bp-favicon">Favicon</label>
+					</div>
+					<div class="customize-section customize-h5bp-no-title customize-h5bp-no-title-middle">
+						<h3 class="second-h5bp-label">H5BP Optional</h3>
+						<label><input type="checkbox" value="h5bp-appletouchicons">Apple Touch Icons</label>
+						<label><input type="checkbox" value="h5bp-scripts">JS Plugins</label>
+						<label><input type="checkbox" value="h5bp-robots">Robots.txt</label>
+					</div>
+					<div class="customize-section customize-h5bp-no-title">
+						<h3 class="third-h5bp-label">H5BP Optional</h3>
+						<label><input type="checkbox" value="h5bp-humans">Humans.txt</label>
+						<label><input type="checkbox" value="h5bp-404">404 Page</label>
+						<label><input type="checkbox" value="h5bp-adobecrossdomain">Adobe Cross Domain</label>
+					</div>
+					
+				</div>
+				
+<!-- 				<textarea id="download-url"></textarea><br /> -->
+<!-- 				<textarea id="preview-url"></textarea> -->
+	
+				<div id="download-section" class="clearfix">
+					<a id="download-link" href="#">Download it!</a>
+					<a id="preview-link" href="#" target="_blank">What's inside?</a>
+				</div>
+			</div>
+		</div> <!-- #main -->
+	</div> <!-- #main-container -->
+	
+	<div id="about-container">
+		<div class="wrapper">
+			<div id="github-container" class="clearfix">
+				<img src="front/img/github-logo.png" alt="Github logo" />
+				<div id="github-repositories">
+					<h3>Github Repositories</h3>
+					<ul>
+						<li><a target="_blank" href="https://github.com/verekia/initializr">The builder itself</a></li>
+						<li><a target="_blank" href="https://github.com/verekia/initializr-template">The responsive template</a></li>
+						<li><a target="_blank" href="https://github.com/verekia/initializr-website">This page</a></li>
+					</ul>
+				</div>
+			</div>
+			<article id="docs">
+				<h3>About Initializr</h3>
+				<p>Initializr is here to kick-start the development of your new projects. It generates templates based on HTML5 Boilerplate
+				by allowing you to choose which parts you want or don't want from it. A <a href="http://verekia.com/initializr/responsive-template" target="_blank">responsive template</a> has also been added to start
+				from a basic design instead of a blank page.
+
+				<h3>HTML5 Boilerplate</h3>
+				<p>"H5BP" is here to handle the boring stuff you don't want to deal with. It provides a rock-solid default code
+				that improves the cross-browser compatibility for HTML5 projects and handy tools to help their development.</p>
+				<p>You may have noticed that HTML5 Boilerplate also provides a builder on its main page, called "Boilerplate Custom".
+				Actually this builder <em>is</em> Initializr. It uses the same backend, so feel free to use whichever you prefer, it's exactly the same!
+				</p>
+
+
+				<h3>International guides</h3>
+				<p>Initializr functioning is pretty intuitive but it can help to read guides about it in your own language. Here are some which will help you using Initializr and understanding HTML5 Boilerplate, HTML5shiv or Modernizr, in <a href="http://www.html5-css3.fr/html5/initializr-generateur-template-html5-boilerplate" target="_blank">French</a> (official), <a href="http://www.mk-dizajn.com/en/2011/06/initializr-izvrstan-html5-predlozak-za-svaki-web-projekt/" target="_blank">English</a>, <a href="http://www.diegoante.com/initializr.html" target="_blank">Spanish</a>, <a href="http://starwebdesign.com.ua/blog/2011/02/16/initializr-generator-chistogo-i-nastraivaemogo-html5-shablona-osnovannogo-na-boilerplate/" target="_blank">Russian</a>, <a href="http://www.mk-dizajn.com/2011/06/initializr-izvrstan-html5-predlozak-za-svaki-web-projekt/" target="_blank">Croatian</a>, <a href="http://www.jaapvdveen.nl/2011/02/17/initializr-een-template-generator-op-basis-van-html5-boilerplate/" target="_blank">Dutch</a> and <a href="http://flaviosilveira.com/2011/initializr-comece-seu-projeto-html5-em-15-segundos/" target="_blank">Portuguese</a>.
+				If you write an nice article in a missing language, I will put your link here!</p>
+				
+				
+				<h3>Could you add this or that option?</h3>
+				<p>It would definitely be awesome to have many other cool options. I will add more when I have time, but you can also do it yourself <em>super
+				easily</em> by contributing on <a href="https://github.com/verekia/initializr#readme" target="_blank">Github</a>. You don't even need to know the backend language I used! Seriously, take a look :)</p>
+				
+				<h3>Contact</h3>
+				<p>Email me at <span id="email"></span>, or mention <a target="_blank" href="http://twitter.com/#!/initializr">@initializr</a> and <a target="_blank" href="http://twitter.com/#!/verekia">@verekia</a>.</p>
+			
+			</article>
+
 		</div>
-		<h2>Want more?</h2>
-		<p>Some functionalities have been removed from Boilerplate to focus on what most people really use.
-		Feel free to visit <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> if you need some of these functionalities for your project.
-		Boilerplate also provides very good advice to make your site even better!
-		</p>	
-		<section id="guides">
-			<h2>Boilerplate? Modernizr? HTML5shiv?</h2>
-			<p>If you are not familiar with these things but would like to start playing with HTML5, you should read some HTML5
-			introductions and tutorials before. Here will be listed articles that introduce Initializr with some information about at least Modernizr, HTML5shiv and Boilerplate in as many languages as possible:</p>
-			<ul>
-				<li><a href="http://www.html5-css3.fr/html5/initializr-generateur-template-html5-boilerplate">Official french version on HTML5-CSS3.fr</a></li>
-				<li><a href="http://www.mk-dizajn.com/en/2011/06/initializr-izvrstan-html5-predlozak-za-svaki-web-projekt/">English version on MK-Dizajn.com</a></li>
-				<li><a href="http://www.mk-dizajn.com/2011/06/initializr-izvrstan-html5-predlozak-za-svaki-web-projekt/">Croatian version on MK-Dizajn.com</a></li>
-				<li><a href="http://starwebdesign.com.ua/blog/2011/02/16/initializr-generator-chistogo-i-nastraivaemogo-html5-shablona-osnovannogo-na-boilerplate/">Russian version on Starwebdesign.com.ua</a></li>
-				<li><a href="http://www.jaapvdveen.nl/2011/02/17/initializr-een-template-generator-op-basis-van-html5-boilerplate/">Dutch version on jaapvdveen.nl</a></li>
-			</ul>
-			<p>If you write a nice article in a missing language, I will post here a link to your site ;)</p>
-		</section>
-		<footer>
-		<h2>About</h2>
-		<p>Initializr (<a href="http://twitter.com/#!/initializr">@initializr</a>) has been created by Jonathan Verrecchia (<a href="http://twitter.com/#!/verekia">@verekia</a>) to help the spread of HTML5 on the web.
-		If you have any suggestion please send me a tweet or an <a href="mailto:initializr@gmail.com">email</a>!</p>
-		</footer>	
-	</div>
-	<div id="footer-container">
-		<footer class="wrapper">
-		</footer>
 	</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.4.min.js"%3E%3C/script%3E'))</script>	<script src="js/script.js?v=3"></script>	<!--[if lt IE 7 ]>
-	<script src="js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('img, .png_bg');</script>
-	<![endif]--></body>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="front/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+<script src="front/js/script.js?v=2"></script>
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+</body>
 </html>

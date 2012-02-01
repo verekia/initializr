@@ -1,255 +1,232 @@
+$(function(){
 
-$(function() {
-	var beginurl = '/builder?';
-	var urlparameters = "";
-
-	var mode;
-	var modules;
-	
-	var simpleDefaultModules = ['izr-responsive', 'izr-emptyscript', 'jquery', 'modernizrrespond', 'h5bp-chromeframe', 'h5bp-analytics'];
-	
-	var simpleModules = {
-		'h5bp-analytics' : {
-			'enabled' : false,
-			'default' : []
+	/************
+	    CONFIG
+	 ************/
+	var config = {
+		/* allModules:[
+		            'h5bp-content',
+		            'izr-responsive',
+		            'boot-responsive',
+		            'modernizr',
+		            'html5shiv',
+		            'respond',
+		            'h5bp-htaccess',
+		            'h5bp-nginx',
+		            'h5bp-webconfig',
+		            'jquerymin',
+		            'jquerydev',
+		            'h5bp-chromeframe',
+		            'h5bp-analytics',
+		            'less',
+		            'h5bp-build',
+		            'h5bp-iecond',
+		            'h5bp-favicon',
+		            'h5bp-appletouchicons',
+		            'h5bp-scripts',
+		            'h5bp-robots',
+		            'h5bp-humans',
+		            'h5bp-404',
+		            'h5bp-adobecrossdomain',
+		            'h5bp-stylefile'
+		            ], */
+		defaultModules:{
+			blank: [
+			        'css-mode',
+			        'h5bp-content',
+			        'modernizr',
+			        'jquerymin',
+			        'h5bp-htaccess',
+			        'h5bp-chromeframe',
+		            'h5bp-analytics',
+		            'h5bp-iecond',
+		            'h5bp-favicon',
+		            'h5bp-appletouchicons',
+		            'h5bp-scripts',
+		            'h5bp-robots',
+		            'h5bp-humans',
+		            'h5bp-404',
+		            'h5bp-adobecrossdomain'
+			        ],
+			initializr: [
+			             'css-mode',
+			             'izr-responsive',
+			             'modernizr',
+			             'respond',
+			             'jquerymin',
+			             'h5bp-chromeframe',
+			             'h5bp-analytics',
+			             'h5bp-favicon',
+			             'h5bp-appletouchicons',
+			             'h5bp-iecond'
+			             ],
+			bootstrap: [
+			            'less-mode',
+			            'boot-responsive',
+			             'modernizr',
+			             'respond',
+			             'jquerymin',
+			             'h5bp-chromeframe',
+			             'h5bp-analytics',
+			             'h5bp-favicon',
+			             'h5bp-appletouchicons',
+			             'h5bp-iecond',
+			             'less'
+			            ]
 		},
-		'h5bp-chromeframe' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-content' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-htaccess' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-iecond' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-nginx' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-oldiecond' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-readmemd' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-robots' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-scripts' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'h5bp-webconfig' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'html5shiv' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'izr-samplepage' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'izr-responsive' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'izr-emptyscript' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'jquery' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'jquerydev' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'jquerymin' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'modernizr' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'respond' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'modernizrrespond' : {
-			'enabled' : false,
-			'default' : []
-		},
-		'simplehtmltag' : {
-			'enabled' : false,
-			'default' : []
-		}
+		baseUrl:'builder?'
 	};
 	
-	var advancedModules = {
-			'h5bp-404' : {'enabled' : false, 'default' : ['h5bp']},
-			'h5bp-adobecrossdomain' : {'enabled' : false, 'default' : ['h5bp']},
-			'h5bp-analytics' : {'enabled' : false, 'default' : []},
-			'h5bp-appletouchicons' : {'enabled' : false, 'default' : ['h5bp', 'izr']},
-			'h5bp-chromeframe' : {'enabled' : false, 'default' : []},
-			'h5bp-content' : {'enabled' : false, 'default' : ['h5bp']},
-			'h5bp-css' : {'enabled' : false, 'default' : ['h5bp', 'izr']},
-			'h5bp-csshelpers' : {'enabled' : false, 'default' : ['h5bp', 'izr']},
-			'h5bp-favicon' : {'enabled' : false, 'default' : ['h5bp', 'izr']},
-			'h5bp-htaccess' : {'enabled' : false, 'default' : []},
-			'h5bp-humans' : {'enabled' : false, 'default' : ['h5bp']},
-			'h5bp-iecond' : {'enabled' : false, 'default' : ['izr']},
-			'h5bp-mediaqueries' : {'enabled' : false, 'default' : ['h5bp', 'izr']},
-			'h5bp-mediaqueryprint' : {'enabled' : false, 'default' : ['h5bp', 'izr']},
-			'h5bp-nginx' : {'enabled' : false, 'default' : []},
-			'h5bp-oldiecond' : {'enabled' : false, 'default' : []},
-			'h5bp-readmemd' : {'enabled' : false, 'default' : []},
-			'h5bp-robots' : {'enabled' : false, 'default' : ['h5bp']},
-			'h5bp-scripts' : {'enabled' : false, 'default' : []},
-			'h5bp-webconfig' : {'enabled' : false, 'default' : []},
-			'html5shiv' : {'enabled' : false, 'default' : []},
-			'izr-samplepage' : {'enabled' : false, 'default' : []},
-			'izr-responsive' : {'enabled' : false, 'default' : []},
-			'izr-emptyscript' : {'enabled' : false, 'default' : []},
-			'jquery' : {'enabled' : false, 'default' : []},
-			'jquerydev' : {'enabled' : false, 'default' : []},
-			'jquerymin' : {'enabled' : false, 'default' : []},
-			'modernizr' : {'enabled' : false, 'default' : []},
-			'respond' : {'enabled' : false, 'default' : []},
-			'modernizrrespond' : {'enabled' : false, 'default' : ['h5bp']},
-			'simplehtmltag' : {'enabled' : false, 'default' : []}
+	/************
+	   VARIABLES
+	 ************/
+	
+	var params;
+	var modules = [];
+	var stylelang = '';
+
+	/**********
+	   EVENTS
+	 **********/	
+
+	$('input').click(function(){
+		update();
+	});
+
+	
+	$('#preconfig-blank').click(function(){
+		fillDefaultModules('blank');
+	});
+
+	$('#preconfig-initializr').click(function(){
+		fillDefaultModules('initializr');
+	});
+	
+	$('#preconfig-bootstrap').click(function(){
+		fillDefaultModules('bootstrap');
+	});
+	
+	/*********
+	   LOGIC
+	 *********/
+	
+	function fillDefaultModules(type){
+		$('input').attr('checked', false);
+				
+		for (var i = 0, curModule; curModule = config.defaultModules[type][i++];){
+			$('input[value=' + curModule +']').attr('checked', true);
 		};
-	
-	if (typeof initializrBuilderMode != 'undefined'){
-	
-	if (initializrBuilderMode == 'izr')
-		mode = 'izr';
-	else
-		mode = 'custom';
-	
-	if (initializrBuilderType == 'simple')
-		modules = simpleModules;
-	if (initializrBuilderType == 'advanced')
-		modules = advancedModules;
-
-	$('#leftoptions').click(function(){
-		_gaq.push(['_trackEvent', 'DL featured', 'clicked']);
-	});
-
-
-	$('.mode').click(function() {
-		mode = $(this).attr('value');
-		updateMode();
-		updateCheckBoxes(true);
-		updateURLs();
-	});
-
-	$('.select').click(function() {
-		modules[$(this).attr('id')].enabled = $(this).prop('checked');
-		updateData(true);
-		updateURLs();
-	});
-
-	$("#print").click(function() {
-		updateURLs();
-		window.location = (beginurl + 'print&' + urlparameters);
-		_gaq.push(['_trackEvent', initializrBuilderMode + ' ' + initializrBuilderType + ' Print ' + urlparameters, 'clicked']);
-	});
-	$("#download").click(function() {
-		updateURLs();
-		window.location = (beginurl + urlparameters);
-		_gaq.push(['_trackEvent', initializrBuilderMode + ' ' + initializrBuilderType + ' DL ' + urlparameters, 'clicked']);
-	});
-
-	function updateMode() {
-		for (var curModule in modules) {
-			if ($.inArray(mode, modules[curModule]['default']) >= 0) {
-				modules[curModule].enabled = true;
-			} else
-				modules[curModule].enabled = false;
-		}
-	}
-
-	function loadDefaultModules(){
-		if (initializrBuilderType == 'simple'){
-			for (var currentModuleDefault in simpleDefaultModules){
-				modules[simpleDefaultModules[currentModuleDefault]].enabled = true;
-				$("#" + currentModuleDefault).prop('checked', true);
-			}
-		}
+		update();
+		$('#hidden-section').fadeIn('slow');
 	}
 	
-	function updateData(checkEnabled){
-		if (checkEnabled){
-			for (var curModule in modules) {
-			modules[curModule].enabled = $("#" + curModule).prop('checked');
-			}
-		}
-		// updates the form too
-		for (var curModule in modules) {
-			$('#' + curModule).prop('checked', modules[curModule].enabled);
-		}		
+	function update(){
+		updateModules();
+		updateUrls();
 	}
 	
-	function updateCheckBoxes(disableDefaults) {
-		for (var curModule in modules) {
-			if (modules[curModule].enabled) {
-				$('#' + curModule).prop('checked', true);
-				if (disableDefaults)
-					$('#' + curModule).prop('disabled', true);
-			}
-
-			else {
-				$('#' + curModule).prop('checked', false);
-				if (disableDefaults)
-					$('#' + curModule).prop('disabled', false);
-			}
-		}
-	}
-
-	function updateURLs() {
-		urlparameters = '';
-
-		if (mode == 'h5bp')
-			urlparameters = 'mode=h5bp&';
-		else if (mode != 'izr')
-			urlparameters = 'mode=custom&';
-
-		for (var curModule in modules) {
-			if (modules[curModule].enabled == true
-					&& $.inArray(mode, modules[curModule]['default']) == -1)
-				urlparameters += curModule + '&';
-		}
-
-		if (urlparameters[urlparameters.length - 1] == '&')
-			urlparameters = urlparameters.substr(0,
-					urlparameters.length - 1);
-
-		$('#printurl').attr('value', beginurl + 'print&' + urlparameters);
-		$('#downloadurl').attr('value', beginurl + urlparameters);
-	}
-	
-	$('#centeroptions').click(function(){
-		$('#simplecustom').slideDown('normal', function(){
-			loadDefaultModules();	
-			updateData(false);
-			updateURLs();
-			//updateCheckBoxes();
+	function updateModules(){
+		modules = [];
+		$('input').each(function(){
+			if ($(this).is(':checked'))
+				modules.push($(this).val());
 		});
-		_gaq.push(['_trackEvent', 'Simple Custom', 'clicked']);
-	});
-}
-});	
+		replaceSpecialModules();
+	}
+	
+	function replaceSpecialModules(){
+		if (modules.indexOf('jquerymin') != -1 && modules.indexOf('jquerydev') != -1){
+			modules.remove('jquerymin');
+			modules.remove('jquerydev');
+			modules.push('jquery');
+		}
+
+		if (modules.indexOf('modernizr') != -1 && modules.indexOf('respond') != -1){
+			modules.remove('modernizr');
+			modules.remove('respond');
+			modules.push('modernizrrespond');
+		}
+		
+		if (modules.indexOf('less-mode') != -1){
+			modules.remove('less-mode');
+			stylelang = 'less';
+		}
+		else
+			stylelang = '';
+		
+		if (modules.indexOf('css-mode') != -1){
+			modules.remove('css-mode');
+		}
+		
+		if (modules.indexOf('h5bp-content') != -1 || modules.indexOf('izr-responsive') != -1){
+			modules.push('h5bp-css');
+			modules.push('h5bp-csshelpers');
+			modules.push('h5bp-mediaqueryprint');
+		}
+
+		if (modules.indexOf('h5bp-content') != -1){
+			modules.push('h5bp-mediaqueries');
+		}
+		
+		if (modules.indexOf('h5bp-iecond') == -1){
+			modules.push('simplehtmltag');
+		}		
+
+		if (modules.indexOf('h5bp-scripts') == -1){
+			modules.push('izr-emptyscript');
+		}		
+		
+	}
+	
+	function updateUrls(){
+		var modeParam = '';
+		
+		if (stylelang != ''){
+			modeParam = 'mode=' + stylelang + '&';
+		}
+
+		params = '';
+		
+		for (var i = 0, curModule; curModule = modules[i++];){
+			params += curModule + '&';
+		}
+		
+		params = params.substring(0, params.length - 1);
+
+		$('#preview-url').val(config.baseUrl + 'print&' + modeParam + params);
+		$('#download-url').val(config.baseUrl + modeParam + params);	
+		
+		$('#preview-link').attr('href', config.baseUrl + 'print&' + modeParam + params);
+		$('#download-link').attr('href', config.baseUrl + modeParam + params);	
+	}	
+
+	/***********
+	   HELPERS
+	 ***********/
+	
+	if (!Array.indexOf){
+		Array.prototype.indexOf = function(searchedElement){
+			for (var i = 0; i < this.length; i++){
+				if (this[i] === searchedElement)
+					return i;
+			};
+			return -1;
+		};
+	}
+	
+	Array.prototype.remove = function(searchedElement){
+		var i = this.indexOf(searchedElement);
+		if (i != -1)
+			this.splice(i, 1);
+	};
+	
+	/***********
+	    MAIN
+	 ***********/
+	
+	if ($('input:checked').length > 0)
+		$('#hidden-section').fadeIn(0);
+	update();
+	
+	
+});
