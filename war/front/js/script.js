@@ -62,7 +62,7 @@ $(function(){
 			             ],
 			bootstrap: [
 			            'less-mode',
-			            'boot-responsive',
+			            'boot-hero',
 			             'modernizr',
 			             'respond',
 			             'jquerymin',
@@ -175,6 +175,15 @@ $(function(){
 		if (modules.indexOf('h5bp-scripts') == -1){
 			modules.push('izr-emptyscript');
 		}		
+		
+		if (modules.indexOf('boot-hero') != -1){
+			modules.push('boot-css');
+			modules.push('boot-scripts');
+			if (modules.indexOf('jquery') == -1 && modules.indexOf('jquerydev') == -1 && modules.indexOf('jquerymin') == -1){
+				modules.push('jquerymin');
+			}
+		}		
+		
 		
 	}
 	
