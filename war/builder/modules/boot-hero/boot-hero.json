@@ -1,0 +1,30 @@
+{
+	"author" : "Twitter Bootstrap",
+	"name" : "Hero Example",
+	"id" : "boot-hero",
+	"inserts" :
+	[
+		{
+			"what" : "boot-hero.html",
+			"where" : "index.html/body/content"
+		}
+	,
+		{
+			"what" : "hero-scripts.html",
+			"where" : "index.html/body/jslib2"
+		}
+	,
+		{
+			"mode" : "css",
+			"what" : "style-hero.html",
+			"where" : "index.html/head/styleslib2"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "style-hero.less",
+			"where" : "style.less/boilerplate2"
+		}
+	
+	]
+}

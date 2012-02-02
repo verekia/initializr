@@ -5,33 +5,107 @@
 	"inserts" :
 	[
 		{
+			"mode" : "css",
 			"what" : "boot-css.html",
 			"where" : "index.html/head/styleslib"
 		}
 	,
 		{
+			"mode" : "css",
+			"what" : "boot-resp.html",
+			"where" : "index.html/head/styleslib3"
+		}
+	,
+		{
+			"mode" : "css",
 			"what" : "bootstrap-responsive.css",
 			"where" : "css/bootstrap-responsive.css",
 			"type" : "file"
 		}
 	,
 		{
+			"mode" : "css",
 			"what" : "bootstrap-responsive.min.css",
 			"where" : "css/bootstrap-responsive.min.css",
 			"type" : "file"
 		}
 	,
 		{
+			"mode" : "css",
 			"what" : "bootstrap.css",
 			"where" : "css/bootstrap.css",
 			"type" : "file"
 		}
 	,
 		{
+			"mode" : "css",
 			"what" : "bootstrap.min.css",
 			"where" : "css/bootstrap.min.css",
 			"type" : "file"
 		}
+	,
+		{
+			"mode" : "less",
+			"what" : "include-bootstrap.less",
+			"where" : "style.less/boilerplate"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "include-bootstrap-resp.less",
+			"where" : "style.less/boilerplate3"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "bootstrap/bootstrap.less",
+			"where" : "less/bootstrap/bootstrap.less",
+			"type" : "file"
+		}
+	,
+		{
+			"mode" : "less",
+			"what" : "bootstrap/responsive.less",
+			"where" : "less/bootstrap/responsive.less",
+			"type" : "file"
+		}
+	,
+		{"mode" : "less", "what" : "bootstrap/accordion.less", "where" : "less/bootstrap/accordion.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/alerts.less", "where" : "less/bootstrap/alerts.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/breadcrumbs.less", "where" : "less/bootstrap/breadcrumbs.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/button-groups.less", "where" : "less/bootstrap/button-groups.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/buttons.less", "where" : "less/bootstrap/buttons.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/carousel.less", "where" : "less/bootstrap/carousel.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/close.less", "where" : "less/bootstrap/close.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/code.less", "where" : "less/bootstrap/code.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/component-animations.less", "where" : "less/bootstrap/component-animations.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/dropdowns.less", "where" : "less/bootstrap/dropdowns.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/forms.less", "where" : "less/bootstrap/forms.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/grid.less", "where" : "less/bootstrap/grid.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/hero-unit.less", "where" : "less/bootstrap/hero-unit.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/labels.less", "where" : "less/bootstrap/labels.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/layouts.less", "where" : "less/bootstrap/layouts.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/mixins.less", "where" : "less/bootstrap/mixins.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/modals.less", "where" : "less/bootstrap/modals.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/navbar.less", "where" : "less/bootstrap/navbar.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/navs.less", "where" : "less/bootstrap/navs.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/pager.less", "where" : "less/bootstrap/pager.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/pagination.less", "where" : "less/bootstrap/pagination.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/patterns.less", "where" : "less/bootstrap/patterns.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/popovers.less", "where" : "less/bootstrap/popovers.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/print.less", "where" : "less/bootstrap/print.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/progress-bars.less", "where" : "less/bootstrap/progress-bars.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/reset.less", "where" : "less/bootstrap/reset.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/scaffolding.less", "where" : "less/bootstrap/scaffolding.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/sprites.less", "where" : "less/bootstrap/sprites.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/tables.less", "where" : "less/bootstrap/tables.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/thumbnails.less", "where" : "less/bootstrap/thumbnails.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/tooltip.less", "where" : "less/bootstrap/tooltip.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/type.less", "where" : "less/bootstrap/type.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/utilities.less", "where" : "less/bootstrap/utilities.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/variables.less", "where" : "less/bootstrap/variables.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/wells.less", "where" : "less/bootstrap/wells.less", "type" : "file"}
+
 	],
 	"incompatibilities" : ["h5bp-css", "h5bp-content", "h5bp-mediaqueries", "h5bp-mediaqueryprint", "h5bp-csshelpers", "izr-responsive"]
 }

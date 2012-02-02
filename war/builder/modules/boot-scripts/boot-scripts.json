@@ -1,0 +1,33 @@
+{
+	"author" : "Twitter Bootstrap",
+	"name" : "JavaScript Plugins",
+	"id" : "boot-scripts",
+	"inserts" :
+	[
+		{
+			"what" : "bootstrap.js",
+			"where" : "js/libs/bootstrap/bootstrap.js",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "bootstrap.min.js",
+			"where" : "js/libs/bootstrap/bootstrap.min.js",
+			"type" : "file"
+		}
+	,
+		{"what" : "alert.js", "where" : "js/libs/bootstrap/alert.js", "type" : "file"},
+		{"what" : "button.js", "where" : "js/libs/bootstrap/button.js", "type" : "file"},
+		{"what" : "carousel.js", "where" : "js/libs/bootstrap/carousel.js", "type" : "file"},
+		{"what" : "collapse.js", "where" : "js/libs/bootstrap/collapse.js", "type" : "file"},
+		{"what" : "dropdown.js", "where" : "js/libs/bootstrap/dropdown.js", "type" : "file"},
+		{"what" : "modal.js", "where" : "js/libs/bootstrap/modal.js", "type" : "file"},
+		{"what" : "popover.js", "where" : "js/libs/bootstrap/popover.js", "type" : "file"},
+		{"what" : "scrollspy.js", "where" : "js/libs/bootstrap/scrollspy.js", "type" : "file"},
+		{"what" : "tab.js", "where" : "js/libs/bootstrap/tab.js", "type" : "file"},
+		{"what" : "tooltip.js", "where" : "js/libs/bootstrap/tooltip.js", "type" : "file"},
+		{"what" : "transition.js", "where" : "js/libs/bootstrap/transition.js", "type" : "file"},
+		{"what" : "typeahead.js", "where" : "js/libs/bootstrap/typeahead.js", "type" : "file"}
+	
+	]
+}
