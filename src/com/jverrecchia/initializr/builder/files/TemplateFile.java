@@ -58,7 +58,7 @@ public class TemplateFile {
 					for (Module currentModule : modules){
 
 						List<Insert> inserts = currentModule.getInserts();
-						String insertString = null;
+						String insertString = "";
 						for (Insert currentInsert : inserts){
 							if (currentInsert.getMode() == null || currentInsert.getMode().equals(mode.getId())){
 								if (currentInsert.getType() == null || !currentInsert.getType().equals("file")){
