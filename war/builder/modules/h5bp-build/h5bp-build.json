@@ -1,0 +1,36 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Build Script",
+	"id" : "h5bp-build",
+	"inserts" :
+	[
+		{
+			"what" : "jscommentstart.html",
+			"where" : "index.html/body/buildcommentjsstart"
+		}
+	,
+		{
+			"what" : "jscommentend.html",
+			"where" : "index.html/body/buildcommentjsend"
+		}
+	,
+		{ "what" : "build/build.xml", "where" : "build/build.xml", "type":"file" },
+		{ "what" : "build/createproject.sh", "where" : "build/createproject.sh", "type":"file" },
+		{ "what" : "build/project.xml", "where" : "build/project.xml", "type":"file" },
+		{ "what" : "build/runbuildscript.bat", "where" : "build/runbuildscript.bat", "type":"file" },
+		{ "what" : "build/config/default.properties", "where" : "build/config/default.properties", "type":"file" },
+		{ "what" : "build/config/manifest.appcache", "where" : "build/config/manifest.appcache", "type":"file" },
+		{ "what" : "build/config/project.properties", "where" : "build/config/project.properties", "type":"file" },
+		{ "what" : "build/tools/ant-contrib-1.0b3.jar", "where" : "build/tools/ant-contrib-1.0b3.jar", "type":"file" },
+		{ "what" : "build/tools/closure-compiler-v1346.jar", "where" : "build/tools/closure-compiler-v1346.jar", "type":"file" },
+		{ "what" : "build/tools/csslint-rhino.js", "where" : "build/tools/csslint-rhino.js", "type":"file" },
+		{ "what" : "build/tools/fulljshint.js", "where" : "build/tools/fulljshint.js", "type":"file" },
+		{ "what" : "build/tools/fulljslint.js", "where" : "build/tools/fulljslint.js", "type":"file" },
+		{ "what" : "build/tools/htmlcompressor-1.5.2.jar", "where" : "build/tools/htmlcompressor-1.5.2.jar", "type":"file" },
+		{ "what" : "build/tools/jpegtran.exe", "where" : "build/tools/jpegtran.exe", "type":"file" },
+		{ "what" : "build/tools/rhino.jar", "where" : "build/tools/rhino.jar", "type":"file" },
+		{ "what" : "build/tools/yuicompressor-2.4.7.jar", "where" : "build/tools/yuicompressor-2.4.7.jar", "type":"file" },
+		{ "what" : "build/tools/optipng-0.6.4-exe/LICENSE.txt", "where" : "build/tools/optipng-0.6.4-exe/LICENSE.txt", "type":"file" },
+		{ "what" : "build/tools/optipng-0.6.4-exe/optipng.exe", "where" : "build/tools/optipng-0.6.4-exe/optipng.exe", "type":"file" }
+	]
+}
