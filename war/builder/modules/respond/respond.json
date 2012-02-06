@@ -7,16 +7,11 @@
 		{
 			"what" : "respond.html",
 			"where" : "index.html/head/respond"
-		},
-			
+		}
+	,
 		{
-			"what" : "respond.js",
-			"where" : "js/libs/respond.js",
-			"type" : "file"
-		},
-		{
-			"what" : "respond.min.js",
-			"where" : "js/libs/respond.min.js",
+			"what" : "respond-1.1.0.min.js",
+			"where" : "js/libs/respond-1.1.0.min.js",
 			"type" : "file"
 		}
 	],
