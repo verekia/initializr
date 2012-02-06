@@ -9,5 +9,5 @@
 			"where" : "index.html/htmltag"
 		}
 	],
-	"incompatibilities" : ["h5bp-oldiecond", "h5bp-iecond"]
+	"incompatibilities" : ["h5bp-iecond"]
 }

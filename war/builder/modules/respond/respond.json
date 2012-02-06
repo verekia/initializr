@@ -15,5 +15,5 @@
 			"type" : "file"
 		}
 	],
-	"incompatibilities" : ["modernizrrespond"]
+	"incompatibilities" : ["modernizrrespond", "html5shivrespond", "modernizr"]
 }

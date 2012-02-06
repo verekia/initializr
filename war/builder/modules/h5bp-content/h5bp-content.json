@@ -9,5 +9,5 @@
 			"where" : "index.html/body/content"
 		}
 	],
-	"incompatibilities" : ["izr-responsive"]
+	"incompatibilities" : ["izr-responsive", "boot-hero"]
 }

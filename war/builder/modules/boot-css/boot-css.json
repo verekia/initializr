@@ -107,5 +107,5 @@
 		{"mode" : "less", "what" : "bootstrap/wells.less", "where" : "less/bootstrap/wells.less", "type" : "file"}
 
 	],
-	"incompatibilities" : ["h5bp-css", "h5bp-content", "h5bp-mediaqueries", "h5bp-mediaqueryprint", "h5bp-csshelpers", "izr-responsive"]
+	"incompatibilities" : ["h5bp-css", "h5bp-content", "h5bp-mediaqueryprint"]
 }

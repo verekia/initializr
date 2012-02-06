@@ -22,5 +22,6 @@
 			"type":"file"
 		}
 		
-	]
+	],
+	"incompatibilities" : ["boot-css", "h5bp-csshelpers"]
 }

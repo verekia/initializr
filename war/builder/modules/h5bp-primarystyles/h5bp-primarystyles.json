@@ -14,6 +14,5 @@
 			"where" : "style.less/primary"
 		}
 	
-	],
-	"incompatibilities" : ["izr-responsive"]
+	]
 }

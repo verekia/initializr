@@ -16,5 +16,5 @@
 		}
 	
 	],
-	"incompatibilities" : ["modernizr", "modernizrrespond"]
+	"incompatibilities" : ["modernizr", "modernizrrespond", "html5shivrespond"]
 }
