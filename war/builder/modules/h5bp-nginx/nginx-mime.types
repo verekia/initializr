@@ -3,9 +3,12 @@
 types {
     text/html                             html htm shtml;
     text/css                              css;
-    text/xml                              xml rss;
+    # application/rss+xml causes some browsers to start a download
+    text/xml                              rss;
     image/gif                             gif;
     image/jpeg                            jpeg jpg;
+    application/json                      json;
+    # http://www.rfc-editor.org/rfc/rfc4329.txt
     application/javascript                js;
     application/atom+xml                  atom;
 
@@ -23,8 +26,9 @@ types {
     image/webp                            webp;
     image/x-icon                          ico;
     image/x-jng                           jng;
-    image/x-ms-bmp                        bmp;
+    image/bmp                             bmp;
 
+    application/xml                       xml;
     application/java-archive              jar war ear;
     application/mac-binhex40              hqx;
     application/msword                    doc;
@@ -32,11 +36,16 @@ types {
     application/postscript                ps eps ai;
     application/rtf                       rtf;
     application/vnd.ms-excel              xls;
+    application/vnd.ms-fontobject         eot;
     application/vnd.ms-powerpoint         ppt;
     application/vnd.wap.wmlc              wmlc;
-    application/vnd.wap.xhtml+xml         xhtml;
+    application/xhtml+xml                 xhtml;
+    application/vnd.google-earth.kml+xml  kml;
+    application/vnd.google-earth.kmz      kmz;
+    application/x-7z-compressed           7z;
     application/x-chrome-extension        crx;
     application/x-cocoa                   cco;
+    application/x-font-ttf                ttf ttc;
     application/x-java-archive-diff       jardiff;
     application/x-java-jnlp-file          jnlp;
     application/x-makeself                run;
@@ -57,12 +66,14 @@ types {
     application/octet-stream              dmg;
     application/octet-stream              iso img;
     application/octet-stream              msi msp msm;
-    application/octet-stream              safariextz
+    application/octet-stream              safariextz;
 
     audio/midi                            mid midi kar;
     audio/mpeg                            mp3;
-    audio/x-realaudio                     ra;
     audio/ogg                             oga ogg;
+    audio/x-m4a                           m4a;
+    audio/x-realaudio                     ra;
+    audio/x-wav                           wav;
 
     video/3gpp                            3gpp 3gp;
     video/mpeg                            mpeg mpg;
@@ -70,13 +81,12 @@ types {
     video/quicktime                       mov;
     video/webm                            webm;
     video/x-flv                           flv;
+    video/x-m4v                           m4v;
     video/x-mng                           mng;
     video/x-ms-asf                        asx asf;
     video/x-ms-wmv                        wmv;
     video/x-msvideo                       avi;
 
-    application/vnd.ms-fontobject         eot;
-    font/truetype                         ttf;
     font/opentype                         otf;
     font/woff                             woff;
 }
