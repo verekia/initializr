@@ -13,6 +13,7 @@ public class Boilerplate extends Mode {
 		this.getDefaultModulesNames().add("h5bp-content");
 		this.getDefaultModulesNames().add("h5bp-stylefile");
 		this.getDefaultModulesNames().add("h5bp-css");
+		this.getDefaultModulesNames().add("h5bp-primarystyles");
 		this.getDefaultModulesNames().add("h5bp-csshelpers");
 		this.getDefaultModulesNames().add("h5bp-mediaqueries");
 		this.getDefaultModulesNames().add("h5bp-mediaqueryprint");		

@@ -1,0 +1,19 @@
+{
+	"author" : "Paul Irish",
+	"name" : "Primary Styles",
+	"id" : "h5bp-primarystyles",
+	"inserts" :
+	[
+		{
+			"what" : "primarystyles.css",
+			"where" : "style.css/primary"
+		}
+	,
+		{
+			"what" : "primarystyles.css",
+			"where" : "style.less/primary"
+		}
+	
+	],
+	"incompatibilities" : ["izr-responsive"]
+}
