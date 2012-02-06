@@ -45,6 +45,18 @@
 		}
 	,
 		{
+			"what" : "glyphicons-halflings-white.png",
+			"where" : "img/glyphicons-halflings-white.png",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "glyphicons-halflings.png",
+			"where" : "img/glyphicons-halflings.png",
+			"type" : "file"
+		}
+	,
+		{
 			"mode" : "less",
 			"what" : "include-bootstrap.less",
 			"where" : "style.less/boilerplate"
