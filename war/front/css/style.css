@@ -210,7 +210,7 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 }
 
 #fine-tuning-separator{
-	margin:40px 0 20px;
+	margin:30px 0 20px;
 }
 
 .blank-background button,
@@ -257,6 +257,10 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 
 .bootstrap-background button:active{
 	background:#4070df;
+}
+
+#preconfig-section{
+	padding-bottom:10px;
 }
 
 .preconfig-container{

@@ -4,32 +4,7 @@ $(function(){
 	    CONFIG
 	 ************/
 	var config = {
-		/* allModules:[
-		            'h5bp-content',
-		            'izr-responsive',
-		            'boot-responsive',
-		            'modernizr',
-		            'html5shiv',
-		            'respond',
-		            'h5bp-htaccess',
-		            'h5bp-nginx',
-		            'h5bp-webconfig',
-		            'jquerymin',
-		            'jquerydev',
-		            'h5bp-chromeframe',
-		            'h5bp-analytics',
-		            'less',
-		            'h5bp-build',
-		            'h5bp-iecond',
-		            'h5bp-favicon',
-		            'h5bp-appletouchicons',
-		            'h5bp-scripts',
-		            'h5bp-robots',
-		            'h5bp-humans',
-		            'h5bp-404',
-		            'h5bp-adobecrossdomain',
-		            'h5bp-stylefile'
-		            ], */
+
 		defaultModules:{
 			blank: [
 			        'css-mode',
@@ -145,6 +120,12 @@ $(function(){
 			modules.remove('modernizr');
 			modules.remove('respond');
 			modules.push('modernizrrespond');
+		}
+
+		if (modules.indexOf('html5shiv') != -1 && modules.indexOf('respond') != -1){
+			modules.remove('html5shiv');
+			modules.remove('respond');
+			modules.push('html5shivrespond');
 		}
 		
 		if (modules.indexOf('less-mode') != -1){
