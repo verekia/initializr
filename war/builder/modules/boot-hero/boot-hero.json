@@ -26,5 +26,6 @@
 			"where" : "style.less/boilerplate2"
 		}
 	
-	]
+	],
+	"incompatibilities": ["h5bp-content", "izr-responsive"]
 }
