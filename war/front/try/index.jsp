@@ -13,7 +13,7 @@
 
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="front/try/css/style.css">
 
 	<!--[if lt IE 9]>
 	<script src="js/libs/html5shiv-3-respond-1.1.0.min.js"></script>
@@ -70,7 +70,7 @@
 		</footer>
 	</div>
 
-<script src="js/script.js"></script>
+<script src="front/try/js/script.js"></script>
 <script>
 	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
