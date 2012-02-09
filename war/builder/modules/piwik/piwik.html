@@ -1,0 +1,16 @@
+<!-- Piwik -->
+<script type="text/javascript">
+  var pkBaseURL = (("https:" == document.location.protocol) ? "https://[URL]" : "http://[URL]"); //replace the two [URL] with the url of your piwik server
+  document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+<script type="text/javascript">
+  try {
+    var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", [XXX]); // replace [XXX] with your site id (give by piwik after creating a new site)
+    piwikTracker.trackPageView();
+    piwikTracker.enableLinkTracking();
+  } 
+  catch( err ) {}
+</script>
+<noscript>
+  <p><img src="http://[URL]/piwik.php?idsite=[XXX]" style="border:0" alt="" /></p></noscript> <!-- replace [URL] with the url of your piwik server and [XXX] with your site id -->
+<!-- End Piwik Tracking Code -->

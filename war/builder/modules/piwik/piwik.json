@@ -1,0 +1,12 @@
+{
+	"author" : "Edwin Joassart",
+	"name" : "Piwik",
+	"id" : "piwik",
+	"inserts" :
+	[
+		{
+			"what" : "piwik.html",
+			"where" : "index.html/body/end"
+		}
+	]
+}
