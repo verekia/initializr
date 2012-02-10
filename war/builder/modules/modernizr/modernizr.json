@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "modernizr.h5bp.custom.js",
-			"where" : "js/libs/modernizr.h5bp.custom.js",
+			"what" : "modernizr-2.5.2.min.js",
+			"where" : "js/libs/modernizr-2.5.2.min.js",
 			"type" : "file"
 		}
 	],
