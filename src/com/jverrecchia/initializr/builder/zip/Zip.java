@@ -45,7 +45,8 @@ public class Zip {
 		try {
 	        ByteArrayOutputStream bos = new ByteArrayOutputStream(); 
 	        ZipOutputStream zipOut = new ZipOutputStream(bos); 
-	        
+
+
 	        
 	        for (ZipFile currentZipFile : zipfiles){
 	        	ZipEntry entry = new ZipEntry(currentZipFile.getZipPath());
@@ -60,8 +61,9 @@ public class Zip {
 	        		theByteArray = currentZipFile.getBytesData();
 		        zipOut.write(theByteArray);	        	
 	        }
-	        
-	        zipOut.finish(); 
+
+	        zipOut.putNextEntry(new ZipEntry("img/"));
+			zipOut.finish(); 
 	        byteData = bos.toByteArray(); 
 	
 		} catch (IOException e) {
@@ -71,6 +73,7 @@ public class Zip {
 	
 	public void sendZip(List<ZipFile> zipfiles){
 		generateZip(zipfiles);
+
         resp.setContentType("application/zip"); 
         resp.setContentLength(byteData.length); 
         resp.setHeader("Content-Disposition", "inline; filename=" + this.filename); 
