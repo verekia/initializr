@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="front/try/css/style.css">
 
 	<!--[if lt IE 9]>
-	<script src="js/libs/html5shiv-3-respond-1.1.0.min.js"></script>
+	<script src="front/try/js/libs/html5shiv-3-respond-1.1.0.min.js"></script>
 	<![endif]-->
 </head>
 <body>
