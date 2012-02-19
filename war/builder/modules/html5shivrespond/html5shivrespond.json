@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "html5-3.3-respond-1.1.0.min.js",
-			"where" : "js/libs/html5-3.3-respond-1.1.0.min.js",
+			"what" : "html5-3.4-respond-1.1.0.min.js",
+			"where" : "js/libs/html5-3.4-respond-1.1.0.min.js",
 			"type" : "file"
 		}
 	],

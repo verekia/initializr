@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "modernizr-2.5.2-respond-1.1.0.min.js",
-			"where" : "js/libs/modernizr-2.5.2-respond-1.1.0.min.js",
+			"what" : "modernizr-2.5.3-respond-1.1.0.min.js",
+			"where" : "js/libs/modernizr-2.5.3-respond-1.1.0.min.js",
 			"type" : "file"
 		}
 	],

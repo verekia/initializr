@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "modernizr-2.5.2.min.js",
-			"where" : "js/libs/modernizr-2.5.2.min.js",
+			"what" : "modernizr-2.5.3.min.js",
+			"where" : "js/libs/modernizr-2.5.3.min.js",
 			"type" : "file"
 		}
 	],
