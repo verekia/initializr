@@ -11,3 +11,4 @@
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
+.noscreen { position: absolute; top: -1000em; width: 1px; height: 1px; overflow: hidden; }
