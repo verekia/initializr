@@ -1,6 +1,6 @@
 {
 	"author" : "Paul Irish",
-	"name" : "jQuery 1.7.1 Minified",
+	"name" : "jQuery 1.7.2 Minified",
 	"id" : "jquerymin",
 	"inserts" :
 	[
@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "jquery-1.7.1.min.js",
-			"where" : "js/libs/jquery-1.7.1.min.js",
+			"what" : "jquery-1.7.2.min.js",
+			"where" : "js/libs/jquery-1.7.2.min.js",
 			"type" : "file"
 		}
 	],

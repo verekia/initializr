@@ -1,6 +1,6 @@
 {
 	"author" : "Paul Irish",
-	"name" : "jQuery 1.7.1 Dev",
+	"name" : "jQuery 1.7.2 Dev",
 	"id" : "jquerydev",
 	"inserts" :
 	[
@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "jquery-1.7.1.js",
-			"where" : "js/libs/jquery-1.7.1.js",
+			"what" : "jquery-1.7.2.js",
+			"where" : "js/libs/jquery-1.7.2.js",
 			"type" : "file"
 		}
 	],
