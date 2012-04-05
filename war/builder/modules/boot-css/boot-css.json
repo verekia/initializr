@@ -1,6 +1,6 @@
 {
 	"author" : "Twitter Bootstrap",
-	"name" : "Bootstrap 2",
+	"name" : "Bootstrap 2.0.2",
 	"id" : "boot-css",
 	"inserts" :
 	[
@@ -84,6 +84,7 @@
 	,
 		{"mode" : "less", "what" : "bootstrap/accordion.less", "where" : "less/bootstrap/accordion.less", "type" : "file"},
 		{"mode" : "less", "what" : "bootstrap/alerts.less", "where" : "less/bootstrap/alerts.less", "type" : "file"},
+		{"mode" : "less", "what" : "bootstrap/badges.less", "where" : "less/bootstrap/badges.less", "type" : "file"},
 		{"mode" : "less", "what" : "bootstrap/breadcrumbs.less", "where" : "less/bootstrap/breadcrumbs.less", "type" : "file"},
 		{"mode" : "less", "what" : "bootstrap/button-groups.less", "where" : "less/bootstrap/button-groups.less", "type" : "file"},
 		{"mode" : "less", "what" : "bootstrap/buttons.less", "where" : "less/bootstrap/buttons.less", "type" : "file"},
