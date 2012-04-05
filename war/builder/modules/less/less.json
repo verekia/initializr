@@ -1,6 +1,6 @@
 {
 	"author" : "Alexis Sellier",
-	"name" : "Less 1.2.1",
+	"name" : "Less 1.3.0",
 	"id" : "less",
 	"inserts" :
 	[
@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "less-1.2.1.min.js",
-			"where" : "js/libs/less-1.2.1.min.js",
+			"what" : "less-1.3.0.min.js",
+			"where" : "js/libs/less-1.3.0.min.js",
 			"type" : "file"
 		}
 	],
