@@ -1,0 +1,19 @@
+{
+	"author" : "Rob Smith",
+	"name" : "Knockout",
+	"id" : "knockout",
+	"inserts" :
+	[
+		{
+			"what" : "knockout.html",
+			"where" : "index.html/head/knockout"
+		}
+	,
+		{
+			"what" : "knockout-2.0.0.js",
+			"where" : "js/libs/knockout-2.0.0.js",
+			"type" : "file"
+		}
+	],
+	"incompatibilities" : []
+}
