@@ -16,18 +16,18 @@
 			"type" : "file"
 		}
 	,
-		{"what" : "alert.js", "where" : "js/libs/bootstrap/alert.js", "type" : "file"},
-		{"what" : "button.js", "where" : "js/libs/bootstrap/button.js", "type" : "file"},
-		{"what" : "carousel.js", "where" : "js/libs/bootstrap/carousel.js", "type" : "file"},
-		{"what" : "collapse.js", "where" : "js/libs/bootstrap/collapse.js", "type" : "file"},
-		{"what" : "dropdown.js", "where" : "js/libs/bootstrap/dropdown.js", "type" : "file"},
-		{"what" : "modal.js", "where" : "js/libs/bootstrap/modal.js", "type" : "file"},
-		{"what" : "popover.js", "where" : "js/libs/bootstrap/popover.js", "type" : "file"},
-		{"what" : "scrollspy.js", "where" : "js/libs/bootstrap/scrollspy.js", "type" : "file"},
-		{"what" : "tab.js", "where" : "js/libs/bootstrap/tab.js", "type" : "file"},
-		{"what" : "tooltip.js", "where" : "js/libs/bootstrap/tooltip.js", "type" : "file"},
-		{"what" : "transition.js", "where" : "js/libs/bootstrap/transition.js", "type" : "file"},
-		{"what" : "typeahead.js", "where" : "js/libs/bootstrap/typeahead.js", "type" : "file"}
-	
+		{"what" : "bootstrap-alert.js", "where" : "js/libs/bootstrap/bootstrap-alert.js", "type" : "file"},
+		{"what" : "bootstrap-button.js", "where" : "js/libs/bootstrap/bootstrap-button.js", "type" : "file"},
+		{"what" : "bootstrap-carousel.js", "where" : "js/libs/bootstrap/bootstrap-carousel.js", "type" : "file"},
+		{"what" : "bootstrap-collapse.js", "where" : "js/libs/bootstrap/bootstrap-collapse.js", "type" : "file"},
+		{"what" : "bootstrap-dropdown.js", "where" : "js/libs/bootstrap/bootstrap-dropdown.js", "type" : "file"},
+		{"what" : "bootstrap-modal.js", "where" : "js/libs/bootstrap/bootstrap-modal.js", "type" : "file"},
+		{"what" : "bootstrap-popover.js", "where" : "js/libs/bootstrap/bootstrap-popover.js", "type" : "file"},
+		{"what" : "bootstrap-scrollspy.js", "where" : "js/libs/bootstrap/bootstrap-scrollspy.js", "type" : "file"},
+		{"what" : "bootstrap-tab.js", "where" : "js/libs/bootstrap/bootstrap-tab.js", "type" : "file"},
+		{"what" : "bootstrap-tooltip.js", "where" : "js/libs/bootstrap/bootstrap-tooltip.js", "type" : "file"},
+		{"what" : "bootstrap-transition.js", "where" : "js/libs/bootstrap/bootstrap-transition.js", "type" : "file"},
+		{"what" : "bootstrap-typeahead.js", "where" : "js/libs/bootstrap/bootstrap-typeahead.js", "type" : "file"}
+
 	]
 }
