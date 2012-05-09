@@ -71,14 +71,25 @@ $(function(){
 	
 	$('#preconfig-blank').click(function(){
 		fillDefaultModules('blank');
+		_gaq.push(['_trackEvent', 'preconfig', 'h5bp-classic']);
 	});
 
 	$('#preconfig-initializr').click(function(){
 		fillDefaultModules('initializr');
+		_gaq.push(['_trackEvent', 'preconfig', 'responsive']);
 	});
 	
 	$('#preconfig-bootstrap').click(function(){
 		fillDefaultModules('bootstrap');
+		_gaq.push(['_trackEvent', 'preconfig', 'bootstrap']);
+	});
+
+	$('#download-link').click(function(){
+		_gaq.push(['_trackEvent', 'action', 'download']);
+	});
+
+	$('#preview-link').click(function(){
+		_gaq.push(['_trackEvent', 'action', 'preview']);
 	});
 	
 	/*********

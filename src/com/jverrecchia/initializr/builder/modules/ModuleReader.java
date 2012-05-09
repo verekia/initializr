@@ -20,7 +20,6 @@ public class ModuleReader {
 		}
 		
 		return gson.fromJson(jsonString, Module.class);
-		
 	}
 	
 }
