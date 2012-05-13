@@ -1,13 +1,13 @@
 # Initializr - Documentation
 
-## The basics
+## Download or Print
 
 The idea of Initializr API is pretty simple. You can either download an archive or display its content.
 Just ping this URL to get an archive of Initializr:
 
 http://www.initializr.com/builder
 
-Please note that the content of this particular archive is not relevant because no "module" have been added to it, but you'll understand that in a minute :).
+Please note that the content of this particular archive is not relevant because no "module" have been added to it, but you'll understand that in a minute.
 
 If you add a ?print parameter, it will display the content of the archive without downloading it:
 
