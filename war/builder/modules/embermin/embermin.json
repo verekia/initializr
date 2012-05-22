@@ -1,0 +1,19 @@
+{
+	"author" : "Glenn 'alias' Grant",
+	"name" : "Ember 0.9.8 Minified",
+	"id" : "embermin",
+	"inserts" :
+	[
+		{
+			"what" : "embermin.html",
+			"where" : "index.html/body/jslib"
+		}
+	,
+		{
+			"what" : "ember-0.9.8.min.js",
+			"where" : "js/libs/ember-0.9.8.min.js",
+			"type" : "file"
+		}
+	],
+	"incompatibilities" : ["ember", "emberdev"]
+}
