@@ -11,13 +11,13 @@
 	,
 		{
 			"what" : "jquery-1.8.0.min.js",
-			"where" : "js/libs/jquery-1.8.0.min.js",
+			"where" : "js/vendor/jquery-1.8.0.min.js",
 			"type" : "file"
 		}
 	,
 		{
 			"what" : "jquery-1.8.0.js",
-			"where" : "js/libs/jquery-1.8.0.js",
+			"where" : "js/vendor/jquery-1.8.0.js",
 			"type" : "file"
 		}
 	],
