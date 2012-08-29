@@ -6,7 +6,13 @@
 	[
 		{
 			"what" : "boilerplatecss.css",
-			"where" : "style.css/boilerplate"
+			"where" : "main.css/boilerplate"
+		}
+	,
+		{
+			"what" : "normalize.css",
+			"where" : "css/normalize.css",
+			"type" : "file"
 		}
 	,
 		{

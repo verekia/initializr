@@ -9,7 +9,7 @@ public class Boilerplate extends Mode {
 		this.setId("h5bp");
 		this.setFileName("h5bp-initializr");
 		this.getFiles().add(new File("index.html", "builder/templates/index.html", true, true));
-		this.getFiles().add(new File("css/style.css", "builder/templates/style.css", true, true));
+		this.getFiles().add(new File("css/main.css", "builder/templates/main.css", true, true));
 		this.getDefaultModulesNames().add("h5bp-content");
 		this.getDefaultModulesNames().add("h5bp-stylefile");
 		this.getDefaultModulesNames().add("h5bp-css");

@@ -6,7 +6,7 @@
 	[
 		{
 			"what" : "mediaqueries.css",
-			"where" : "style.css/mediaqueries"
+			"where" : "main.css/mediaqueries"
 		}
 	,
 		{
