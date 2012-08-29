@@ -16,6 +16,11 @@
 		}
 	,
 		{
+			"what" : "includenormalize.html",
+			"where" : "index.html/head/styleslib"
+		}
+	,
+		{
 			"mode" : "less",
 			"what" : "less-include.less",
 			"where" : "style.less/boilerplate"
