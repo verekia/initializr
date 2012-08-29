@@ -10,6 +10,11 @@
 			"type" : "file"
 		},
 		{
+			"what" : "apple-touch-icon-144x144-precomposed.png",
+			"where" : "apple-touch-icon-144x144-precomposed.png",
+			"type" : "file"
+		},
+		{
 			"what" : "apple-touch-icon-114x114-precomposed.png",
 			"where" : "apple-touch-icon-114x114-precomposed.png",
 			"type" : "file"
