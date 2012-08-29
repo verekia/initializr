@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "script.js",
-			"where" : "js/script.js",
+			"what" : "main.js",
+			"where" : "js/main.js",
 			"type" : "file"
 		}	
 	],
