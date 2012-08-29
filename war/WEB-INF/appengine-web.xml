@@ -7,5 +7,7 @@
 	<system-properties>
 		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
 	</system-properties>
-	
+
+	<threadsafe>true</threadsafe>
+
 </appengine-web-app>
