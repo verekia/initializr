@@ -9,12 +9,12 @@
 			"where" : "index.html/body/content"
 		},
 		{
-			"what" : "style.css",
-			"where" : "style.css/primary"
+			"what" : "main.css",
+			"where" : "main.css/primary"
 		},
 		{
 			"what" : "mediaqueries.css",
-			"where" : "style.css/mediaqueries"
+			"where" : "main.css/mediaqueries"
 		}
 	,
 		{
