@@ -11,7 +11,7 @@
 	,
 		{
 			"what" : "respond-1.1.0.min.js",
-			"where" : "js/libs/respond-1.1.0.min.js",
+			"where" : "js/vendor/respond-1.1.0.min.js",
 			"type" : "file"
 		}
 	],

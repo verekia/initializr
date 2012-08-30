@@ -11,7 +11,7 @@
 	,
 		{
 			"what" : "html5-3.6-respond-1.1.0.min.js",
-			"where" : "js/libs/html5-3.6-respond-1.1.0.min.js",
+			"where" : "js/vendor/html5-3.6-respond-1.1.0.min.js",
 			"type" : "file"
 		}
 	],
