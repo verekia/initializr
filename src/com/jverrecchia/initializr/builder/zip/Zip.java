@@ -49,7 +49,7 @@ public class Zip {
 
 	        
 	        for (ZipFile currentZipFile : zipfiles){
-	        	ZipEntry entry = new ZipEntry(currentZipFile.getZipPath());
+	        	ZipEntry entry = new ZipEntry("initializr/" + currentZipFile.getZipPath());
 	        	zipOut.putNextEntry(entry);
 	        	
 	        	byte[] theByteArray = null;
@@ -62,7 +62,7 @@ public class Zip {
 		        zipOut.write(theByteArray);	        	
 	        }
 
-	        zipOut.putNextEntry(new ZipEntry("img/"));
+	        zipOut.putNextEntry(new ZipEntry("initializr/img/"));
 			zipOut.finish(); 
 	        byteData = bos.toByteArray(); 
 	
