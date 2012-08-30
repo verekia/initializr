@@ -6,15 +6,15 @@
 	[
 		{
 			"what" : "bootstrap.js",
-			"where" : "js/libs/bootstrap/bootstrap.js",
+			"where" : "js/vendor/bootstrap.js",
 			"type" : "file"
 		}
 	,
 		{
 			"what" : "bootstrap.min.js",
-			"where" : "js/libs/bootstrap/bootstrap.min.js",
+			"where" : "js/vendor/bootstrap.min.js",
 			"type" : "file"
-		}
+		}/*
 	,
 		{"what" : "alert.js", "where" : "js/libs/bootstrap/alert.js", "type" : "file"},
 		{"what" : "button.js", "where" : "js/libs/bootstrap/button.js", "type" : "file"},
@@ -28,6 +28,6 @@
 		{"what" : "tooltip.js", "where" : "js/libs/bootstrap/tooltip.js", "type" : "file"},
 		{"what" : "transition.js", "where" : "js/libs/bootstrap/transition.js", "type" : "file"},
 		{"what" : "typeahead.js", "where" : "js/libs/bootstrap/typeahead.js", "type" : "file"}
-	
+	*/
 	]
 }
