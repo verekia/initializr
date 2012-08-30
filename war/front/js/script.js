@@ -36,7 +36,6 @@ $(function(){
 			             'h5bp-iecond'
 			             ],
 			bootstrap: [
-			            'less-mode',
 			            'boot-hero',
 			             'modernizr',
 			             'respond',
@@ -45,8 +44,7 @@ $(function(){
 			             'h5bp-analytics',
 			             'h5bp-favicon',
 			             'h5bp-appletouchicons',
-			             'h5bp-iecond',
-			             'less'
+			             'h5bp-iecond'
 			            ]
 		},
 		baseUrl:'builder?'
