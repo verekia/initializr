@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "html5.js",
-			"where" : "js/libs/html5.js",
+			"what" : "html5shiv.js",
+			"where" : "js/vendor/html5shiv.js",
 			"type" : "file"
 		}
 	
