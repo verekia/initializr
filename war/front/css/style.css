@@ -351,6 +351,14 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 	visibility:hidden;
 }
 
+.first-h5bp-label {
+	clear: both;
+}
+
+.last-section {
+	clear: both;
+}
+
 .customize-section a{
 	color:#E44D26;
 	text-decoration:none;
@@ -549,16 +557,12 @@ textarea{
 	}
 
 	.customize-section{
-		float:left;
-		width:50%;
+		width:80%;
+		margin: auto;
 	}
 	
 	.customize-section:nth-child(2n + 1){
 		clear:both;
-	}
-	
-	.second-h5bp-label{
-		display:block;
 	}
 	
 	#download-section a{
@@ -692,9 +696,12 @@ textarea{
 		display:block;
 	}
 	
-
+	.second-h5bp-label{
+		display:block;
+	}
 
 	.customize-section{
+		float: left;
 		width:33.3%;
 	}
 
