@@ -4,7 +4,7 @@
    ========================================================================== */
 
 body {
-	font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
 .wrapper {
@@ -17,12 +17,12 @@ body {
    =================== */
 
 .header-container {
-	border-bottom: 20px solid #e44d26;
+    border-bottom: 20px solid #e44d26;
 }
 
 .footer-container,
 .main aside {
-	border-top: 20px solid #e44d26;
+    border-top: 20px solid #e44d26;
 }
 
 .header-container,
@@ -32,7 +32,7 @@ body {
 }
 
 .title {
-	color: white;
+    color: white;
 }
 
 /* ==============

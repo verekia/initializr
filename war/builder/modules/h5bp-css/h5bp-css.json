@@ -16,6 +16,12 @@
 		}
 	,
 		{
+			"what" : "normalize.min.css",
+			"where" : "css/normalize.min.css",
+			"type" : "file"
+		}
+	,
+		{
 			"what" : "includenormalize.html",
 			"where" : "index.html/head/styleslib"
 		}
