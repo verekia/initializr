@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "modernizr-2.6.1-respond-1.1.0.min.js",
-			"where" : "js/vendor/modernizr-2.6.1-respond-1.1.0.min.js",
+			"what" : "modernizr-2.6.2-respond-1.1.0.min.js",
+			"where" : "js/vendor/modernizr-2.6.2-respond-1.1.0.min.js",
 			"type" : "file"
 		}
 	],
