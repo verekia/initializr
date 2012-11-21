@@ -1,6 +1,6 @@
 {
 	"author" : "Paul Irish",
-	"name" : "jQuery 1.8.2 Minified",
+	"name" : "jQuery 1.8.3 Minified",
 	"id" : "jquerymin",
 	"inserts" :
 	[
@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "jquery-1.8.2.min.js",
-			"where" : "js/vendor/jquery-1.8.2.min.js",
+			"what" : "jquery-1.8.3.min.js",
+			"where" : "js/vendor/jquery-1.8.3.min.js",
 			"type" : "file"
 		}
 	],
