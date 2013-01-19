@@ -1,6 +1,6 @@
 {
 	"author" : "Paul Irish",
-	"name" : "jQuery 1.8.3 Dev",
+	"name" : "jQuery 1.9.0 Dev",
 	"id" : "jquerydev",
 	"inserts" :
 	[
@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "jquery-1.8.3.js",
-			"where" : "js/vendor/jquery-1.8.3.js",
+			"what" : "jquery-1.9.0.js",
+			"where" : "js/vendor/jquery-1.9.0.js",
 			"type" : "file"
 		}
 	],

@@ -1,6 +1,6 @@
 {
 	"author" : "Paul Irish",
-	"name" : "jQuery 1.8.3 Dev + Min",
+	"name" : "jQuery 1.9.0 Dev + Min",
 	"id" : "jquery",
 	"inserts" :
 	[
@@ -10,14 +10,14 @@
 		}
 	,
 		{
-			"what" : "jquery-1.8.3.min.js",
-			"where" : "js/vendor/jquery-1.8.3.min.js",
+			"what" : "jquery-1.9.0.min.js",
+			"where" : "js/vendor/jquery-1.9.0.min.js",
 			"type" : "file"
 		}
 	,
 		{
-			"what" : "jquery-1.8.3.js",
-			"where" : "js/vendor/jquery-1.8.3.js",
+			"what" : "jquery-1.9.0.js",
+			"where" : "js/vendor/jquery-1.9.0.js",
 			"type" : "file"
 		}
 	],
