@@ -1,6 +1,6 @@
 {
 	"author" : "Twitter Bootstrap",
-	"name" : "Bootstrap 2.3.2",
+	"name" : "Bootstrap 3.0.0",
 	"id" : "boot-css",
 	"inserts" :
 	[
@@ -12,21 +12,21 @@
 	,
 		{
 			"mode" : "css",
-			"what" : "boot-resp.html",
+			"what" : "boot-theme.html",
 			"where" : "index.html/head/styleslib3"
 		}
 	,
 		{
 			"mode" : "css",
-			"what" : "bootstrap-responsive.css",
-			"where" : "css/bootstrap-responsive.css",
+			"what" : "bootstrap-theme.css",
+			"where" : "css/bootstrap-theme.css",
 			"type" : "file"
 		}
 	,
 		{
 			"mode" : "css",
-			"what" : "bootstrap-responsive.min.css",
-			"where" : "css/bootstrap-responsive.min.css",
+			"what" : "bootstrap-theme.min.css",
+			"where" : "css/bootstrap-theme.min.css",
 			"type" : "file"
 		}
 	,
@@ -45,14 +45,26 @@
 		}
 	,
 		{
-			"what" : "glyphicons-halflings-white.png",
-			"where" : "img/glyphicons-halflings-white.png",
+			"what" : "glyphicons-halflings-regular.eot",
+			"where" : "fonts/glyphicons-halflings-regular.eot",
 			"type" : "file"
 		}
 	,
 		{
-			"what" : "glyphicons-halflings.png",
-			"where" : "img/glyphicons-halflings.png",
+			"what" : "glyphicons-halflings-regular.svg",
+			"where" : "fonts/glyphicons-halflings-regular.svg",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "glyphicons-halflings-regular.ttf",
+			"where" : "fonts/glyphicons-halflings-regular.ttf",
+			"type" : "file"
+		}
+	,
+		{
+			"what" : "glyphicons-halflings-regular.woff",
+			"where" : "fonts/glyphicons-halflings-regular.woff",
 			"type" : "file"
 		}
 	,
