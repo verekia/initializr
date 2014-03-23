@@ -45,6 +45,20 @@
 		}
 	,
 		{
+			"mode" : "css",
+			"what" : "bootstrap.css.map",
+			"where" : "css/bootstrap.css.map",
+			"type" : "file"
+		}
+	,
+		{
+			"mode" : "css",
+			"what" : "bootstrap-theme.css.map",
+			"where" : "css/bootstrap-theme.css.map",
+			"type" : "file"
+		}
+	,
+		{
 			"what" : "glyphicons-halflings-regular.eot",
 			"where" : "fonts/glyphicons-halflings-regular.eot",
 			"type" : "file"
