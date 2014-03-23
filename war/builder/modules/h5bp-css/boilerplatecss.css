@@ -1,6 +1,4 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
 html,
 button,
@@ -10,7 +8,7 @@ textarea {
     color: #222;
 }
 
-body {
+html {
     font-size: 1em;
     line-height: 1.4;
 }
@@ -34,7 +32,10 @@ hr {
     padding: 0;
 }
 
-img {
+audio,
+canvas,
+img,
+video {
     vertical-align: middle;
 }
 
@@ -48,7 +49,7 @@ textarea {
     resize: vertical;
 }
 
-.chromeframe {
+.browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
