@@ -14,7 +14,13 @@
 			"what" : "bootstrap.min.js",
 			"where" : "js/vendor/bootstrap.min.js",
 			"type" : "file"
-		}/*
+		},
+		{
+			"what" : "npm.js",
+			"where" : "js/vendor/npm.js",
+			"type" : "file"
+		}
+/*
 	,
 		{"what" : "alert.js", "where" : "js/libs/bootstrap/alert.js", "type" : "file"},
 		{"what" : "button.js", "where" : "js/libs/bootstrap/button.js", "type" : "file"},
