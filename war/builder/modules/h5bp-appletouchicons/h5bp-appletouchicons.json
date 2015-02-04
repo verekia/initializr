@@ -10,6 +10,21 @@
 			"type" : "file"
 		},
 		{
+			"what" : "browserconfig.xml",
+			"where" : "browserconfig.xml",
+			"type" : "file"
+		},
+		{
+			"what" : "tile-wide.png",
+			"where" : "tile-wide.png",
+			"type" : "file"
+		},
+		{
+			"what" : "tile.png",
+			"where" : "tile.png",
+			"type" : "file"
+		},
+		{
 			"what" : "apple-touch.html",
 			"where" : "index.html/head/appletouch"
 		}
