@@ -2,20 +2,6 @@
    Helper classes
    ========================================================================== */
 
-.ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    *text-indent: -9999px;
-}
-
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
 .hidden {
     display: none !important;
     visibility: hidden;
