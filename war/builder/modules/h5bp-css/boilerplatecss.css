@@ -34,6 +34,7 @@ hr {
 
 audio,
 canvas,
+iframe,
 img,
 video {
     vertical-align: middle;
@@ -49,7 +50,7 @@ textarea {
     resize: vertical;
 }
 
-.browsehappy {
+.browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
