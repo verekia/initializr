@@ -1,14 +1,7 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
-
 html {
+    color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -36,6 +29,7 @@ audio,
 canvas,
 iframe,
 img,
+svg,
 video {
     vertical-align: middle;
 }
