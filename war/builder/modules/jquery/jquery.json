@@ -1,6 +1,6 @@
 {
 	"author" : "Paul Irish",
-	"name" : "jQuery 1.11.1 Dev + Min",
+	"name" : "jQuery 1.11.2 Dev + Min",
 	"id" : "jquery",
 	"inserts" :
 	[
@@ -10,14 +10,14 @@
 		}
 	,
 		{
-			"what" : "jquery-1.11.1.min.js",
-			"where" : "js/vendor/jquery-1.11.1.min.js",
+			"what" : "jquery-1.11.2.min.js",
+			"where" : "js/vendor/jquery-1.11.2.min.js",
 			"type" : "file"
 		}
 	,
 		{
-			"what" : "jquery-1.11.1.js",
-			"where" : "js/vendor/jquery-1.11.1.js",
+			"what" : "jquery-1.11.2.js",
+			"where" : "js/vendor/jquery-1.11.2.js",
 			"type" : "file"
 		}
 	],
