@@ -10,8 +10,8 @@
 		}
 	,
 		{
-			"what" : "respond-1.1.0.min.js",
-			"where" : "js/vendor/respond-1.1.0.min.js",
+			"what" : "respond-1.4.2.min.js",
+			"where" : "js/vendor/respond-1.4.2.min.js",
 			"type" : "file"
 		}
 	],
