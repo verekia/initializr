@@ -14,7 +14,6 @@ $(function(){
 			        'h5bp-htaccess',
 			        'h5bp-chromeframe',
 		            'h5bp-analytics',
-		            'h5bp-iecond',
 		            'h5bp-favicon',
 		            'h5bp-appletouchicons',
 		            'h5bp-scripts',
