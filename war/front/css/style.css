@@ -492,7 +492,7 @@ textarea{
 
 	#follow-iframes-container iframe{
 		float:right;
-		width:146px!important;
+		width:139px!important;
 		margin-bottom:6px;
 	}
 
@@ -640,7 +640,7 @@ textarea{
 	
 	#follow-iframes-container iframe{
 /* 		float:right; */
-		width:auto!important;
+		width: 262px !important;
 		margin-bottom:6px;
 	}
 	
