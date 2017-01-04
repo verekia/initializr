@@ -1,0 +1,18 @@
+{
+	"author" : "Keith Clark",
+	"name" : "Selectivizr",
+	"id" : "selectivizr",
+	"inserts" :
+	[
+		{
+			"what" : "selectivizr.html",
+			"where" : "index.html/body/jslib"
+		}
+	,
+		{
+			"what" : "selectivizr-min.js",
+			"where" : "js/libs/selectivizr-min.js",
+			"type" : "file"
+		}
+	]
+}
