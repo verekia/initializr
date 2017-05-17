@@ -17,28 +17,28 @@ http://www.initializr.com/builder?print
 
 Initializr uses "modules", which are code snippets or files (or both) that will be included in the archive.
 
-The <code>modernizr</code> module, for instance, adds the following line in <code>index.html</code>:
+The `modernizr` module, for instance, adds the following line in `index.html`:
 
-<code>\<script src="js/libs/modernizr-2.0.min.js"\>\</script\></code>
+```js
+<script src="js/libs/modernizr-2.0.min.js"></script>
+```
 
-and also adds <code>modernizr-2.0.min.js</code> in the <code>js/libs</code> directory.
+and also adds `modernizr-2.0.min.js` in the `js/libs` directory.
 
 If you want to add a module to your archive, just add the name of that module as a GET parameter:
 
 http://www.initializr.com/builder?print&jquery&modernizr
 
-All the current available modules can be found on this <a href="https://github.com/verekia/initializr/tree/master/war/builder/modules">Github</a>.<br />
+All the current available modules can be found on this [Github](https://github.com/verekia/initializr/tree/master/war/builder/modules).<br />
 
 # How a module is defined
 
-Let's take a look at what contains <a href="https://github.com/verekia/initializr/tree/master/war/builder/modules/modernizr">modules/modernizr</a> on the Git repo:
-<ul>
-	<li><code>modernizr-2.0.min.js</code> - It's the actual Modernizr JS file,</li>
-	<li><code>modernizr.html</code> - It's the file containing the HTML JavaScript code inclusion,</li>
-	<li><code>modernizr.json</code> - Here is the interesting stuff! Let's take a closer look at this file:</li>
-</ul> 
+Let's take a look at what contains [modules/modernizr](https://github.com/verekia/initializr/tree/master/war/builder/modules/modernizr) on the Git repo:
+* `modernizr-2.0.min.js` - It's the actual Modernizr JS file,
+* `modernizr.html` - It's the file containing the HTML JavaScript code inclusion,
+* `modernizr.json` - Here is the interesting stuff! Let's take a closer look at this file:
 
-<pre>
+```json
 {
 	"author" : "Paul Irish",
 	"name" : "Modernizr",
@@ -58,7 +58,7 @@ Let's take a look at what contains <a href="https://github.com/verekia/initializ
 	],
 	"incompatibilities" : ["html5shiv"]
 }
-</pre>
+```
 
 We can see that a module configuration file is actually a simple JSON containing the following members:
 <ul>
