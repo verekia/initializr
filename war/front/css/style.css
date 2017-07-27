@@ -209,6 +209,23 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 	float:right;
 }
 
+.js-stack {
+	background: #eee;
+	border-radius: 5px;
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin-top: 25px;
+	text-align: center;
+}
+
+.js-stack a,
+.js-stack a:visited,
+.js-stack a:hover,
+.js-stack a:active
+ {
+	color: #F16529;
+}
+
 #fine-tuning-separator{
 	margin:30px 0 20px;
 }
